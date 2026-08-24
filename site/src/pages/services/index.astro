@@ -1,0 +1,117 @@
+---
+// SIGHTSPEC Services Overview — OEM, Wholesale & Technical Support
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Manufacturing Services — OEM, Wholesale & Technical Support';
+const description = 'SIGHTSPEC manufacturing services for industrial sight glasses: OEM/ODM customization, wholesale distribution with tiered factory pricing, and 24-hour technical support from the factory.';
+
+const services = [
+  {
+    href: '/services/oem-odm/',
+    icon: '🏭',
+    title: 'OEM / ODM Customization',
+    desc: 'Sight glasses built to your drawing — custom sizes from 1/4" to 12", glass selection for temperature and media, flange drilling, hygienic finishes and private-label branding.',
+    points: ['MOQ from 10 pieces, samples first', 'Custom sizes, materials & gaskets', 'Drawing → sample → production in 15–30 days'],
+  },
+  {
+    href: '/services/wholesale-distribution/',
+    icon: '📦',
+    title: 'Wholesale & Distribution',
+    desc: 'Factory-direct sight glass supply for resellers: tiered volume pricing from a 10-piece MOQ, regional distributor agreements, stock cooperation and private-label programs.',
+    points: ['MOQ from 10 pieces, samples available', 'Tiered volume discounts', 'Territory protection for distributors'],
+  },
+  {
+    href: '/services/technical-support/',
+    icon: '🔧',
+    title: 'Technical Support',
+    desc: 'Selection help, CAD drawings, installation and torque guidance, gasket selection and after-sales glass replacement — from the engineers who build the windows.',
+    points: ['Selection answers within 24 hours', 'CAD drawings before you order', 'Glass breakage & gasket service'],
+  },
+];
+
+const advantages = [
+  { title: 'Factory Direct, No Middlemen', desc: 'You deal with the factory that cuts, fuses and pressure-tests the glass. No trading company layers and no margin stacking — the engineers who answer your questions are the people who build the product.' },
+  { title: 'Real Published Specifications', desc: 'Borosilicate to DIN 7080, tri-clamp ratings to 572°F (300°C), threaded windows to 100 bar, USP Class VI and FDA-compliant materials on hygienic models. The numbers we publish are the numbers we build and test to.' },
+  { title: 'Dedicated Export Team', desc: 'The export team handles inquiries, drawings, documentation, packaging, shipping and after-sales in English — from the first quotation to repeat orders and spare glass.' },
+  { title: 'Tested Before Shipment', desc: 'Every window is pressure-tested and inspected before packing, with batch traceability, material certificates and test reports included with your shipment.' },
+];
+
+const steps = [
+  { title: 'Send Your Inquiry', desc: 'Tell us the product type, size, connection, pressure/temperature and expected volume. You receive a quotation and a technical answer within 24 hours.' },
+  { title: 'Confirm the Specification', desc: 'We confirm the datasheet, drawing and lead time for your configuration. Standard models ship fast; custom OEM builds move directly into sampling.' },
+  { title: 'Sample or Production', desc: 'OEM projects start with samples for your validation. Wholesale and stock orders go straight to production with 100% pressure testing on every window.' },
+  { title: 'Delivery & After-Sales', desc: 'Every order ships with test certificates and packing lists. Technical support continues after delivery for installation, gasket selection and replacement questions.' },
+];
+---
+
+<Layout title={`${title} | SIGHTSPEC`} description={description}>
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{title}</h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-300">SIGHTSPEC is an industrial sight glass manufacturer serving OEM equipment builders, distributors, plant operators and line builders — three service lines cover the whole journey from custom design to after-sales.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Our Manufacturing Services</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Every service line is backed by the same factory: borosilicate and soda-lime glass processing, stainless steel fabrication, pressure testing and export documentation under one roof.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        {services.map((s) => (
+          <a href={s.href} class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-8 transition hover:border-brand-blue/50 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-2xl">{s.icon}</div>
+            <h3 class="mt-5 text-lg font-bold text-navy-950">{s.title}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{s.desc}</p>
+            <ul class="mt-5 space-y-2">
+              {s.points.map((p) => (
+                <li class="flex gap-2 text-sm text-slate-700">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green"></span>
+                  <span>{p}</span>
+                </li>
+              ))}
+            </ul>
+            <span class="mt-6 text-sm font-semibold text-brand-blue group-hover:underline">Learn more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-center text-3xl font-extrabold tracking-tight text-navy-950">Why Buyers Choose SIGHTSPEC</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-slate-600">The same factory, quality system and export team supports every program — whether you order ten windows or ten thousand.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {advantages.map((a) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-sm font-bold text-navy-950">{a.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{a.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mx-auto mt-10 max-w-3xl text-center text-sm leading-relaxed text-slate-600">SIGHTSPEC windows serve <a href="/applications/pharmaceutical/" class="font-semibold text-brand-blue underline">pharmaceutical</a>, <a href="/applications/food-beverage/" class="font-semibold text-brand-blue underline">food &amp; beverage</a>, <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue underline">chemical processing</a> and <a href="/applications/oil-gas/" class="font-semibold text-brand-blue underline">oil &amp; gas</a> plants worldwide. Read the <a href="/blog/" class="font-semibold text-brand-blue underline">blog</a> for application guides, or get to know the <a href="/about/" class="font-semibold text-brand-blue underline">factory behind the brand</a>.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">How to Start</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Whether you need a custom window for a new vessel or a steady wholesale supply line, the starting point is the same — an inquiry with your requirements.</p>
+      <div class="mt-12 grid gap-8 md:grid-cols-4">
+        {steps.map((s, i) => (
+          <div>
+            <span class="text-5xl font-extrabold text-navy-950/10">0{i + 1}</span>
+            <h3 class="mt-2 font-bold text-navy-950">{s.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Which Service Fits Your Project?"
+    subtitle="Send your sight glass requirement — size, connection, pressure, volume — and we recommend the right program within 24 hours."
+  />
+</Layout>

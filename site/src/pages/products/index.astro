@@ -1,0 +1,78 @@
+---
+// SIGHTSPEC Products Overview
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const lines = [
+  {
+    tag: 'TRI-CLAMP',
+    title: 'Tri-Clamp Sight Glasses',
+    href: '/products/tri-clamp-sight-glasses/',
+    desc: 'Sanitary clamp connection, borosilicate to DIN 7080, USP Class VI — 1/2" to 12", up to 572°F and 230 psi FV. The standard for pharma, food and brewery lines.',
+  },
+  {
+    tag: 'FLOW INDICATORS',
+    title: 'Sight Flow Indicators',
+    href: '/products/sight-flow-indicators/',
+    desc: 'Inline visual flow verification with flapper, rotary, ball or drip-tube indication. Tri-clamp, threaded and flanged — up to 500°F and 300 psi.',
+  },
+  {
+    tag: 'THREADED',
+    title: 'Threaded Sight Glasses',
+    href: '/products/threaded-sight-glasses/',
+    desc: 'Compact male NPT / BSP sight glasses for tanks and small-bore lines. Rated to 100 bar, 316 SS or Hastelloy bodies.',
+  },
+  {
+    tag: 'FLANGED',
+    title: 'Flanged Sight Glasses',
+    href: '/products/flanged-sight-glasses/',
+    desc: 'Large-window flanged sight glasses for chemical, oil & gas and power piping. ANSI Class 150/300 or DIN PN10-PN40, quartz option to 1000°F+.',
+  },
+];
+
+const faqs = [
+  { q: 'Which sight glass connection should I choose?', a: 'Tri-clamp for sanitary and frequently dismantled lines, threaded for compact high-pressure duty, flanged for large pipes and high flow, weld-in for permanent installations.' },
+  { q: 'Can you supply sight glasses with lights or wipers?', a: 'Yes — illuminated versions (24V LED) for dark process media, and wiper or spray versions for hazy or fouling applications.' },
+  { q: 'Do you offer samples before bulk orders?', a: 'Standard sizes ship as samples (1-2 pcs) with a production order; custom items get a pre-production sample for approval.' },
+];
+---
+
+<Layout title="Sight Glass Products | SIGHTSPEC" description="SIGHTSPEC sight glass product lines: sanitary tri-clamp sight glasses, sight flow indicators, threaded and flanged sight glasses — DIN 7080 borosilicate, factory-direct.">
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Sight Glass Products</h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-300">Four product lines built around one core: the right glass, in the right housing, for your pressure, temperature and media.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-2">
+        {lines.map((l) => (
+          <a href={l.href} class="group rounded-2xl border border-slate-200 p-8 transition hover:border-brand-blue hover:shadow-lg">
+            <p class="text-xs font-bold uppercase tracking-widest text-cta-orange">{l.tag}</p>
+            <h2 class="mt-3 text-xl font-bold text-navy-950 group-hover:text-brand-blue">{l.title}</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{l.desc}</p>
+            <span class="mt-4 inline-block text-sm font-semibold text-brand-blue">View products →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Product FAQs</h2>
+      <div class="mt-8 space-y-3">
+        {faqs.map((f) => (
+          <details class="rounded-xl border border-slate-200 bg-white px-6 py-4">
+            <summary class="cursor-pointer font-semibold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title="Not Sure Which Sight Glass Fits?" subtitle="Tell us your connection, media and pressure/temperature — we recommend the right model within 24 hours." />
+</Layout>

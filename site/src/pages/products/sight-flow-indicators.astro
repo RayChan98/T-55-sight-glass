@@ -1,0 +1,198 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Flow Indicators | Sight Glass Flow Indicator - SG-200 Series';
+const description = 'SIGHTSPEC SG-200 sight flow indicators: flapper, rotary, ball and drip tube types in tri-clamp, threaded and flanged mountings. Borosilicate or soda lime glass, up to 500F / 300 psi. Factory-direct pricing.';
+
+const flowTypes = [
+  { type: 'Flapper', mech: 'A hinged flap deflects with flow; its angle shows the relative flow rate', best: 'Judging low / medium / high flow in liquid lines', drop: 'Very low', media: 'Liquids, light slurries' },
+  { type: 'Rotary', mech: 'A spinning rotor turns at a rate proportional to flow velocity', best: 'Continuous lines where a visible RPM signal is useful', drop: 'Low', media: 'Liquids and gases' },
+  { type: 'Ball', mech: 'A free ball lifts off its seat with flow and drops when flow stops', best: 'Pump discharge and lube lines needing flow / no-flow proof', drop: 'Minimal', media: 'Liquids only' },
+  { type: 'Drip tube', mech: 'Liquid trickles through a drip tube into the viewing chamber', best: 'Low-flow dosing and sample lines', drop: 'Minimal', media: 'Thin liquids' },
+];
+
+const specRows = [
+  { param: 'Indicator type', options: 'Flapper / rotary / ball / drip tube' },
+  { param: 'Body material', options: '304 or 316L stainless steel; carbon steel for industrial duty' },
+  { param: 'Mounting', options: 'Tri-clamp (1/2"-6"), threaded NPT/BSP (1/4"-2"), flanged ANSI/DIN (up to 6")' },
+  { param: 'Glass', options: 'Borosilicate to DIN 7080 (standard); soda lime for low-temperature duty' },
+  { param: 'Temperature', options: 'Up to 500F (260C)' },
+  { param: 'Pressure', options: 'Up to 300 psi (2.1 MPa); flange-class dependent on flanged models' },
+  { param: 'Gaskets', options: 'EPDM, FKM (Viton) or PTFE, matched to media' },
+  { param: 'Options', options: 'Extended bodies, glass shields, OEM branding, special wetted materials' },
+];
+
+const faqs = [
+  { q: 'What is the difference between a sight glass and a sight flow indicator?', a: 'A plain sight glass is a window only - you see what is inside the line. A sight flow indicator adds a mechanical element (flapper, rotary, ball or drip tube) so you can also judge whether media is moving and roughly how fast, even when the liquid is clear and colorless.' },
+  { q: 'Which indicator type should I choose?', a: 'Ball and drip tube types answer the flow / no-flow question simply. Flapper types add a rough flow-rate readout, and rotary types give the most obvious motion signal on larger lines. Send us your media, line size and what you need to verify, and our engineers will recommend an element.' },
+  { q: 'What pressure and temperature can the SG-200 handle?', a: 'Up to 500F (260C) and 300 psi (2.1 MPa) depending on mounting and glass choice - threaded and flanged versions carry the higher ratings. Confirm the exact rating for your configuration with our technical team before ordering.' },
+  { q: 'Can sight flow indicators be used in food and pharma lines?', a: 'Yes. Sanitary tri-clamp models are built in 316L stainless steel with crevice-free bores and media-matched gaskets, so they clean up in place. Tell us your CIP chemicals and temperatures so we can specify the right gasket for your line.' },
+  { q: 'How often does the sight glass need replacing?', a: 'The glass is a wear part, not a lifetime component. Inspect it at every maintenance interval and replace it when you see chips, cracks, clouding or any sign of leakage. Spare glass and gaskets ship with every SG-200 order.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Sight Flow Indicators</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / SG-200 SERIES</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Sight Flow Indicators</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A sight flow indicator - also called a sight glass flow indicator - is a pipeline window that shows you at a glance whether media is moving, how fast, and whether its color or clarity has changed. The SG-200 series pairs a machined stainless body with a flapper, rotary, ball or drip tube element, so flow verification needs no power, no wiring and no calibration.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/flanged-sight-glasses/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Flanged Sight Glasses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Is a Sight Flow Indicator?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A sight flow indicator is a transparent section of process line - typically a stainless body with a glass window - that contains a mechanical element driven by the media itself. Flapper types rise with flow, rotors spin with velocity, balls lift off their seat when liquid moves, and drip tubes meter slow trickles. Because the indicator is purely mechanical, there is nothing to power, configure or calibrate: the answer to "is this line flowing?" is a one-second visual check.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Indicators are specified wherever operators need fast, continuous confirmation without adding instrumentation cost: pump seal flush lines, cooling water returns, CIP circuits, solvent dosing and lubrication lines. They complement - not replace - electronic flow transmitters, giving plant staff a direct physical confirmation that a loop failure cannot hide.</p>
+    </div>
+  </section>
+
+  <!-- Indicator types comparison -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">INDICATOR TYPES</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Flapper, Rotary, Ball &amp; Drip Tube: Which One Do You Need?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The SG-200 series is built around four indicator elements. Each suits a different flow regime, so the right choice depends on your media and on what you need the indicator to tell you. The table below compares them side by side.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Type</th>
+              <th class="px-5 py-4 font-semibold">How It Works</th>
+              <th class="px-5 py-4 font-semibold">Best For</th>
+              <th class="px-5 py-4 font-semibold">Pressure Drop</th>
+              <th class="px-5 py-4 font-semibold">Typical Media</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {flowTypes.map((f) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{f.type}</td>
+                <td class="px-5 py-4 text-slate-600">{f.mech}</td>
+                <td class="px-5 py-4 text-slate-600">{f.best}</td>
+                <td class="px-5 py-4 text-slate-600">{f.drop}</td>
+                <td class="px-5 py-4 text-slate-600">{f.media}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Ball and drip tube indicators answer the yes/no flow question; flapper indicators add a rough flow-rate readout; rotary indicators give the liveliest signal on larger lines. All four use the same SG-200 body, so you can change the element style without changing the pipe connection.</p>
+    </div>
+  </section>
+
+  <!-- Mounting -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MOUNTING OPTIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Tri-Clamp, Threaded &amp; Flanged Installations</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-brand-blue/10 text-xl">🔗</span>
+          <h3 class="mt-4 text-lg font-bold text-navy-950">Tri-Clamp (Sanitary)</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Tri-clamp ferrules from 1/2" to 6" suit food, beverage and pharmaceutical lines where the indicator must come apart for CIP and sterilization. Clamped connections leave no threaded crevices for product to hide in.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-brand-blue/10 text-xl">🔩</span>
+          <h3 class="mt-4 text-lg font-bold text-navy-950">Threaded</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Male NPT or BSP ends from 1/4" to 2" are the compact, low-cost choice for utility lines, skids and instrumentation tubing. Threaded mountings suit higher pressures and smaller bores with the same body.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-brand-blue/10 text-xl">⚙️</span>
+          <h3 class="mt-4 text-lg font-bold text-navy-950">Flanged</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">ANSI or DIN flanges up to 6" suit larger process lines and media that cannot tolerate thread restrictions. Flanged indicators bolt directly into existing piping spools. Weld-end versions are available for permanent installation.</p>
+        </div>
+      </div>
+      <p class="mt-6 text-sm leading-relaxed text-slate-600">Need a large-diameter flanged window? See the <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-400 flanged sight glasses</a> range, or the flagship <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a> for hygienic plants.</p>
+    </div>
+  </section>
+
+  <!-- Glass selection -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS SELECTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Borosilicate vs Soda Lime Glass</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The window is the part that does the seeing, and the SG-200 ships with two standard glass options. Borosilicate glass to DIN 7080 is the default for process service: it resists thermal shock, stands up to chemical attack and runs to 500F (260C). Soda lime glass costs less and is fine for low-temperature, low-pressure utility duty, but it tolerates far less thermal shock - so it is not recommended for steam-traced or hot process lines.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Treat the glass as a consumable: thermal cycling, vibration and impact can chip or crack it. Inspect windows during routine maintenance and replace any glass with a visible flaw before it leaks. Every SG-200 ships with spare gaskets and a documented replacement procedure.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG-200 Sight Flow Indicator Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">SG-200 Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">APPLICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Where Sight Flow Indicators Are Used</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">SG-200 indicators earn their place wherever flow must be verified continuously without instrumentation cost:</p>
+      <ul class="mt-4 max-w-3xl list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-600">
+        <li>Chemical dosing and additive lines - confirm pump stroke and product flow in <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue transition hover:underline">chemical processing</a> plants.</li>
+        <li>Cooling water and heat-transfer circuits - confirm circulation before a pump trips on low flow.</li>
+        <li>Pump seal flush and lubrication systems - a stopped flush line means a dry seal; the indicator makes it visible.</li>
+        <li>CIP and washdown returns in food plants, plus pharmaceutical utility lines where the hygienic tri-clamp version is standard.</li>
+      </ul>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For hygienic food and pharma duty, the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a> is the usual choice; for large flanged process lines, pair the SG-200 with an <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-400 flanged sight glass</a>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Sight Flow Indicator Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need a Sight Flow Indicator Specified for Your Line?"
+    subtitle="Send your media, line size and mounting preference - get a datasheet, dimensional drawing and factory-direct quotation within 24 hours."
+  />
+</Layout>

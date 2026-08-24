@@ -1,0 +1,223 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Tri-Clamp Sight Glass (SG-100) — Sanitary Sight Glass for Hygienic Process Lines';
+const description = 'SG-100 sanitary tri-clamp sight glass: borosilicate DIN 7080 window, 304/316L stainless body, 1/2"–12" (DN15–DN300), up to 572°F and 230 psi. USP Class VI / BPE / FDA compliant. Factory-direct with OEM sizes.';
+
+const specs = [
+  ['Model', 'SG-100'],
+  ['Mounting', 'Sanitary tri-clamp (TC) ferrule, clamp-on installation'],
+  ['Size range', '1/2"–12" (DN15–DN300)'],
+  ['Glass window', 'Borosilicate to DIN 7080; soda-lime option for low-temperature duty'],
+  ['Body material', '304 / 316L stainless steel; Hastelloy or Duplex on request'],
+  ['Max temperature', 'Up to 572°F (300°C)'],
+  ['Max pressure', 'Full vacuum to 230 psi (1.6 MPa)'],
+  ['Surface finish', 'Hygienic finish standard; electropolish option for CIP/SIP lines'],
+  ['Compliance', 'USP Class VI materials, BPE-compliant design, FDA-compliant wetted materials'],
+  ['Options', 'Illuminated light port, heated anti-fog window, custom lengths and OEM marking'],
+];
+
+const variants = [
+  {
+    name: 'SG-100 Standard',
+    tag: 'The workhorse',
+    desc: 'The base configuration for most sanitary lines: a polished tri-clamp ferrule body, DIN 7080 borosilicate window and food-grade seal. Choose it when you need a reliable, low-maintenance view port on water, product, CIP solution and utility lines.',
+    points: ['Zero dead-leg ferrule design', 'Borosilicate or soda-lime window', 'Quick clamp-on install and removal'],
+  },
+  {
+    name: 'SG-100-L Illuminated',
+    tag: 'See into dark tanks',
+    desc: 'Adds a compact LED illumination port so operators can inspect product level, color and flow in dark vessels and unlit skids without opening the line. Ideal for mixing tanks, buffer vessels and storage where ambient light never reaches the window.',
+    points: ['LED light integrated into the ferrule', 'Low-voltage, long-life lamp', 'Works with standard and heated windows'],
+  },
+  {
+    name: 'SG-100-H Heated Anti-Fog',
+    tag: 'Clear windows, every batch',
+    desc: 'A low-voltage heater keeps the glass above the dew point, stopping condensation fog on steam, hot CIP or high-humidity lines. The result is a window that stays readable through the full cycle — batch after batch.',
+    points: ['Anti-fog heating for hot and humid duty', 'Keeps vision clear through CIP/SIP cycles', 'Available with illumination on request'],
+  },
+];
+
+const applications = [
+  { name: 'Pharmaceutical', href: '/applications/pharmaceutical/', desc: 'Bioreactors, WFI loops, buffer tanks and process skids where dead-leg elimination and material traceability are mandatory.' },
+  { name: 'Food & Beverage', href: '/applications/food-beverage/', desc: 'Dairy, brewing, beverage and sauce lines that run daily CIP and need quick visual checks without breaking the seal.' },
+  { name: 'Chemical Processing', href: '/applications/chemical-processing/', desc: 'Pilot plants and fine-chemical lines where borosilicate clarity and 316L corrosion resistance matter.' },
+  { name: 'Oil & Gas', href: '/applications/oil-gas/', desc: 'Utility and process skids that follow hygienic or semi-hygienic standards and need a fast inspection point.' },
+];
+
+const faqs = [
+  { q: 'What is the difference between a sight glass and a sight flow indicator?', a: 'A sight glass is a window that lets you see liquid level, color and general condition inside a vessel or pipe. A sight flow indicator (such as our SG-200) adds an internal element — a flapper, rotor, drip tube or ball — that visibly moves with flow so you can confirm flow direction and rate at a glance. If you only need a view, the SG-100 is the right choice; if you need proof of flow, look at the SG-200.' },
+  { q: 'Can the SG-100 handle CIP and SIP cleaning?', a: 'Yes. The SG-100 is designed for hygienic lines and is built from USP Class VI / FDA-compliant materials with a dead-leg-free tri-clamp design, so it tolerates routine CIP and SIP cycles. Note that the glass window is a wear item: inspect it during maintenance and replace it if it develops chips, cracks or etching from aggressive cleaning.' },
+  { q: 'What are the maximum temperature and pressure ratings?', a: 'The SG-100 is rated up to 572°F (300°C) and from full vacuum to 230 psi (1.6 MPa). The practical limit on any given installation depends on the window material, seal and body metal you select — send us your media, temperature and pressure and we will confirm the correct configuration.' },
+  { q: 'Can you make custom sizes or OEM-branded sight glasses?', a: 'Yes. We manufacture SG-100 in the standard 1/2"–12" (DN15–DN300) range and can build custom ferrule lengths, special finishes and OEM-marked units. Custom projects go through our OEM/ODM process — see our OEM/ODM service page for how it works.' },
+  { q: 'Is the glass replaceable if it breaks or fogs?', a: 'Yes, and we recommend planning for it. The borosilicate window is a replaceable component, not a permanent part. Keep a spare window kit on site, and replace the window if you see chips, cracks or permanent etching. For recurring fogging, choose the heated anti-fog configuration instead of relying on frequent cleaning.' },
+];
+
+const related = [
+  { name: 'Sight Flow Indicators (SG-200)', href: '/products/sight-flow-indicators/', desc: 'Flapper, rotor, drip tube and ball types for visible flow confirmation.' },
+  { name: 'Threaded Sight Glasses (SG-300)', href: '/products/threaded-sight-glasses/', desc: 'Compact NPT/BSP sight glasses for small-bore tanks and high-pressure lines.' },
+  { name: 'Flanged Sight Glasses (SG-400)', href: '/products/flanged-sight-glasses/', desc: 'Large-window ANSI/DIN flanged units for chemical and oil & gas piping.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Tri-Clamp Sight Glasses</span>
+      </nav>
+      <div class="mt-8 grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-green">SANITARY SIGHT GLASS</p>
+          <h1 class="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">Tri-Clamp Sight Glass (SG-100) — Sanitary Sight Glass for Hygienic Process Lines</h1>
+          <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">SIGHTSPEC SG-100 tri-clamp sight glasses give you a clear, continuous view of product inside sanitary piping — without the dead legs and crevices where bacteria hide. A borosilicate window to DIN 7080 and a 304/316L stainless body with tri-clamp ferrule ends make it the go-to sanitary sight glass for pharmaceutical, food, beverage and biotech lines that run CIP/SIP cleaning and demand full material traceability.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+            <a href="#specifications" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">View Specifications</a>
+          </div>
+        </div>
+        <!-- Image placeholder (asset pipeline later) -->
+        <svg viewBox="0 0 600 500" class="w-full rounded-2xl ring-1 ring-white/10" role="img" aria-label="SG-100 tri-clamp sight glass placeholder image">
+          <rect width="600" height="500" fill="#102A45"/>
+          <circle cx="300" cy="210" r="110" fill="none" stroke="#2563EB" stroke-width="3"/>
+          <circle cx="300" cy="210" r="70" fill="none" stroke="#10B981" stroke-width="3"/>
+          <circle cx="300" cy="210" r="16" fill="#F97316"/>
+          <rect x="180" y="120" width="240" height="14" rx="7" fill="#17395C"/>
+          <rect x="180" y="276" width="240" height="14" rx="7" fill="#17395C"/>
+          <text x="300" y="420" text-anchor="middle" fill="#64748B" font-size="18" font-family="sans-serif">SG-100 TRI-CLAMP SIGHT GLASS (PLACEHOLDER)</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">PRODUCT OVERVIEW</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">A Dead-Leg-Free Window Into Your Process</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">In hygienic processing, every pocket and crevice is a risk. The SG-100 is engineered around a seamless tri-clamp ferrule design, so the sight glass adds no internal ledges where product can collect and biofilm can form. The window sits flush with the bore, giving operators a full, unobstructed view of level, color, clarity and mixing — without opening the line, losing pressure or breaking the sterile boundary. Because it mounts with a standard tri-clamp, it installs in minutes on existing sanitary pipework and is easy to remove for inspection and window replacement.</p>
+      <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> Zero dead-leg tri-clamp design for hygienic lines</li>
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> Replaceable borosilicate window to DIN 7080</li>
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> 304/316L stainless body; Hastelloy or Duplex on request</li>
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> USP Class VI, BPE-compliant, FDA-compliant materials</li>
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> Optional heated anti-fog and LED illumination</li>
+        <li class="flex items-start gap-2 rounded-lg bg-slate-50 p-3 text-sm text-slate-700"><span class="mt-0.5 text-brand-green">✓</span> OEM/ODM sizes from 1/2"–12" (DN15–DN300)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section id="specifications" class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG-100 Technical Specifications</h2>
+      <p class="mt-4 max-w-3xl text-base text-slate-600">Standard ratings follow published sanitary sight glass practice. The final configuration — window material, seal and body metal — should be confirmed against your media, temperature and pressure.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">Specification</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specs.map(([item, value]) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{item}</td>
+                <td class="px-5 py-4 text-slate-600">{value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">* Ratings are application-dependent — glass is a consumable component and should be inspected during routine maintenance. Contact the factory for the current datasheet.</p>
+    </div>
+  </section>
+
+  <!-- Variants -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">CONFIGURATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Three Configurations, One Reliable Window</h2>
+      <p class="mt-4 max-w-3xl text-base text-slate-600">Every SG-100 shares the same hygienic ferrule body and DIN 7080 window platform. Pick the configuration that matches your viewing conditions — or combine options for heated, illuminated duty.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        {variants.map((v) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <span class="inline-block rounded-full bg-brand-green/10 px-3 py-1 text-xs font-semibold text-brand-green">{v.tag}</span>
+            <h3 class="mt-4 text-lg font-bold text-navy-950">{v.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{v.desc}</p>
+            <ul class="mt-4 space-y-2">
+              {v.points.map((p) => (
+                <li class="flex items-start gap-2 text-sm text-slate-700"><span class="mt-0.5 text-brand-blue">•</span>{p}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-green">APPLICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold sm:text-3xl">Where the SG-100 Is Specified</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">The SG-100 earns its place wherever a hygienic connection standard is required and operators need eyes on the process. It is a standard sight glass choice for vessels, transfer lines and process skids in the industries below — each with its own inspection routines and cleaning cycles.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        {applications.map((a) => (
+          <a href={a.href} class="group rounded-2xl border border-white/10 bg-navy-900 p-6 transition hover:border-brand-blue/60 hover:bg-navy-800">
+            <h3 class="text-lg font-bold text-white group-hover:text-brand-blue">{a.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">{a.desc}</p>
+            <span class="mt-3 inline-block text-sm font-semibold text-cta-orange">Learn more →</span>
+          </a>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-400">Not sure which configuration fits your line? Send your media, temperature and pressure to <a href="/contact/" class="text-brand-blue underline transition hover:text-white">our engineers</a> and get a recommendation with a quote within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Related products -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">RELATED PRODUCTS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Other Sight Glass Options</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        {related.map((r) => (
+          <a href={r.href} class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="text-base font-bold text-navy-950 group-hover:text-brand-blue">{r.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{r.desc}</p>
+          </a>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-500">Browse the full range on our <a href="/products/" class="text-brand-blue underline hover:text-navy-950">products overview</a>, or read our <a href="/faq/" class="text-brand-blue underline hover:text-navy-950">general FAQ</a> for ordering, lead time and documentation questions.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Tri-Clamp Sight Glass FAQ</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-base font-bold text-navy-950">
+              {f.q}
+              <span class="text-brand-blue transition group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title="Spec Your Sanitary Sight Glass in One Message" subtitle="Tell us your line size, media, temperature and pressure — get the right SG-100 configuration and a factory-direct quote within 24 hours." />
+</Layout>

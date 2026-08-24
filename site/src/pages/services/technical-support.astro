@@ -1,0 +1,232 @@
+---
+// SIGHTSPEC Technical Support — Sight Glass Selection, CAD & After-Sales
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Technical Support — Selection, CAD Drawings & Installation';
+const description = 'SIGHTSPEC sight glass technical support: model selection by size, connection, pressure and media; CAD drawings before you order; installation and torque guidance; glass breakage replacement and gasket service.';
+
+const areas = [
+  { icon: '📐', title: 'Selection Assistance', desc: 'We match glass type, size, connection, pressure and temperature to your process — for new builds and for replacing windows in existing vessels and piping.' },
+  { icon: '🖼️', title: 'CAD Drawings', desc: 'Dimensional drawings in DWG and PDF before you order, so your designers can verify fit, flange drilling and envelope without guesswork.' },
+  { icon: '🔧', title: 'Installation Guidance', desc: 'Gasket selection, torque values, clamp alignment and heating options — the details that stop leaks, glass stress and premature failures.' },
+  { icon: '🛠️', title: 'After-Sales Service', desc: 'Glass breakage replacement, gasket kits and spare parts, with a warranty process handled directly by the factory.' },
+];
+
+const selectionRows = [
+  { question: 'What is the opening size?', answer: 'Measure the clear opening or existing window envelope. Standard tri-clamp sizes run 1/2"–12" (DN15–DN300), threaded 1/4"–3", flanged 2"–8".' },
+  { question: 'Which connection?', answer: 'Tri-clamp for sanitary lines, NPT/BSP threaded for compact high-pressure service, ANSI/DIN flanged for large process windows. Weld-in and bolt-on are available.' },
+  { question: 'Pressure and temperature?', answer: 'Borosilicate to DIN 7080 handles up to 572°F (300°C); threaded models are rated up to 100 bar. Vacuum service uses the FV rating (to 230 psi on tri-clamp models).' },
+  { question: 'What media is inside?', answer: 'Aggressive chemicals favor borosilicate or quartz with matching gaskets (PTFE, FKM, EPDM); food and pharma lines need USP Class VI compliant materials and hygienic finishes.' },
+  { question: 'New build or retrofit?', answer: 'For retrofits we match existing bolt patterns and glass dimensions exactly — send a photo or drawing and we confirm compatibility before you order.' },
+];
+
+const installSteps = [
+  { title: 'Inspect on Arrival', desc: 'Unpack and check glass and gaskets for transport damage. Report any cracked glass or damaged seals within 7 days with photos for a free replacement.' },
+  { title: 'Fit New Gaskets', desc: 'Always install new gaskets when replacing a window. Match the gasket to your media — EPDM for water and mild chemicals, FKM for oils and solvents, PTFE for aggressive media.' },
+  { title: 'Align & Torque Evenly', desc: 'Center the glass in the opening and tighten clamps or bolts in a criss-cross pattern, in stages, to the recommended torque — uneven clamping is the most common cause of glass cracking.' },
+  { title: 'Pressure Test & Operate', desc: 'After installation, gradually bring the line to operating pressure and check for leaks. Thermal shock is the main enemy: avoid cold liquid hitting a hot glass surface.' },
+];
+
+const gasketRows = [
+  { media: 'Water, steam (low), CIP chemicals', gasket: 'EPDM', temp: '–40°F to 300°F' },
+  { media: 'Oils, fuels, solvents, moderate acids', gasket: 'FKM (Viton)', temp: '–20°F to 400°F' },
+  { media: 'Strong acids, aggressive chemicals', gasket: 'PTFE', temp: '–100°F to 500°F' },
+  { media: 'Pharma, food, beverage (USP Class VI)', gasket: 'Silicone / hygienic TPE', temp: '–60°F to 400°F' },
+];
+
+const issues = [
+  { symptom: 'Glass fogs or clouds internally', cause: 'Moisture ingress or long-term thermal stress', fix: 'Replace the glass; consider an anti-fog heating option for humid duty' },
+  { symptom: 'Leak at the gasket face', cause: 'Worn gasket, uneven torque or damaged sealing surface', fix: 'Replace gaskets and re-torque in sequence to the specified value' },
+  { symptom: 'Glass cracked or shattered', cause: 'Thermal shock, overpressure, impact or uneven clamping', fix: 'Replace with the correct glass type; verify pressure rating and clamp alignment' },
+  { symptom: 'Flow indicator not spinning', cause: 'Rotor stuck on deposits or worn parts', fix: 'Disassemble, clean and check the rotor; replace parts from our spare kits' },
+];
+
+const faqs = [
+  { q: 'How fast do you answer technical questions?', a: 'Technical questions, drawings and quotations are answered within 24 hours on working days. Urgent field issues can reach us directly on WhatsApp +86 137 1086 0663.' },
+  { q: 'Do you provide CAD drawings before purchase?', a: 'Yes. We provide dimensional drawings in DWG and PDF for approval before production, including custom flange drilling and bolt patterns for retrofit windows.' },
+  { q: 'What if the glass breaks in service?', a: 'Sight glass windows are service parts — they can break under thermal shock, overpressure or impact. We supply replacement glass and gaskets quickly, and our warranty covers manufacturing defects including glass fusion flaws found on arrival.' },
+  { q: 'Can you replace a sight glass on an existing vessel?', a: 'Usually yes. Send the opening dimensions, bolt pattern and a photo — we match the envelope exactly and supply the window, gaskets and clamps as a retrofit kit.' },
+  { q: 'Which gasket should I use for my media?', a: 'The gasket table above covers the common cases: EPDM for water service, FKM for oils and solvents, PTFE for aggressive chemicals, silicone or hygienic TPE for food and pharma. Send us your media and we confirm compatibility.' },
+  { q: 'Do you support installation on site?', a: 'We guide installation remotely with instructions, torque tables and video support. For critical pharma and food lines we can also arrange commissioning support for larger orders.' },
+];
+---
+
+<Layout title={`${title} | SIGHTSPEC`} description={description}>
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{title}</h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-300">From choosing the right glass to replacing a broken window — technical support from the engineers who build SIGHTSPEC sight glasses.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">What Our Technical Support Covers</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Four support areas cover the full life of a sight glass — before you order, at installation and long after delivery. All support is provided by factory engineers, in English, with answers within 24 hours on working days.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {areas.map((a) => (
+          <div class="rounded-2xl border border-slate-200 p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-2xl">{a.icon}</div>
+            <h3 class="mt-5 text-lg font-bold text-navy-950">{a.title}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{a.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Selection Assistance — Five Questions We Ask</h2>
+      <p class="mt-4 text-base leading-relaxed text-slate-600">Answer these five questions and the right sight glass — or a custom configuration — becomes obvious. Send the answers with a photo or drawing and we confirm the model within 24 hours.</p>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Question</th>
+              <th class="px-6 py-4 font-semibold">What We Need to Know</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {selectionRows.map((r) => (
+              <tr>
+                <td class="px-6 py-4 font-medium text-navy-950">{r.question}</td>
+                <td class="px-6 py-4 text-slate-600">{r.answer}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-6 text-sm leading-relaxed text-slate-600">Product families and full ratings: <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue underline">tri-clamp sight glasses</a>, <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue underline">sight flow indicators</a>, <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue underline">threaded sight glasses</a> and <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue underline">flanged sight glasses</a>.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">CAD Drawings Before You Order</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Every SIGHTSPEC window can be supplied with a dimensional drawing before production. For retrofit windows we work from your measurements to guarantee the envelope fits.</p>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3 text-sm leading-relaxed text-slate-600"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand-green"></span><span>DWG and PDF drawings for approval — including custom flange drilling and bolt patterns.</span></li>
+            <li class="flex gap-3 text-sm leading-relaxed text-slate-600"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand-green"></span><span>Drawings returned within 24–48 hours for standard sizes, slightly longer for complex OEM designs.</span></li>
+            <li class="flex gap-3 text-sm leading-relaxed text-slate-600"><span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand-green"></span><span>Full OEM drawing and sampling support on our <a href="/services/oem-odm/" class="font-semibold text-brand-blue underline">OEM / ODM page</a>.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Installation Guide</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Most sight glass field failures trace back to installation: old gaskets, uneven torque or thermal shock. Follow these four steps and the window will seat correctly first time.</p>
+          <div class="mt-6 space-y-4">
+            {installSteps.map((s, i) => (
+              <div class="flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-950 text-sm font-bold text-white">{i + 1}</span>
+                <div>
+                  <h3 class="text-sm font-bold text-navy-950">{s.title}</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Gasket Selection Table</h2>
+      <p class="mt-4 text-base leading-relaxed text-slate-600">Gaskets are the sealing heart of every sight glass installation. Match the gasket to your media and temperature — wrong gasket selection is a leading cause of leaks. For chemical, oil and gas duty, review the <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue underline">chemical processing</a> and <a href="/applications/oil-gas/" class="font-semibold text-brand-blue underline">oil & gas</a> application guides.</p>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Media</th>
+              <th class="px-6 py-4 font-semibold">Recommended Gasket</th>
+              <th class="px-6 py-4 font-semibold">Temperature Range</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {gasketRows.map((r) => (
+              <tr>
+                <td class="px-6 py-4 text-slate-700">{r.media}</td>
+                <td class="px-6 py-4 font-medium text-navy-950">{r.gasket}</td>
+                <td class="px-6 py-4 text-slate-600">{r.temp}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">After-Sales: Glass Breakage & Gasket Replacement</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Sight glass windows are service parts by nature — glass is a consumable that can be damaged by thermal shock, overpressure or impact. Our after-sales service keeps your line running with fast replacement supply. For pharma and food lines, see our <a href="/applications/pharmaceutical/" class="font-semibold text-brand-blue underline">pharmaceutical</a> and <a href="/applications/food-beverage/" class="font-semibold text-brand-blue underline">food & beverage</a> application pages.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 p-8">
+          <h3 class="text-lg font-bold text-navy-950">🪟 Glass Breakage Replacement</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">Send photos of the failed window and the size or nameplate. We supply a drop-in replacement — glass, gaskets and clamps — matching your existing envelope, with express shipping options for downtime-critical lines. Manufacturing defects found on arrival are covered by warranty.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-8">
+          <h3 class="text-lg font-bold text-navy-950">🧩 Gasket & Spare Kits</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">Order spare gasket kits with every window so maintenance crews can reseal during planned stops. Kits include gaskets, washers and a torque specification card for your exact model — EPDM, FKM, PTFE, silicone or hygienic TPE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Common Sight Glass Issues</h2>
+      <p class="mt-4 text-base leading-relaxed text-slate-600">A quick diagnostic table for the field. If your symptom is not listed, send photos and a description — we diagnose the root cause and recommend the fix.</p>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Symptom</th>
+              <th class="px-6 py-4 font-semibold">Likely Cause</th>
+              <th class="px-6 py-4 font-semibold">Fix</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {issues.map((r) => (
+              <tr>
+                <td class="px-6 py-4 font-medium text-navy-950">{r.symptom}</td>
+                <td class="px-6 py-4 text-slate-600">{r.cause}</td>
+                <td class="px-6 py-4 text-slate-600">{r.fix}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Technical Support FAQ</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white transition hover:border-brand-blue/40">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 text-left text-base font-semibold text-navy-950">
+              {f.q}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </summary>
+            <div class="border-t border-slate-100 px-5 py-4 text-sm leading-relaxed text-slate-600">
+              {f.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need Help Spec'ing a Sight Glass?"
+    subtitle="Send your size, connection, pressure and media — our engineers reply within 24 hours with a model recommendation and drawing."
+  />
+</Layout>

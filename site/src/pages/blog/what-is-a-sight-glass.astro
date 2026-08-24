@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "What Is a Sight Glass? Definition, Working Principle and Types";
+const description = "Wondering what is sight glass? SIGHTSPEC explains the definition, why process plants need them, how they work, the glass types (soda lime, borosilicate, quartz) and the four main types of sight glasses.";
+const date = "2026-08-25";
+const readTime = 8;
+const author = "Ray Chan";
+const toc = [
+  { id: "what-is-a-sight-glass", label: "What Is a Sight Glass?" },
+  { id: "why-install-a-sight-glass", label: "Why Do You Need a Sight Glass?" },
+  { id: "how-does-a-sight-glass-work", label: "How Does a Sight Glass Work?" },
+  { id: "sight-glass-glass-types", label: "Sight Glass Glass Types at a Glance" },
+  { id: "main-types-of-sight-glasses", label: "Main Types of Sight Glasses" },
+  { id: "sight-glass-selection-checklist", label: "Sight Glass Selection Checklist" },
+  { id: "faq", label: "Sight Glass FAQ" },
+];
+const related = [
+  { href: "/blog/how-to-choose-a-sight-glass/", title: "How to Choose a Sight Glass: A 6-Question Selection Guide", readTime: 8 },
+  { href: "/blog/sight-glass-glass-types/", title: "Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz", readTime: 8 },
+  { href: "/products/tri-clamp-sight-glasses/", title: "SG-100 Tri-Clamp Sight Glass", readTime: 4 },
+];
+---
+
+<Layout title={title + " | SIGHTSPEC"} description={description}>
+  <BlogPostTemplate title={title} category="Basics" date={date} readTime={readTime} author={author} toc={toc} related={related}>
+    <div slot="cover" class="hidden lg:block" aria-hidden="true">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="60" cy="60" r="28" fill="#BFDBFE" stroke="#60A5FA" stroke-width="3"/>
+        <circle cx="52" cy="52" r="8" fill="#EFF6FF" opacity="0.8"/>
+        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+      </svg>
+    </div>
+
+    <p>Walk through any process plant and you will see them everywhere: small round windows bolted into tanks, reactors, pipelines and transfer lines, letting operators see exactly what is happening inside. These windows are called sight glasses, and although they look like the simplest component in a process line, they are also one of the most safety-critical. A sight glass is a pressure-rated part that sits between the operator and the process — get the specification wrong and the consequences range from process downtime to a serious failure. This guide explains what a sight glass is, why industries rely on them, how they work, which glass types are used, and how to approach selection.</p>
+
+    <h2 id="what-is-a-sight-glass">What Is a Sight Glass?</h2>
+    <p>A sight glass — also called a sight window, inspection window or sight port — is a transparent window fitted into the wall of a vessel, tank, pipe or reactor so that operators can visually inspect the process media without opening the system. A complete sight glass assembly has four basic parts: a metal body or housing, a glass window, a sealing gasket, and a retaining ring or cover plate that holds the glass against the body.</p>
+    <p>The key point is that an industrial sight glass is an engineered pressure component, not a decorative porthole. The glass window is a pressure boundary: it must contain the internal pressure of the vessel while withstanding process temperature, chemical attack, vibration and thermal shock. That is why most industrial sight glasses use borosilicate glass manufactured to DIN 7080 — the standard that defines the dimensions and strength requirements for pressure sight glasses — rather than ordinary window glass. In hygienic industries such as pharmaceuticals and food &amp; beverage, the whole assembly is additionally engineered for clean-in-place (CIP) and sterilize-in-place (SIP) cycles, with dead-space-free internal geometry and gaskets made from FDA-compliant elastomers.</p>
+    <p>As a factory-direct manufacturer, SIGHTSPEC produces sight glasses across four families: <a href="/products/tri-clamp-sight-glasses/">sanitary tri-clamp sight glasses</a>, <a href="/products/sight-flow-indicators/">sight flow indicators</a>, <a href="/products/threaded-sight-glasses/">threaded sight glasses</a> and <a href="/products/flanged-sight-glasses/">flanged sight glasses</a>, with borosilicate, soda lime and quartz windows in 304, 316L and carbon steel bodies.</p>
+
+    <h2 id="why-install-a-sight-glass">Why Do You Need a Sight Glass?</h2>
+    <p>Why go to the trouble of installing a window when your line is full of sensors? Because no instrument fully replaces direct visual confirmation. A sight glass gives you four things:</p>
+    <ul>
+      <li><strong>Process visibility</strong> — you can see flow, level, color, clarity, mixing, foaming, sedimentation and contamination as they happen, not minutes later on a trend screen.</li>
+      <li><strong>Safety</strong> — operators can check the process without opening the vessel, which avoids pressure loss, media release, hot work, and the whole sequence of drain, purge and re-commission.</li>
+      <li><strong>Verification for hygienic processes</strong> — in food and pharma, a sight glass is often the only practical way to confirm that a CIP or SIP cleaning cycle actually reached the surface.</li>
+      <li><strong>Low-cost early warning</strong> — regular visual checks catch buildup, crystallization, cavitation and leaking seals long before they become failures.</li>
+    </ul>
+    <p>Sight glasses are also cheap to own: no power supply, no calibration, no signal wiring, and a maintenance cost that is mostly the occasional replacement of the glass window and gasket — both are consumable parts by design. For many duties, one well-placed sight glass prevents more downtime than a room full of instruments.</p>
+
+    <h2 id="how-does-a-sight-glass-work">How Does a Sight Glass Work?</h2>
+    <p>Mechanically, a sight glass is simple, and that simplicity is its strength. The glass window sits in a recess machined into the body, with a gasket on each side. The retaining ring or cover plate is torqued down to pre-load the gaskets, and the internal pressure then works with that pre-load: the higher the pressure, the harder the glass is pressed against the seal — which is why sight glass seals improve rather than leak as pressure rises. The gaskets also absorb the difference in thermal expansion between the metal body and the glass, which is the main reason a sight glass survives repeated heating and cooling cycles without cracking.</p>
+    <p>Light transmission is the other half of the working principle: the media is visible because light passes through the window, and the window must stay clean and unclouded. In dark or opaque vessels you need an external light source or a sight glass with an integrated light. Where the media itself is clear — so clear that a static window shows nothing — <a href="/products/sight-flow-indicators/">sight flow indicators</a> add a moving element: a flapper, rotary paddle, ball or drip tube inside the bore that visibly moves when flow is present, turning an invisible clear liquid into a verifiable flow.</p>
+
+    <h2 id="sight-glass-glass-types">Sight Glass Glass Types at a Glance</h2>
+    <p>The glass window defines the operating envelope of the whole assembly. Three glass types dominate industrial sight glasses, and they differ mainly in temperature resistance, thermal shock behavior, chemical resistance and price:</p>
+    <table>
+      <thead><tr><th>Glass type</th><th>Typical continuous temperature</th><th>Thermal shock resistance</th><th>Chemical resistance</th><th>Typical use</th></tr></thead>
+      <tbody>
+        <tr><td>Soda lime</td><td>up to ~150–200°C</td><td>Low — cracks with rapid temperature change</td><td>Fair — water, mild media</td><td>Low-temperature water and oil duty; lowest cost</td></tr>
+        <tr><td>Borosilicate (DIN 7080)</td><td>up to ~280–300°C</td><td>Good — survives steam and CIP cycling</td><td>Excellent — wide pH range (not HF or hot concentrated alkali)</td><td>Most industrial and sanitary sight glasses</td></tr>
+        <tr><td>Quartz / fused silica</td><td>up to ~1000–1100°C</td><td>Excellent — extreme cycling tolerance</td><td>Excellent (not HF)</td><td>Furnaces, high-temperature reactors</td></tr>
+      </tbody>
+    </table>
+    <p>Values above are typical for common sight glass sizes. Exact limits depend on window diameter, thickness and assembly design — always confirm against the datasheet for the specific model. A full engineering comparison is in our guide to <a href="/blog/sight-glass-glass-types/">sight glass glass types</a>.</p>
+
+    <h2 id="main-types-of-sight-glasses">Main Types of Sight Glasses</h2>
+    <p>SIGHTSPEC builds four families of sight glasses, each matched to a connection style and a duty range:</p>
+    <h3>SG-100 Tri-Clamp Sight Glass</h3>
+    <p>The flagship sanitary model. It mounts with hygienic tri-clamp fittings from 1/2" to 12" (DN15–DN300), uses borosilicate glass to DIN 7080, and is available in 304 or 316L stainless steel with Hastelloy or duplex options. It is rated up to 572°F (300°C) and from full vacuum to 230 psi (1.6 MPa), and is built for USP Class VI / BPE-compliant pharmaceutical and food duty with a dead-space-free design. See the <a href="/products/tri-clamp-sight-glasses/">SG-100 product page</a> for full specifications.</p>
+    <h3>SG-200 Sight Flow Indicator</h3>
+    <p>The choice when you need to verify flow, not just look into a vessel. It is available with flapper, rotary, drip tube or ball elements, so even crystal-clear liquids produce a visible movement. With tri-clamp, threaded, flanged or weld-end connections, borosilicate glass for high-temperature duty and soda lime for low-cost low-temperature duty, it covers both hygienic and industrial lines up to 500°F and 300 psi — details on the <a href="/products/sight-flow-indicators/">SG-200 page</a>.</p>
+    <h3>SG-300 Threaded Sight Glass</h3>
+    <p>The compact, high-pressure option. Male NPT or BSP connections from 1/4" to 3" let it drop straight into small-bore lines and vessels, with ratings up to 100 bar (1450 psi). Bodies are 316 stainless steel, Hastelloy or carbon steel. Full details on the <a href="/products/threaded-sight-glasses/">SG-300 page</a>.</p>
+    <h3>SG-400 Flanged Sight Glass</h3>
+    <p>Built for large lines and big windows. ANSI B16.5 Class 150/300 or DIN PN10–PN40 flanges from 2" to 8" (DN50–DN200) make it the mainstream connection in <a href="/applications/chemical-processing/">chemical processing</a> and <a href="/applications/oil-gas/">oil &amp; gas</a>, with borosilicate, soda lime or quartz windows depending on temperature. See the <a href="/products/flanged-sight-glasses/">SG-400 page</a>.</p>
+
+    <h2 id="sight-glass-selection-checklist">Sight Glass Selection Checklist</h2>
+    <p>Before you buy, run this checklist. Each item is one line in your inquiry and gets you a correct quotation the first time:</p>
+    <ol>
+      <li><strong>Maximum operating pressure</strong>, and whether the line ever sees full vacuum (FV) — vacuum is a separate rating, not a given.</li>
+      <li><strong>Maximum continuous and peak temperature</strong>, including steam, CIP and SIP spikes.</li>
+      <li><strong>Media and concentration</strong> — the chemicals the glass, body and gasket will contact.</li>
+      <li><strong>Glass type</strong>: borosilicate as the default, quartz above ~300°C, soda lime only for budget low-temperature duty.</li>
+      <li><strong>Body material</strong>: 304, 316L, carbon steel, or special alloys for corrosive service.</li>
+      <li><strong>Gasket material</strong> compatible with both the media and the temperature.</li>
+      <li><strong>Connection</strong>: tri-clamp, threaded, flanged or weld-end, with the exact size.</li>
+      <li><strong>Approvals</strong>: USP Class VI, FDA or BPE compliance for hygienic industries.</li>
+    </ol>
+    <p>Send these eight answers to our team and you will get a model recommendation, a dimensioned drawing and a quotation within 24 hours. For a step-by-step walkthrough of the same questions, read <a href="/blog/how-to-choose-a-sight-glass/">how to choose a sight glass</a>.</p>
+
+    <h2 id="faq">Sight Glass FAQ</h2>
+    <details><summary>What is the difference between a sight glass and a sight flow indicator?</summary><p>A sight glass is a static window for looking into a vessel or line. A sight flow indicator is a sight glass with a moving element — flapper, rotary, ball or drip tube — inside the bore that moves with the flow, so you can confirm flow of clear or colorless liquids that a static window cannot show.</p></details>
+    <details><summary>What pressure and temperature can a sight glass handle?</summary><p>It depends on the design. The SG-300 threaded sight glass is rated up to 100 bar (1450 psi); the SG-100 tri-clamp handles full vacuum to 230 psi (1.6 MPa) at up to 300°C with borosilicate glass; flanged models follow the ANSI or DIN flange class. Temperature is set mainly by the glass type, pressure by the window size and assembly design.</p></details>
+    <details><summary>How long does a sight glass last?</summary><p>The metal body typically lasts the life of the plant. The glass window and gasket are consumables: service life depends on thermal cycling, chemical attack and mechanical load. Inspect windows regularly for cracks, chips and clouding, and replace them as part of scheduled maintenance.</p></details>
+    <details><summary>Can sight glasses be used with corrosive chemicals?</summary><p>Yes, with the right materials. Borosilicate glass resists most acids and alkalis (hydrofluoric acid and hot concentrated alkali are the main exceptions), and the body can be 316L, Hastelloy or duplex stainless. Confirm chemical compatibility with the actual media and concentration before ordering.</p></details>
+    <details><summary>Do you offer custom sizes and OEM?</summary><p>Yes. All four families support custom diameters, connections, markings and OEM/ODM packaging. See our <a href="/services/oem-odm/">OEM / ODM service</a> for the process from sample to mass production.</p></details>
+  </BlogPostTemplate>
+
+  <CtaBand
+    title="Need a Sight Glass for Your Process Line?"
+    subtitle="Tell us your pressure, temperature, media and connection — get a model recommendation and quotation within 24 hours, factory-direct."
+  />
+</Layout>

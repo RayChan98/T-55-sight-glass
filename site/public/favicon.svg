@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- SIGHTSPEC 字标 favicon：深蓝圆角底 + 圆形视窗 -->
+  <rect width="128" height="128" rx="24" fill="#0B1F33"/>
+  <!-- 法兰外圈（三耳） -->
+  <circle cx="64" cy="64" r="42" fill="none" stroke="#2563EB" stroke-width="8"/>
+  <circle cx="38" cy="64" r="5" fill="#F97316"/>
+  <circle cx="90" cy="64" r="5" fill="#F97316"/>
+  <circle cx="64" cy="38" r="5" fill="#F97316"/>
+  <circle cx="64" cy="90" r="5" fill="#F97316"/>
+  <!-- 视镜玻璃（内侧） -->
+  <circle cx="64" cy="64" r="24" fill="#0EA5E9" opacity="0.4"/>
+  <!-- 高光 -->
+  <circle cx="56" cy="56" r="8" fill="white" opacity="0.25"/>
+</svg>

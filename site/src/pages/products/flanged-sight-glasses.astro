@@ -1,0 +1,183 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Flanged Sight Glasses | ANSI Sight Glass - SG-400 Series';
+const description = 'SIGHTSPEC SG-400 flanged sight glasses: ANSI B16.5 Class 150/300 and DIN PN10-PN40, 2"-8" (DN50-DN200). Borosilicate, soda lime or quartz windows for chemical and oil & gas piping. Factory-direct pricing.';
+
+const flangeRows = [
+  { std: 'ANSI B16.5', rating: 'Class 150', press: '~285 psi (19.6 bar)', use: 'General process, water and utility lines' },
+  { std: 'ANSI B16.5', rating: 'Class 300', press: '~740 psi (51 bar)', use: 'Higher-pressure chemical and refinery lines' },
+  { std: 'DIN EN 1092-1', rating: 'PN10 / PN16', press: '10 / 16 bar (145 / 232 psi)', use: 'European water and general process duty' },
+  { std: 'DIN EN 1092-1', rating: 'PN25 / PN40', press: '25 / 40 bar (363 / 580 psi)', use: 'European process and steam lines' },
+];
+
+const specRows = [
+  { param: 'Size range', options: '2"-8" (DN50-DN200)' },
+  { param: 'Flange standard', options: 'ANSI B16.5 Class 150 / 300; DIN EN 1092-1 PN10-PN40' },
+  { param: 'Face type', options: 'Raised face (RF) standard; flat face (FF) and ring-type joint (RTJ) on request' },
+  { param: 'Glass', options: 'Borosilicate to DIN 7080, soda lime, or fused quartz' },
+  { param: 'Body material', options: 'Carbon steel (standard) or 316 stainless steel' },
+  { param: 'Temperature', options: 'Up to 572F (300C) with borosilicate; higher with quartz' },
+  { param: 'Pressure', options: 'Follows the flange class: Class 150-300, PN10-PN40' },
+  { param: 'Gaskets', options: 'PTFE, FKM or graphite-reinforced, matched to media and temperature' },
+  { param: 'Options', options: 'Glass shields, extended bodies, drain/vent ports, OEM marking' },
+];
+
+const faqs = [
+  { q: 'What does Class 150 or Class 300 mean on a flanged sight glass?', a: 'It is the ANSI flange rating: the maximum working pressure the flange pair can hold, derated as temperature rises. Class 150 is roughly 285 psi at ambient, Class 300 roughly 740 psi. The assembled sight glass is never rated above its flange class - the glass and gasket are selected to match.' },
+  { q: 'Can flanged sight glasses handle high temperatures?', a: 'Yes, with the right combination. Borosilicate glass runs to 572F (300C), and fused quartz extends service well beyond that for furnace and high-temperature duty. Check the body material and gasket too - on carbon steel bodies with PTFE gaskets, the gasket usually sets the practical limit.' },
+  { q: 'What is the largest size available?', a: 'Standard SG-400 production covers 2"-8" (DN50-DN200). Larger diameters are available through our OEM/ODM program, where the bore, glass thickness and bolt pattern are engineered to the flange class. Contact our technical team with your size and rating.' },
+  { q: 'Raised face or flat face - which do I need?', a: 'Most ANSI process piping uses raised-face flanges; flat-face is used when bolting to flat counter-flanges, typically cast iron, to avoid cracking them. If you are unsure, check your existing flange face or send us a photo and we will identify it for you.' },
+  { q: 'Do you supply sight glasses with shields or lighting?', a: 'Yes. Options include outer glass shields for mechanical protection, light ports for dark media, and drain/vent ports for cleaning. All options are listed per configuration on the datasheet we send with your quotation.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Flanged Sight Glasses</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / SG-400 SERIES</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Flanged Sight Glasses</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A flanged sight glass is a viewing window bolted between two flange faces - the standard way to add visual access to chemical, petrochemical and oil &amp; gas piping without cutting, welding or repiping. The SG-400 series is machined to ANSI B16.5 Class 150/300 and DIN PN10-PN40 patterns, in sizes from 2" to 8" (DN50-DN200), with borosilicate, soda lime or quartz windows.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/sight-flow-indicators/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Sight Flow Indicators</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Is a Flanged Sight Glass?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A flanged sight glass - often specified simply as an ANSI sight glass - is a short body with two flange faces and a glass window through the bore. It bolts between existing flanges in a pipe run, so installation is a matter of swapping in a spool piece: no welding, no hot work permit, no pressure-system re-certification. The large window gives operators a direct view of level, flow, color, foam, carryover and contamination inside the line.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Because the flange face, bolt circle and rating must match your line exactly, the SG-400 is built around the two dominant global families: ANSI B16.5 raised-face flanges and DIN EN 1092-1 flanges. Get the class right and the sight glass drops into any standard piping specification.</p>
+    </div>
+  </section>
+
+  <!-- Flange standards comparison -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FLANGE STANDARDS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">ANSI Class 150/300 vs DIN PN10-PN40</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Flange rating determines how much pressure the sight glass can hold and which bolt pattern it uses. The table below compares the classes SIGHTSPEC machines for the SG-400 body.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Standard</th>
+              <th class="px-5 py-4 font-semibold">Rating</th>
+              <th class="px-5 py-4 font-semibold">Max Working Pressure (approx., ambient)</th>
+              <th class="px-5 py-4 font-semibold">Typical Use</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {flangeRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.std}</td>
+                <td class="px-5 py-4 text-slate-600">{r.rating}</td>
+                <td class="px-5 py-4 text-slate-600">{r.press}</td>
+                <td class="px-5 py-4 text-slate-600">{r.use}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Values shown are standard flange ratings at ambient temperature; allowable pressure derates as temperature rises, and the final rating of an assembled sight glass follows the weakest component - flange, glass or gasket. Most chemical and oil &amp; gas specifications use raised-face (RF) flanges; flat-face (FF) suits cast-iron counter-flanges, and RTJ faces are available for high-pressure services. Send us your flange standard, class and face type and we supply the matching bore, glass thickness and gasket.</p>
+    </div>
+  </section>
+
+  <!-- Glass selection -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS SELECTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Glass by Temperature: Borosilicate, Soda Lime &amp; Quartz</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Service temperature is the first question when choosing a window material. The SG-400 offers three glass options matched to the duty:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Soda Lime Glass</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~250F (120C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The economical choice for cold water and air duties where thermal shock is not a concern. Not recommended for steam tracing, hot process media or rapid temperature swings.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Borosilicate (DIN 7080)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to 572F (300C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The process workhorse: chemically resistant, thermally stable and resistant to thermal shock. This is the default window for chemical, pharmaceutical and most industrial sight glass service.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Quartz (Fused Silica)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~1832F (1000C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">For furnace, stack and high-temperature duty where borosilicate softens. Quartz also offers superior thermal-shock resistance for demanding cycling service.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Note that the metal body and gasket may limit the assembly before the glass does - match all three components to your service temperature. On high-temperature SG-400 builds, carbon steel bodies are typically paired with graphite-reinforced gaskets and borosilicate or quartz windows.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG-400 Flanged Sight Glass Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">SG-400 Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">APPLICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Large-Viewport Applications: Chemical Piping &amp; Oil &amp; Gas</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The SG-400 large window exists for one reason: big processes need big eyes on them. In <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue transition hover:underline">chemical processing</a>, flanged sight glasses sit on reactor outlets, pump suction and discharge lines, storage tank nozzles and heat-exchanger returns, where operators watch for cavitation, carryover, crystallization and phase separation.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">In <a href="/applications/oil-gas/" class="font-semibold text-brand-blue transition hover:underline">oil &amp; gas</a> and refining, ANSI sight glasses verify flow in fuel, lube and gas systems, confirm separator levels, and provide viewports at sample points and pigging stations. The 8-inch window is also the standard solution for vessel level observation where a sight gauge is not enough.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For in-line flow verification on smaller lines, pair the SG-400 with an <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicator</a>; for hygienic food and pharma duty, the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a> covers the sanitary range.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Flanged Sight Glass Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Specifying a Flanged Sight Glass for Your Pipeline?"
+    subtitle="Send your flange standard, class, size and service conditions - get a datasheet, dimensional drawing and factory-direct quotation within 24 hours."
+  />
+</Layout>

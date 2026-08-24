@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "How to Choose a Sight Glass: A 6-Question Selection Guide";
+const description = "How to choose sight glass: answer six questions — pressure, temperature, materials, application, gasket and mounting — and the right model is clear. Includes a decision table and FAQ from SIGHTSPEC.";
+const date = "2026-08-25";
+const readTime = 8;
+const author = "Ray Chan";
+const toc = [
+  { id: "pressure", label: "Q1: What Pressure Will the Sight Glass See?" },
+  { id: "temperature", label: "Q2: What Operating Temperature?" },
+  { id: "materials", label: "Q3: What Materials — Glass and Metal?" },
+  { id: "application", label: "Q4: What Is the Application and Media?" },
+  { id: "gasket", label: "Q5: Which Gasket or Seal Material?" },
+  { id: "mounting", label: "Q6: Which Mounting and Connection Type?" },
+  { id: "decision-table", label: "Sight Glass Decision Table" },
+  { id: "faq", label: "Sight Glass Selection FAQ" },
+];
+const related = [
+  { href: "/blog/what-is-a-sight-glass/", title: "What Is a Sight Glass? Definition, Working Principle and Types", readTime: 8 },
+  { href: "/blog/sight-glass-glass-types/", title: "Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz", readTime: 8 },
+  { href: "/products/threaded-sight-glasses/", title: "SG-300 Threaded Sight Glass", readTime: 4 },
+];
+---
+
+<Layout title={title + " | SIGHTSPEC"} description={description}>
+  <BlogPostTemplate title={title} category="Selection Guide" date={date} readTime={readTime} author={author} toc={toc} related={related}>
+    <div slot="cover" class="hidden lg:block" aria-hidden="true">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="60" cy="60" r="28" fill="#BFDBFE" stroke="#60A5FA" stroke-width="3"/>
+        <path d="M42 60 h36" stroke="#F97316" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="60" cy="60" r="7" fill="#F97316"/>
+        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+      </svg>
+    </div>
+
+    <p>Choosing a sight glass looks deceptively simple — it is a window with a metal ring, how hard can it be? But the window is a pressure boundary, the metal sees the process chemistry, the gasket has to survive both, and the connection has to match your pipework. Specify any of these wrong and you either buy the wrong product twice or discover the mistake under pressure. The reliable way to choose a sight glass is to answer six questions in order: pressure, temperature, materials, application, gasket and mounting. Each answer narrows the field, and by the time you have answered all six, one or two models will remain. This guide walks through the six questions with the numbers you need, and ends with a decision table and the questions buyers ask most.</p>
+
+    <h2 id="pressure">Q1: What Pressure Will the Sight Glass See?</h2>
+    <p>Start with pressure because it sets the safety envelope. You need three numbers: the maximum working pressure, the test or burst requirement your specification calls for, and whether the line ever sees full vacuum (FV). Vacuum is the one people forget — a sight glass rated only for positive pressure can be pulled inward and fail in a line that is drained or evacuated.</p>
+    <p>The product families have very different pressure ceilings. The <a href="/products/threaded-sight-glasses/">SG-300 threaded sight glass</a> is rated up to 100 bar (1450 psi), which makes it the choice for high-pressure small-bore lines. The <a href="/products/tri-clamp-sight-glasses/">SG-100 tri-clamp sight glass</a> handles full vacuum to 230 psi (1.6 MPa) at up to 300°C, which covers most hygienic duties. <a href="/products/flanged-sight-glasses/">Flanged models</a> follow the flange class — ANSI Class 150 or 300, DIN PN10–PN40. One more rule: window diameter is the main enemy of pressure rating. The larger the window, the lower the pressure the same glass thickness can hold. If you need a big window at high pressure, the glass gets thick and expensive — and sometimes two smaller sight glasses beat one large one.</p>
+
+    <h2 id="temperature">Q2: What Operating Temperature?</h2>
+    <p>Temperature determines the glass type and the gasket. Start with the maximum continuous temperature, then check the peak and the rate of change. Continuous temperature is straightforward: soda lime glass is typically limited to around 150–200°C, borosilicate to DIN 7080 to roughly 280–300°C, and quartz to 1000°C and beyond.</p>
+    <p>The rate of change matters just as much as the absolute number, because glass fails from thermal shock — a sudden temperature difference across the window — more often than from steady heat. A sight glass on a steam line, a vessel cleaned with hot CIP solution, or a reactor that cycles between ambient and process temperature needs a glass with good thermal shock resistance: borosilicate at minimum, quartz when cycling is severe. Temperature also derates pressure. Most manufacturers specify pressure ratings at ambient temperature, with reduced allowable pressure as temperature climbs — always check the derating curve instead of quoting the ambient rating.</p>
+
+    <h2 id="materials">Q3: What Materials — Glass and Metal?</h2>
+    <p>Two material decisions: the glass and the body. For the glass, let temperature and chemistry decide: borosilicate is the default industrial choice, quartz above ~300°C, and soda lime only for low-temperature budget duty. A full comparison of temperature, thermal shock, chemical resistance and cost is in our guide to <a href="/blog/sight-glass-glass-types/">sight glass glass types</a>.</p>
+    <p>For the body, match the metal to the process and the environment: 304 stainless steel covers most general and food duties; 316L adds corrosion resistance for chlorides, acids and hygienic cleaning chemicals; carbon steel keeps cost down on non-corrosive media such as oils and clean water; Hastelloy and duplex are available for aggressive chemical service. Wetted materials matter for compliance as well as safety — in <a href="/applications/pharmaceutical/">pharmaceutical</a> and <a href="/applications/food-beverage/">food &amp; beverage</a> lines, the body, gasket and glass all need to meet FDA / USP Class VI requirements.</p>
+
+    <h2 id="application">Q4: What Is the Application and Media?</h2>
+    <p>The application decides the form factor. Ask what the media is and what you actually need to see. If you need to check level, color, clarity or mixing in a vessel, a static sight glass is enough. If you need to prove that liquid is flowing through a pipe — especially a clear liquid — you need a <a href="/products/sight-flow-indicators/">sight flow indicator</a> with a flapper, rotary, ball or drip tube element that moves with the flow.</p>
+    <p>Industry matters too. Pharmaceutical lines want hygienic tri-clamp construction with dead-space-free bores and USP Class VI materials. Food &amp; beverage wants FDA-compliant gaskets and CIP/SIP tolerance. <a href="/applications/chemical-processing/">Chemical processing</a> emphasizes corrosion resistance and pressure class. <a href="/applications/oil-gas/">Oil &amp; gas</a> favors flanged connections and larger windows. Each application page on this site lists the specific requirements for that sector.</p>
+
+    <h2 id="gasket">Q5: Which Gasket or Seal Material?</h2>
+    <p>The gasket is the smallest part of the assembly and the most common cause of premature failure, because it is squeezed between the hot process and the glass on one side and the metal body on the other. Select it for temperature plus chemical compatibility. Common options and their typical continuous limits:</p>
+    <ul>
+      <li><strong>EPDM</strong> — -40 to 150°C; water, steam, CIP chemicals; the hygienic workhorse.</li>
+      <li><strong>NBR (nitrile)</strong> — -30 to 100°C; oils, fuels, general industrial media.</li>
+      <li><strong>FKM (Viton)</strong> — -20 to 200°C; oils, fuels, many acids; the high-temperature generalist.</li>
+      <li><strong>PTFE</strong> — -200 to 260°C; nearly universal chemical resistance, but less resilient, so it needs careful compression control.</li>
+      <li><strong>Silicone</strong> — -60 to 200°C; hygienic and food-contact friendly.</li>
+      <li><strong>FFKM</strong> — up to ~300°C; the premium choice for the harshest chemical and thermal duty.</li>
+    </ul>
+    <p>In hygienic lines, confirm the gasket is FDA-compliant and that the assembly geometry allows full drainability. When in doubt between two gasket materials, choose the one that survives the media — a gasket failure is a leak path, not a cosmetic issue.</p>
+
+    <h2 id="mounting">Q6: Which Mounting and Connection Type?</h2>
+    <p>Finally, the connection — this is what makes the sight glass fit your pipework. <strong>Tri-clamp</strong> (SG-100): sanitary, fast to disassemble, 1/2"–12" / DN15–DN300; the best choice for food, pharma and hygienic CIP lines. <strong>Threaded</strong> (SG-300): male NPT or BSP from 1/4" to 3", compact and high-pressure; the choice for small lines and tight spaces. <strong>Flanged</strong> (SG-400): ANSI Class 150/300 or DIN PN10–PN40, 2"–8"; the mainstream connection for chemical and oil &amp; gas piping. Weld-end and hybrid options exist for special cases. Choose the connection your pipework already uses — retrofitting a different connection type is the most common avoidable cost in sight glass projects.</p>
+
+    <h2 id="decision-table">Sight Glass Decision Table</h2>
+    <p>Once the six questions are answered, the recommendation usually lands in one of these rows:</p>
+    <table>
+      <thead><tr><th>Duty</th><th>Recommended series</th><th>Glass</th><th>Connection</th><th>Typical rating</th></tr></thead>
+      <tbody>
+        <tr><td>Sanitary pharma or food vessel</td><td><a href="/products/tri-clamp-sight-glasses/">SG-100 Tri-Clamp</a></td><td>Borosilicate (DIN 7080)</td><td>Tri-clamp 1/2"–12"</td><td>300°C, FV to 230 psi</td></tr>
+        <tr><td>Clear-liquid flow verification</td><td><a href="/products/sight-flow-indicators/">SG-200 Flow Indicator</a></td><td>Borosilicate or soda lime</td><td>Tri-clamp / threaded / flanged / weld</td><td>500°F, 300 psi</td></tr>
+        <tr><td>High-pressure small-bore line</td><td><a href="/products/threaded-sight-glasses/">SG-300 Threaded</a></td><td>Borosilicate (DIN 7080)</td><td>NPT / BSP 1/4"–3"</td><td>100 bar / 1450 psi</td></tr>
+        <tr><td>Large chemical or oil &amp; gas line</td><td><a href="/products/flanged-sight-glasses/">SG-400 Flanged</a></td><td>Borosilicate / quartz</td><td>ANSI 150/300, DIN PN10–40, 2"–8"</td><td>Per flange class</td></tr>
+        <tr><td>High-temperature furnace or reactor</td><td>SG-400 Flanged (quartz option)</td><td>Quartz</td><td>Flanged</td><td>Up to ~1000°C</td></tr>
+      </tbody>
+    </table>
+    <p>One rule beats all six questions: when in doubt, ask. Send your pressure, temperature, media, gasket preference and connection size to our engineers — you will get a model recommendation and a quotation within 24 hours.</p>
+
+    <h2 id="faq">Sight Glass Selection FAQ</h2>
+    <details><summary>What size sight glass do I need?</summary><p>Start from the connection: match the pipe or vessel connection size (tri-clamp, NPT, BSP or flange). For vessels, also consider what you need to see — level range, mixing action or cleaning coverage — and position the window at that height. Larger windows cost more and rate lower in pressure, so spec the smallest window that gives a clear view.</p></details>
+    <details><summary>Can a sight glass handle full vacuum?</summary><p>Yes, but only if it is specified and rated for vacuum. Full vacuum (FV) is a separate rating from positive pressure — the SG-100 tri-clamp series is rated FV to 230 psi, and other models are rated per design. State explicitly in your inquiry that the line sees vacuum.</p></details>
+    <details><summary>Borosilicate or soda lime for my application?</summary><p>Borosilicate unless your duty is clearly low-temperature (below ~150–200°C), non-aggressive and budget-sensitive. Borosilicate costs more but survives steam, CIP and thermal cycling that will eventually crack soda lime. The price difference is small compared with the cost of replacing a failed window on a live line.</p></details>
+    <details><summary>Which gasket should I use for steam service?</summary><p>EPDM handles low-pressure steam to ~150°C and is the standard hygienic choice. For higher temperatures, step up to FKM or FFKM — but remember the glass and body must also tolerate the steam temperature, and the glass type usually becomes the limiting factor above 200°C.</p></details>
+    <details><summary>How long is your lead time?</summary><p>Quotations go out within 24 hours. Standard models ship from stock or short production; custom and OEM configurations follow the 15–25 day production schedule described on our <a href="/services/oem-odm/">OEM / ODM page</a>.</p></details>
+    <details><summary>Can I order samples before a full order?</summary><p>Yes. Samples ship with test documentation for your validation, and the sample cost is credited against the first production order for approved configurations. Contact us via the <a href="/contact/">contact page</a> to start.</p></details>
+  </BlogPostTemplate>
+
+  <CtaBand
+    title="Not Sure Which Sight Glass Fits?"
+    subtitle="Answer the six questions in one email — pressure, temperature, materials, application, gasket and connection — and our engineers reply with a recommendation within 24 hours."
+  />
+</Layout>

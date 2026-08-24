@@ -1,0 +1,108 @@
+---
+// SIGHTSPEC — Food & Beverage Sight Glass
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const points = [
+  { title: 'Hygienic & Dead-Leg-Free Design', desc: 'Sanitary tri-clamp sight glasses with no crevices or dead legs where product can linger. Electropolished 316L bodies to Ra ≤ 0.4 µm meet 3-A and EHEDG-style expectations for food-contact surfaces.' },
+  { title: 'CIP / SIP Compatible', desc: 'Sight glasses in food lines must survive caustic and acid cleaning cycles. Borosilicate glass and EPDM/silicone gaskets resist CIP chemicals, while fused-glass windows handle the thermal shock of alternating hot product and cold washdown.' },
+  { title: 'Visual Quality Checks Without Line Breaks', desc: 'Operators confirm product color, clarity, separation and flow rate at a glance — without opening the line and risking contamination. Add an LED illuminator for dark or opaque products like juices, syrups and oils.' },
+];
+
+const tableRows = [
+  { location: 'Transfer lines', glass: 'Borosilicate', connection: 'Tri-clamp 1.5"–4"', note: 'Inline flow visibility' },
+  { location: 'Mixing / blending tanks', glass: 'Borosilicate or soda-lime', connection: 'Tri-clamp or weld-in', note: 'Level & mixing observation' },
+  { location: 'Pasteurizers / heat exchangers', glass: 'Borosilicate (high temp)', connection: 'Tri-clamp, clamp-ferrule', note: 'Product clarity at temperature' },
+  { location: 'CIP return lines', glass: 'Borosilicate', connection: 'Tri-clamp', note: 'Visual cleanliness confirmation' },
+  { location: 'Filling / packaging lines', glass: 'Soda-lime (low temp)', connection: 'Tri-clamp small bore', note: 'Drip & flow checks' },
+];
+
+const faqs = [
+  { q: 'Is your sight glass FDA / food-contact compliant?', a: 'Yes. Our SG-100 tri-clamp sight glasses use USP Class VI / FDA-compliant borosilicate glass with EPDM, silicone or PTFE gaskets, in 316L stainless steel housings with hygienic surface finishes.' },
+  { q: 'Can it handle hot product and cold washdown cycles?', a: 'Borosilicate glass is thermal-shock resistant to 572°F (300°C), which covers pasteurization and most hot-fill processes. For extreme temperature swings, specify a fused (METAGLAS-style) window or quartz glass.' },
+  { q: 'Do you offer illuminated sight glasses for dark products?', a: 'Yes — the SG-100-L version adds a 24V LED illuminator that lights the viewing area for dark or opaque products such as juice concentrates, syrups and edible oils.' },
+  { q: 'What gasket material should I use for CIP?', a: 'EPDM is the standard food-industry choice (caustic-resistant), silicone suits higher temperatures, and PTFE resists the widest chemical range. We supply all three and help you match the media.' },
+];
+---
+
+<Layout title="Sight Glass for Food & Beverage | SIGHTSPEC" description="Sanitary sight glasses for food and beverage processing — hygienic tri-clamp design, CIP/SIP compatible, USP Class VI borosilicate glass, factory-direct with OEM support.">
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Sight Glass for Food &amp; Beverage Processing</h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-300">Hygienic visual monitoring for transfer lines, tanks and CIP circuits — without breaking the seal of your process.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-3">
+        {points.map((p) => (
+          <div class="rounded-2xl border border-slate-200 p-8">
+            <h2 class="text-lg font-bold text-navy-950">{p.title}</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Where Sight Glasses Go in a Food Plant</h2>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Location</th>
+              <th class="px-6 py-4 font-semibold">Glass</th>
+              <th class="px-6 py-4 font-semibold">Connection</th>
+              <th class="px-6 py-4 font-semibold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {tableRows.map((r) => (
+              <tr>
+                <td class="px-6 py-4 font-medium text-navy-950">{r.location}</td>
+                <td class="px-6 py-4 text-slate-700">{r.glass}</td>
+                <td class="px-6 py-4 text-slate-700">{r.connection}</td>
+                <td class="px-6 py-4 text-slate-500">{r.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Recommended Products</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <a href="/products/tri-clamp-sight-glasses/" class="group rounded-2xl border border-slate-200 p-8 transition hover:border-brand-blue">
+          <h3 class="text-xl font-bold text-navy-950 group-hover:text-brand-blue">SG-100 Tri-Clamp Sight Glass</h3>
+          <p class="mt-3 text-sm text-slate-600">The food-line standard: sanitary clamp, borosilicate to DIN 7080, USP Class VI, 1/2"–12", with illuminated (SG-100-L) and heated anti-fog (SG-100-H) options.</p>
+        </a>
+        <a href="/products/sight-flow-indicators/" class="group rounded-2xl border border-slate-200 p-8 transition hover:border-brand-blue">
+          <h3 class="text-xl font-bold text-navy-950 group-hover:text-brand-blue">SG-200 Sight Flow Indicator</h3>
+          <p class="mt-3 text-sm text-slate-600">Flapper, rotary or ball indication for confirming flow and product consistency in transfer and filling lines.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Food &amp; Beverage FAQs</h2>
+      <div class="mt-8 space-y-3">
+        {faqs.map((f) => (
+          <details class="rounded-xl border border-slate-200 bg-white px-6 py-4">
+            <summary class="cursor-pointer font-semibold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title="Specifying a Sight Glass for a Food Line?" subtitle="Send your line size, product and CIP regime — we recommend the right glass, gasket and connection within 24 hours." />
+</Layout>

@@ -1,0 +1,200 @@
+---
+// SIGHTSPEC Wholesale & Distribution — Sight Glass Wholesale Programs
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Wholesale & Distribution — Factory-Direct Prices, MOQ from 10 Pcs';
+const description = 'SIGHTSPEC sight glass wholesale and distribution: factory-direct pricing, tiered volume discounts, MOQ from 10 pieces, regional distributor agreements, private-label packaging and worldwide shipping for sight glass resellers.';
+
+const models = [
+  {
+    icon: '🗺️',
+    title: 'Regional Distribution',
+    desc: 'Exclusive territory agreements for qualified sight glass distributors. We protect your region, your customers and your price level — inquiries from your area are routed back to you instead of sold around you.',
+  },
+  {
+    icon: '📦',
+    title: 'Stock Cooperation',
+    desc: 'We hold buffer stock of your fast-moving tri-clamp and threaded models at the factory, ship mixed containers and support drop-shipping — you sell sight glasses without tying up warehouse space.',
+  },
+  {
+    icon: '🏷️',
+    title: 'Private Label & OEM',
+    desc: 'Your logo laser-engraved on the body and printed on boxes and datasheets. Resell under your own brand while our engineers handle glass selection, testing and production. Full customization is covered on our OEM/ODM page.',
+  },
+  {
+    icon: '🏗️',
+    title: 'Project & Tender Supply',
+    desc: 'Scheduled volume supply for EPC contractors, line builders and plant maintenance programs — with certificate packages, material traceability and phased deliveries that match construction milestones.',
+  },
+];
+
+const priceTiers = [
+  { tier: 'Evaluation / Sample', qty: '1–9 pcs', price: 'List price', lead: 'In stock, 3–5 days', note: 'Mixed sizes allowed' },
+  { tier: 'Wholesale Entry', qty: '10–99 pcs', price: 'Standard wholesale', lead: '7–15 days', note: 'MOQ for resale pricing' },
+  { tier: 'Volume Distributor', qty: '100–499 pcs', price: 'Tier 2 — up to 10% lower', lead: '15–20 days', note: 'Mix models in one order' },
+  { tier: 'Annual Contract', qty: '500+ pcs', price: 'Tier 3 — negotiated', lead: '20–30 days', note: 'Scheduled releases' },
+];
+
+const referencePrices = [
+  { family: 'SG-300 Threaded Sight Glass', size: '1/4"–3" NPT / BSP', band: 'From $4.50', note: '316 SS, borosilicate, up to 100 bar' },
+  { family: 'SG-100 Tri-Clamp Sight Glass', size: '1/2"–12" sanitary', band: 'From $8.90', note: '316L, DIN 7080 glass, USP Class VI' },
+  { family: 'SG-200 Sight Flow Indicator', size: '1/2"–4"', band: 'From $12.50', note: 'Flapper / rotary / drip tube / ball' },
+  { family: 'SG-400 Flanged Sight Glass', size: '2"–8" ANSI / DIN', band: 'From $19.80', note: 'Carbon steel / 316, Class 150–300' },
+];
+
+const moqPoints = [
+  'Wholesale pricing starts at 10 pieces per order — you can mix sizes, glass types and connections in the same order.',
+  'Samples (1–9 pcs) are always available at list price with stock lead times, so your customers can evaluate before committing.',
+  'Payment terms: T/T 30% deposit, balance before shipment for first orders; L/C at sight and open account for established distributors.',
+  'Every wholesale order ships with material certificates, pressure test reports and a packing list you can forward to end customers.',
+];
+
+const logistics = [
+  { title: 'Express & Air Freight', desc: 'DHL, FedEx and UPS for samples and urgent stock — typically 3–7 days door to door with full tracking.' },
+  { title: 'Sea Freight & Containers', desc: 'FCL and LCL consolidation from Guangzhou ports for volume orders. Mixed-model containers cut your landed cost per piece.' },
+  { title: 'Documentation', desc: 'Commercial invoice, packing list, certificate of origin, material certificates and test reports — prepared in English and ready for customs.' },
+  { title: 'Branded Packaging', desc: 'Neutral, private-label or retail-ready packaging with barcodes, multilingual labels and protective corner padding for glass shipments.' },
+];
+
+const steps = [
+  { title: 'Apply as a Reseller', desc: 'Tell us your market, target industries and expected annual volume. We confirm pricing tiers, models and territory terms — usually within 24 hours.' },
+  { title: 'Agree Territory & Terms', desc: 'For regional distribution we agree territory, price levels, MOQ and payment terms in a simple distribution agreement. No hidden conditions.' },
+  { title: 'First Order & Samples', desc: 'Start with a sample kit or a first stock order. Every shipment carries certificates and documentation you can pass straight to your customers.' },
+  { title: 'Grow with Tiered Pricing', desc: 'As your annual volume grows, unit prices step down automatically. Stock cooperation and mixed containers keep your inventory lean.' },
+];
+---
+
+<Layout title={`${title} | SIGHTSPEC`} description={description}>
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{title}</h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-300">Sight glass wholesale, factory-direct — tiered volume pricing from a 10-piece MOQ, regional distributor agreements and private-label programs for resellers worldwide.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Distribution Partnership Models</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">SIGHTSPEC is a sight glass manufacturer selling factory-direct — no trading company layers between your business and the production line. Depending on your market and volume, we set up the cooperation model that fits how you sell.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        {models.map((m) => (
+          <div class="rounded-2xl border border-slate-200 p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-950 text-2xl">{m.icon}</div>
+            <h3 class="mt-5 text-lg font-bold text-navy-950">{m.title}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{m.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Wholesale Price Tiers</h2>
+      <p class="mt-4 text-base leading-relaxed text-slate-600">Prices step down as volume steps up. The table below shows the standard wholesale structure; annual contracts receive a quoted Tier 3 price based on your forecast.</p>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Tier</th>
+              <th class="px-6 py-4 font-semibold">Quantity</th>
+              <th class="px-6 py-4 font-semibold">Price Level</th>
+              <th class="px-6 py-4 font-semibold">Lead Time</th>
+              <th class="px-6 py-4 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {priceTiers.map((t) => (
+              <tr>
+                <td class="px-6 py-4 font-medium text-navy-950">{t.tier}</td>
+                <td class="px-6 py-4 text-slate-700">{t.qty}</td>
+                <td class="px-6 py-4 text-slate-700">{t.price}</td>
+                <td class="px-6 py-4 text-slate-700">{t.lead}</td>
+                <td class="px-6 py-4 text-slate-500">{t.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="mt-16 text-3xl font-extrabold tracking-tight text-navy-950">Reference Factory Prices by Product Family</h2>
+      <p class="mt-4 text-base leading-relaxed text-slate-600">Indicative factory-direct price bands per family — final unit price depends on size, glass type, body material and finish. Full specifications are on the product pages for <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue underline">tri-clamp sight glasses</a>, <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue underline">sight flow indicators</a>, <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue underline">threaded sight glasses</a> and <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue underline">flanged sight glasses</a>.</p>
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Product Family</th>
+              <th class="px-6 py-4 font-semibold">Size Range</th>
+              <th class="px-6 py-4 font-semibold">Wholesale From</th>
+              <th class="px-6 py-4 font-semibold">Configuration</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {referencePrices.map((r) => (
+              <tr>
+                <td class="px-6 py-4 font-medium text-navy-950">{r.family}</td>
+                <td class="px-6 py-4 text-slate-700">{r.size}</td>
+                <td class="px-6 py-4 text-slate-700">{r.band}</td>
+                <td class="px-6 py-4 text-slate-500">{r.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">MOQ, Payment & Order Terms</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Wholesale terms are designed so a sight glass distributor can start small and scale: low entry MOQ, samples before commitment, and terms that improve as your volume grows.</p>
+          <ul class="mt-6 space-y-4">
+            {moqPoints.map((p) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-slate-600">
+                <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-brand-green"></span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Logistics & Worldwide Shipping</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Glass ships safely — protective corner padding, individual wrapping and sturdy cartons are standard, whichever freight method you choose.</p>
+          <div class="mt-6 grid gap-4">
+            {logistics.map((l) => (
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-base font-bold text-navy-950">{l.title}</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">{l.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">How to Become a Sight Glass Distributor</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Four steps from application to a running distribution account. Qualified resellers also get sample units, datasheets, packaging options and technical backup from the export team.</p>
+      <div class="mt-12 grid gap-8 md:grid-cols-4">
+        {steps.map((s, i) => (
+          <div>
+            <span class="text-5xl font-extrabold text-navy-950/10">0{i + 1}</span>
+            <h3 class="mt-2 font-bold text-navy-950">{s.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-10 max-w-3xl text-sm leading-relaxed text-slate-600">Interested in a regional or private-label program? Read about <a href="/services/oem-odm/" class="font-semibold text-brand-blue underline">OEM / ODM customization</a> for branded products, or review our <a href="/faq/" class="font-semibold text-brand-blue underline">FAQ</a> for ordering and shipping details before applying.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Become a Sight Glass Distributor"
+    subtitle="Tell us your market and expected volume — we reply within 24 hours with your price tiers, MOQ and distribution terms."
+  />
+</Layout>

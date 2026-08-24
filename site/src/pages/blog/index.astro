@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "Sight Glass Blog — Technical Guides and Selection Advice | SIGHTSPEC";
+const description = "Engineering guides on sight glasses: what a sight glass is, how to choose one, and the differences between soda lime, borosilicate and quartz glass types.";
+const posts = [
+  {
+    href: "/blog/what-is-a-sight-glass/",
+    tag: "Basics",
+    emoji: "🔍",
+    title: "What Is a Sight Glass? Definition, Working Principle and Types",
+    excerpt: "The definition, why process plants need sight glasses, how they work, a soda lime vs borosilicate vs quartz comparison, and the four main sight glass types.",
+    date: "2026-08-25",
+    readTime: 8,
+  },
+  {
+    href: "/blog/how-to-choose-a-sight-glass/",
+    tag: "Selection Guide",
+    emoji: "🧭",
+    title: "How to Choose a Sight Glass: A 6-Question Selection Guide",
+    excerpt: "Pressure, temperature, materials, application, gasket and mounting — six questions that narrow any sight glass requirement down to the right model.",
+    date: "2026-08-25",
+    readTime: 8,
+  },
+  {
+    href: "/blog/sight-glass-glass-types/",
+    tag: "Materials",
+    emoji: "🥽",
+    title: "Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz",
+    excerpt: "A deep comparison of the three sight glass glass types: temperature limits, thermal shock resistance, chemical compatibility, pressure behavior and cost.",
+    date: "2026-08-25",
+    readTime: 8,
+  },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <span class="text-slate-200">Blog</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">SIGHTSPEC BLOG</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Sight Glass Technical Guides</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">Practical, engineering-level guides on sight glasses: how they work, how to select them, and how to match the glass type to your process. Written by our factory engineers for buyers, specifiers and maintenance teams.</p>
+    </div>
+  </section>
+
+  <!-- Post cards -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {posts.map((p) => (
+          <a href={p.href} class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-blue/40 hover:shadow-md">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-semibold text-brand-blue">{p.tag}</span>
+              <span class="grid h-10 w-10 place-items-center rounded-lg bg-slate-50 text-xl" aria-hidden="true">{p.emoji}</span>
+            </div>
+            <h2 class="mt-4 text-lg font-extrabold leading-snug text-navy-950 transition group-hover:text-brand-blue">{p.title}</h2>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{p.excerpt}</p>
+            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4">
+              <p class="text-xs text-slate-400">{p.date} · {p.readTime} min read</p>
+              <span class="text-sm font-semibold text-brand-blue">Read article →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Have a Sight Glass Question Our Guides Do Not Cover?"
+    subtitle="Ask our engineers directly — send your process details and get a recommendation within 24 hours, factory-direct."
+  />
+</Layout>

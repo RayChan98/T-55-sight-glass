@@ -1,0 +1,114 @@
+---
+// SIGHTSPEC FAQ — Sight Glass Questions Answered
+import Layout from '../layouts/Layout.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const title = 'Sight Glass FAQ — MOQ, Lead Time, Glass Types & More';
+const description = 'Frequently asked questions about sight glasses — MOQ, lead time, borosilicate vs soda-lime glass, DIN 7080 and USP Class VI certifications, custom sizes, warranty, shipping and samples.';
+
+const faqs = [
+  {
+    q: 'What is a sight glass (sight window)?',
+    a: 'A sight glass — also called a sight window or sight port — is a transparent window installed in a vessel, tank or pipe line so operators can visually verify level, flow, color or process condition without opening the system. SIGHTSPEC makes four families: sanitary tri-clamp sight glasses (SG-100), sight flow indicators (SG-200), threaded sight glasses (SG-300) and flanged sight glasses (SG-400), each matched to a different mounting and duty.',
+  },
+  {
+    q: 'Borosilicate or soda-lime glass — which should I choose?',
+    a: 'Borosilicate glass (to DIN 7080) handles up to 572°F (300°C) and offers much better thermal shock resistance, which is why it is the default for process duty. Soda-lime is lower cost and fine below roughly 300°F in stable service. For very high temperatures, quartz windows extend the range further. We recommend borosilicate whenever there is any doubt — it is the safer choice for hot, pressurized or thermally cycling processes.',
+  },
+  {
+    q: 'What temperature and pressure ratings do you offer?',
+    a: 'Tri-clamp sight glasses are rated up to 572°F (300°C) and to 230 psi (1.6 MPa) full vacuum. Threaded models are rated up to 100 bar (1450 psi). Sight flow indicators operate up to 500°F and 300 psi, and flanged models follow ANSI Class 150/300 or DIN PN10–PN40. Ratings always depend on size, glass thickness and body material — we confirm the exact rating with your drawing before production.',
+  },
+  {
+    q: 'What is your MOQ?',
+    a: 'Samples are welcome at any quantity. Wholesale pricing starts at 10 pieces per order, and you can mix sizes, glass types and connections in the same order. OEM/ODM projects start at 10 pieces per custom configuration, with pre-production samples provided for approval.',
+  },
+  {
+    q: 'What are your lead times?',
+    a: 'Standard in-stock models ship in 3–5 days. Regular wholesale orders take 7–15 days, larger volume orders 15–20 days, and custom OEM builds 15–30 days depending on quantity and configuration. We confirm the lead time in writing with every quotation.',
+  },
+  {
+    q: 'Do you provide samples?',
+    a: 'Yes. Sample orders (1–9 pcs) are available at list price with the fastest lead times, so you can verify fit, finish and glass clarity before committing to volume. For OEM projects we produce pre-production samples for approval before mass production.',
+  },
+  {
+    q: 'Which certifications do your sight glasses carry?',
+    a: 'Our borosilicate glass is produced and tested to DIN 7080. SG-100 tri-clamp models use USP Class VI and FDA-compliant materials for pharmaceutical and food contact, with ASME BPE-aligned designs available. Material certificates, pressure test reports and compliance documentation ship with every order — tell us which certification your project requires and we quote accordingly.',
+  },
+  {
+    q: 'Can you customize size, connection and branding?',
+    a: 'Yes. We build custom sizes from 1/4" to 12", custom flange drilling, alternate body materials (316L, Hastelloy, duplex, carbon steel), special gaskets and hygienic finishes. Private-label branding — laser-engraved logo, custom packaging and datasheets — is supported for distributors. See our OEM/ODM page for the full process.',
+  },
+  {
+    q: 'What happens if the glass breaks in service?',
+    a: 'Sight glass windows are service parts — glass can break under thermal shock, overpressure or impact, so treat it as a replaceable component with a maintenance schedule. Our after-sales service supplies drop-in replacement glass, gaskets and clamps quickly, with express shipping for downtime-critical lines. Manufacturing defects found on arrival are covered by warranty.',
+  },
+  {
+    q: 'Are replacement glass and gaskets available separately?',
+    a: 'Yes. Replacement borosilicate and soda-lime windows, gasket kits (EPDM, FKM, PTFE, silicone, hygienic TPE) and spare clamp parts are available for every model. Order spare gasket kits with your windows so maintenance crews can reseal during planned stops.',
+  },
+  {
+    q: 'How do I choose the right size and connection?',
+    a: 'Measure the clear opening (or existing window envelope) and note the mounting: tri-clamp for sanitary lines, NPT/BSP threaded for compact high-pressure service, ANSI/DIN flanged for large process windows, weld-in or bolt-on for special cases. Send us the size, connection, pressure, temperature and media — we confirm the right model and drawing within 24 hours.',
+  },
+  {
+    q: 'What gasket materials do you offer?',
+    a: 'EPDM for water and mild chemicals, FKM (Viton) for oils, fuels and solvents, PTFE for aggressive acids and chemicals, silicone and hygienic TPE for pharmaceutical and food service. The gasket must match both the media and the temperature — our technical support page has a full selection table.',
+  },
+  {
+    q: 'What shipping methods do you use?',
+    a: 'DHL, FedEx and UPS express for samples and urgent orders (3–7 days door to door), air freight for medium volumes, and sea freight — FCL or LCL consolidation — for container orders. Every shipment includes a commercial invoice, packing list and material certificates, with certificate of origin available.',
+  },
+  {
+    q: 'What payment methods do you accept?',
+    a: 'T/T (30% deposit, balance before shipment) for standard and wholesale orders, L/C at sight for larger contracts, and PayPal for samples and small orders. Payment terms for established distributors can be arranged in the distribution agreement.',
+  },
+  {
+    q: 'How should I clean and maintain a sight glass?',
+    a: 'Clean the glass with soft cloths and mild cleaners compatible with the media; avoid abrasive pads that scratch the viewing surface. Inspect gaskets and clamping at every maintenance stop, replace gaskets on schedule, and check glass for chips, cracks or clouding. Never apply cold liquid to a hot glass — thermal shock is the main cause of breakage.',
+  },
+];
+---
+
+<Layout title={`${title} | SIGHTSPEC`} description={description}>
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h1 class="text-4xl font-extrabold tracking-tight">Sight Glass FAQs</h1>
+      <p class="mt-3 max-w-2xl text-lg text-slate-300">MOQ, lead time, glass types, certifications, customization, warranty, shipping and samples — answered by the factory.</p>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6">
+      <p class="text-sm leading-relaxed text-slate-600">New to sight glasses? Start with the <a href="/products/" class="font-semibold text-brand-blue underline">product overview</a>, or read how windows are selected for <a href="/applications/pharmaceutical/" class="font-semibold text-brand-blue underline">pharmaceutical</a>, <a href="/applications/food-beverage/" class="font-semibold text-brand-blue underline">food &amp; beverage</a>, <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue underline">chemical processing</a> and <a href="/applications/oil-gas/" class="font-semibold text-brand-blue underline">oil &amp; gas</a> plants.</p>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white transition hover:border-brand-blue/40">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 text-left text-base font-semibold text-navy-950">
+              {f.q}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </summary>
+            <div class="border-t border-slate-100 px-5 py-4 text-sm leading-relaxed text-slate-600">
+              {f.a}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div class="mt-12 rounded-2xl bg-slate-50 p-8 text-center">
+        <h2 class="text-xl font-extrabold text-navy-950">Still Have Questions?</h2>
+        <p class="mt-2 text-sm text-slate-600">Send us your application details — size, connection, pressure and media — and get a recommendation within 24 hours.</p>
+        <button type="button" data-quote-open class="mt-6 rounded-lg bg-cta-orange px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-orange-600">
+          Ask a Question
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Ready to Choose the Right Sight Glass?"
+    subtitle="Tell us your size, connection, pressure and media — we will handle the rest."
+  />
+</Layout>

@@ -1,0 +1,189 @@
+---
+// SIGHTSPEC About — Precision Sight Glass Manufacturer
+import Layout from '../layouts/Layout.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const title = 'About Us — Precision Sight Glass Manufacturer | SIGHTSPEC';
+const description = 'SIGHTSPEC is a precision sight glass manufacturer: DIN 7080 borosilicate windows, USP Class VI and FDA-compliant materials, 100% pressure testing, and OEM/ODM capability with factory-direct pricing.';
+
+const stats = [
+  { value: '1/4"–12"', label: 'Sight glass sizes (DN8–DN300)' },
+  { value: '572°F', label: 'Borosilicate rating (300°C)' },
+  { value: '100 bar', label: 'Threaded pressure rating' },
+  { value: '24 h', label: 'Quote & technical response' },
+];
+
+const qualitySteps = [
+  { title: 'Glass Incoming Inspection', desc: 'Every batch of borosilicate and soda-lime glass is checked on arrival — thermal shock resistance, dimensional tolerance, edge quality and certification documents. Rejections are documented and returned.' },
+  { title: 'Fusion & Edge Finishing', desc: 'Glass is cut, edge-finished and fused to the metal frame with controlled thermal profiles that prevent stress points — the hidden cause of premature cracking.' },
+  { title: '100% Pressure Testing', desc: 'Every assembled window is pressure-tested to its rating before it leaves the bench, with test records kept per batch for full traceability.' },
+  { title: 'Final Inspection & Packaging', desc: 'Finished windows are inspected for glass clarity, sealing surfaces and finish, then packed with protective corners and labeled with model, size and traceability code.' },
+];
+
+const certs = [
+  { name: 'DIN 7080', desc: 'Borosilicate sight glass standard — our standard glass is produced and tested to DIN 7080 thermal shock and pressure requirements.' },
+  { name: 'USP Class VI', desc: 'Biocompatibility-tested materials for pharmaceutical and biotech contact — standard on SG-100 tri-clamp models.' },
+  { name: 'FDA', desc: 'Food-contact compliant materials and finishes for food and beverage lines, with hygienic surface options to Ra ≤ 0.4 µm.' },
+  { name: 'BPE Compliant', desc: 'ASME BPE-aligned design and surface finish options for bioprocessing installations.' },
+];
+
+const oemPoints = [
+  'Custom sizes from 1/4" to 12" and custom flange drilling',
+  'Glass selection: soda-lime, borosilicate, quartz — matched to duty',
+  'Body materials: 304 / 316L SS, Hastelloy, duplex, carbon steel',
+  'Private-label branding: laser engraving, packaging, datasheets',
+];
+---
+
+<Layout title={`${title} | SIGHTSPEC`} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <p class="text-sm font-semibold text-brand-green">ABOUT US</p>
+      <h1 class="mt-2 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl">A Precision Sight Glass Factory That Tests Every Window</h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">
+        SIGHTSPEC designs and manufactures industrial sight glasses and sight flow indicators — factory-direct to distributors, OEM equipment builders and process plants worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Built Around the Glass, Tested Like the Field</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
+            A sight glass looks simple — a glass window, a metal frame, a gasket. Then it sits in a reactor at 300°C, gets hit by a cold CIP spray, or sees a pressure surge, and the window that seemed simple becomes the difference between a clear view and a line shutdown. Most sight glass failures are not random: they come from glass with hidden stress, uneven clamping, the wrong glass type for the duty, or seals that do not match the media.
+          </p>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
+            SIGHTSPEC started as a precision sight glass workshop focused on one thing — making windows that survive the duty they are specified for. Our borosilicate glass is produced to DIN 7080 and inspected on arrival; frames are machined from 304 and 316L stainless steel; and every assembled window is pressure-tested before it ships. That discipline is why pharmaceutical, chemical and food processors — and the distributors who serve them — spec SIGHTSPEC windows, and why they reorder.
+          </p>
+          <div class="mt-8 grid grid-cols-4 gap-6 border-t border-slate-200 pt-8">
+            {stats.map((s) => (
+              <div>
+                <p class="text-2xl font-extrabold text-brand-blue sm:text-3xl">{s.value}</p>
+                <p class="mt-1 text-xs leading-snug text-slate-600 sm:text-sm">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 class="text-base font-bold text-navy-950">Our Mission</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Make precision sight glass manufacturing accessible — honest specifications and factory-direct pricing, with selection support that helps you choose the right window the first time.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 class="text-base font-bold text-navy-950">Our Promise</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Every window is pressure-tested before shipping. If a unit misbehaves in your application, we help diagnose the root cause — glass type, clamping, gasket or installation — rather than sell you another guess.</p>
+          </div>
+          <div class="rounded-2xl bg-navy-950 p-6 text-white">
+            <h3 class="text-base font-bold">Factory-Direct</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">From our manufacturing base to your plant or production line — no middlemen, no markup games, and OEM pricing that reflects factory cost.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality process -->
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Our Quality Process</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Four controlled steps between raw glass and a shipped window. Each step is documented, so every order carries batch traceability from glass lot to test report.</p>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        {qualitySteps.map((s, i) => (
+          <div>
+            <span class="text-5xl font-extrabold text-navy-950/10">0{i + 1}</span>
+            <h3 class="mt-2 font-bold text-navy-950">{s.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Certifications & Compliance</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Our standard materials and processes align with the certifications process plants ask for most. Certificates and test documentation are issued per batch and included with your shipment.</p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {certs.map((c) => (
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="text-base font-bold text-navy-950">{c.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{c.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM capability -->
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">OEM Capability</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Beyond standard windows, we build to your drawing. OEM/ODM projects start with a spec review and pre-production sample, then move to batch production with the same quality system — MOQ from 10 pieces, lead time 15–30 days.</p>
+          <ul class="mt-6 space-y-3">
+            {oemPoints.map((p) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-slate-600">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green"></span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          <p class="mt-6 text-sm leading-relaxed text-slate-600">Full details on the <a href="/services/oem-odm/" class="font-semibold text-brand-blue underline">OEM / ODM service page</a>.</p>
+        </div>
+        <div class="flex items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-white p-10 text-center">
+          <div>
+            <p class="text-5xl">🏭</p>
+            <p class="mt-4 text-sm font-semibold text-navy-950">Precision Sight Glass Manufacturing</p>
+            <p class="mt-1 text-xs text-slate-500">Glass processing · SS fabrication · Pressure testing · Export docs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="bg-navy-950 py-20 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-10 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight">Talk to the Factory</h2>
+          <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-300">Send your application details — size, connection, pressure, temperature and media — and get a sight glass recommendation with pricing within 24 hours. English-speaking export support, WhatsApp available for urgent field issues.</p>
+        </div>
+        <div class="grid gap-4">
+          <a href="mailto:cj226144@gmail.com" class="flex items-center gap-4 rounded-2xl bg-navy-900 p-6 ring-1 ring-white/10 transition hover:bg-navy-800">
+            <span class="text-2xl">✉️</span>
+            <div>
+              <p class="text-sm font-semibold">Email</p>
+              <p class="text-sm text-slate-300">cj226144@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://wa.me/8613710860663" class="flex items-center gap-4 rounded-2xl bg-navy-900 p-6 ring-1 ring-white/10 transition hover:bg-navy-800">
+            <span class="text-2xl">💬</span>
+            <div>
+              <p class="text-sm font-semibold">WhatsApp</p>
+              <p class="text-sm text-slate-300">+86 137 1086 0663</p>
+            </div>
+          </a>
+          <a href="/contact/" class="flex items-center gap-4 rounded-2xl bg-navy-900 p-6 ring-1 ring-white/10 transition hover:bg-navy-800">
+            <span class="text-2xl">📋</span>
+            <div>
+              <p class="text-sm font-semibold">Contact Form</p>
+              <p class="text-sm text-slate-300">Send an inquiry through the contact page</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Work With a Sight Glass Factory That Answers"
+    subtitle="Tell us about your application — size, connection, pressure and media — and get a recommendation within 24 hours."
+  />
+</Layout>

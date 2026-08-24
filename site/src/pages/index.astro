@@ -1,0 +1,200 @@
+---
+// SIGHTSPEC — Industrial Sight Glass Manufacturer
+import Layout from '../layouts/Layout.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const categories = [
+  {
+    tag: 'TRI-CLAMP SIGHT GLASSES',
+    title: 'Sanitary Tri-Clamp Sight Glasses',
+    desc: 'Borosilicate sight glass fused or clamped in a sanitary tri-clamp housing — the standard for pharmaceutical, food & beverage and brewery pipelines. USP Class VI compliant, 1/2"–12", with optional illumination and anti-fog heating.',
+    specs: ['1/2"–12" (DN15–DN300)', 'Borosilicate to DIN 7080', '304 / 316L SS, Hastelloy', 'Up to 572°F, 230 psi', 'USP Class VI · BPE'],
+    href: '/products/tri-clamp-sight-glasses/',
+  },
+  {
+    tag: 'SIGHT FLOW INDICATORS',
+    title: 'Sight Flow Indicators',
+    desc: 'Inline flow visibility for pipelines and vessels — flapper, rotary, ball and drip-tube indicators in tri-clamp, threaded and flanged connections. Confirm flow direction, color and clarity without breaking the line.',
+    specs: ['Flapper / Rotary / Ball / Drip-tube', 'Tri-clamp · NPT · Flanged', 'Carbon steel to 316L SS', 'Up to 500°F, 300 psi', 'Industrial & hygienic'],
+    href: '/products/sight-flow-indicators/',
+  },
+  {
+    tag: 'THREADED SIGHT GLASSES',
+    title: 'Threaded Sight Glasses',
+    desc: 'Compact male NPT / BSP sight glasses for tanks, reservoirs and small-bore lines. Rated up to 100 bar, with borosilicate windows and 316 stainless steel or Hastelloy bodies where corrosion matters.',
+    specs: ['1/4"–3" NPT / BSP', 'Up to 100 bar (1450 psi)', '316 SS / Hastelloy / CS', 'Borosilicate to DIN 7080', 'Tank · reservoir · line'],
+    href: '/products/threaded-sight-glasses/',
+  },
+  {
+    tag: 'FLANGED SIGHT GLASSES',
+    title: 'Flanged Sight Glasses',
+    desc: 'Large-window flanged sight glasses for chemical, oil & gas and power piping. ANSI Class 150/300 or DIN PN10–PN40 flanges, with borosilicate, soda-lime or quartz glass selected by process temperature.',
+    specs: ['2"–8" (DN50–DN200)', 'ANSI B16.5 / DIN PN', 'Carbon steel / 316 SS', 'Quartz to 1000°F+', 'Chemical · oil & gas'],
+    href: '/products/flanged-sight-glasses/',
+  },
+];
+
+const stats = [
+  { value: 'DIN 7080', label: 'Borosilicate sight glass standard — thermal shock resistant to 572°F' },
+  { value: '100 bar', label: 'Threaded sight glass pressure rating (1450 psi)' },
+  { value: '100%', label: 'Windows pressure-tested and inspected before shipment' },
+  { value: '24 h', label: 'Quote response time on spec + volume requests' },
+];
+
+const applications = [
+  { name: 'Pharmaceutical', href: '/applications/pharmaceutical/' },
+  { name: 'Chemical Processing', href: '/applications/chemical-processing/' },
+  { name: 'Oil & Gas', href: '/applications/oil-gas/' },
+  { name: 'Food & Beverage', href: '/applications/food-beverage/' },
+  { name: 'Brewery', href: '/applications/' },
+  { name: 'Power & Steam', href: '/applications/' },
+];
+
+const faqs = [
+  { q: 'Are you the manufacturer or a trading company?', a: 'Manufacturer. SIGHTSPEC is the export brand of a precision sight glass and flow indicator factory. We cut, fuse, assemble and pressure-test windows in our own facility, and ship direct to engineering firms, integrators and distributors worldwide.' },
+  { q: 'What glass types do you offer and when is each used?', a: 'Soda-lime glass below 300°F, borosilicate (DIN 7080) up to 572°F, and quartz or sapphire above 572°F for high-temperature steam. Borosilicate is our standard because of its thermal-shock and corrosion resistance.' },
+  { q: 'Can you make custom sizes and OEM/ODM products?', a: 'Yes. We offer OEM/ODM on sizes from 1/4" to 12", custom flange drilling, laser-engraved branding, special gasket materials and hygienic surface finishes (Ra ≤ 0.4 µm). Send your drawing or sample for a quote.' },
+  { q: 'What is your MOQ and lead time?', a: 'Standard sizes: no hard MOQ for samples, 10 pcs typical for production. Lead time is 7–15 days for standard items, 20–30 days for custom tooling.' },
+  { q: 'Do you provide certificates and test reports?', a: 'Yes — material certificates, pressure test reports, DIN 7080 conformity and USP Class VI / FDA compliance documentation are available with each shipment.' },
+];
+
+const steps = [
+  { title: 'Send your spec', desc: 'Size, connection, glass, pressure/temperature, quantity — or just a drawing.' },
+  { title: 'Get a quote in 24 h', desc: 'Unit price, MOQ, lead time and a technical recommendation if anything is missing.' },
+  { title: 'Approve a sample', desc: 'For custom items we ship a pre-production sample for fit and finish approval.' },
+  { title: 'Bulk production & QC', desc: 'Batch production with 100% pressure testing and final inspection before packing.' },
+];
+---
+
+<Layout
+  title="Industrial Sight Glass Manufacturer | SIGHTSPEC"
+  description="SIGHTSPEC manufactures industrial sight glasses, sanitary tri-clamp sight glass windows and sight flow indicators — DIN 7080 borosilicate, USP Class VI, factory-direct with OEM support."
+>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-28">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-brand-green">
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-green"></span>
+            Industrial Sight Glass Manufacturer
+          </p>
+          <h1 class="mt-5 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Sight Glasses &amp; Flow Indicators for Process Visibility</h1>
+          <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">Borosilicate sight glasses, sanitary tri-clamp windows and sight flow indicators for vessels, tanks and pipelines — DIN 7080, USP Class VI, factory-direct pricing and OEM support.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="/products/" class="inline-flex items-center justify-center rounded-xl bg-cta-orange px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-600" data-quote-open>Explore Products</a>
+            <a href="/contact/" class="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Request a Quote</a>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-navy-900 p-6">
+          <svg viewBox="0 0 800 450" class="h-full w-full" role="img" aria-label="Industrial sight glass illustration">
+            <rect x="80" y="120" width="300" height="210" rx="24" fill="#17395C"/>
+            <circle cx="230" cy="225" r="70" fill="none" stroke="#2563EB" stroke-width="12"/>
+            <circle cx="230" cy="225" r="40" fill="#0EA5E9" opacity="0.35"/>
+            <rect x="440" y="140" width="280" height="170" rx="20" fill="#17395C"/>
+            <rect x="470" y="165" width="80" height="120" rx="12" fill="none" stroke="#F97316" stroke-width="10"/>
+            <path d="M470 205 H550" stroke="#F97316" stroke-width="6"/>
+            <text x="230" y="390" text-anchor="middle" fill="#64748B" font-size="24" font-family="sans-serif">Tri-Clamp Sight Glass</text>
+            <text x="580" y="390" text-anchor="middle" fill="#64748B" font-size="24" font-family="sans-serif">Sight Flow Indicator</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品类 -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Four Sight Glass Product Lines, One Factory</h2>
+        <p class="mt-4 text-lg text-slate-600">Every SIGHTSPEC product starts as a borosilicate or soda-lime window, selected by your pressure, temperature and media — then housed in the connection your process needs.</p>
+      </div>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        {categories.map((c) => (
+          <a href={c.href} class="group rounded-2xl border border-slate-200 bg-white p-8 transition hover:border-brand-blue hover:shadow-lg">
+            <p class="text-xs font-bold uppercase tracking-widest text-cta-orange">{c.tag}</p>
+            <h3 class="mt-3 text-xl font-bold text-navy-950 group-hover:text-brand-blue">{c.title}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{c.desc}</p>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              {c.specs.map((s) => (
+                <li class="rounded-full bg-navy-950/5 px-3 py-1 text-xs font-medium text-navy-900">{s}</li>
+              ))}
+            </ul>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据 -->
+  <section class="bg-navy-950 py-16 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        {stats.map((s) => (
+          <div>
+            <p class="text-3xl font-extrabold text-brand-green">{s.value}</p>
+            <p class="mt-2 text-sm text-slate-400">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 应用 -->
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Built for Demanding Process Industries</h2>
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {applications.map((a) => (
+          a.href ? (
+            <a href={a.href} class="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-6 py-5 transition hover:border-brand-blue">
+              <span class="font-semibold text-navy-950">{a.name}</span>
+              <span class="text-brand-blue">→</span>
+            </a>
+          ) : (
+            <span class="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-6 py-5 opacity-60">
+              <span class="font-semibold text-navy-950">{a.name}</span>
+              <span class="text-slate-400">Soon</span>
+            </span>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 流程 -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">From Spec to Shipment in Four Steps</h2>
+      <div class="mt-12 grid gap-8 md:grid-cols-4">
+        {steps.map((s, i) => (
+          <div class="relative">
+            <span class="text-5xl font-extrabold text-navy-950/10">0{i + 1}</span>
+            <h3 class="mt-2 font-bold text-navy-950">{s.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-3">
+        {faqs.map((f) => (
+          <details class="rounded-xl border border-slate-200 bg-white px-6 py-4">
+            <summary class="cursor-pointer font-semibold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need a Sight Glass Spec'd for Your Process?"
+    subtitle="Send your size, connection and pressure/temperature requirements — we reply within 24 hours with pricing and a technical recommendation."
+  />
+</Layout>

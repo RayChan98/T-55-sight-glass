@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Applications by Industry';
+const description = 'Sight glass applications across pharmaceutical, food and beverage, chemical processing and oil and gas — recommended models, connection types and selection guidance from SIGHTSPEC.';
+const industries = [
+  { icon: '💊', name: 'Pharmaceutical', desc: 'USP Class VI sanitary sight glasses with tri-clamp mounting and heated anti-fog options for sterile lines, bioreactors and CIP/SIP duty.', href: '/applications/pharmaceutical/', tag: 'SG-100 Tri-Clamp' },
+  { icon: '🥛', name: 'Food & Beverage', desc: 'Hygienic sight glasses and flow indicators for dairy, brewing and beverage lines — 304/316L finishes and sanitary connections.', href: '', tag: 'SG-100 / SG-200' },
+  { icon: '🧪', name: 'Chemical Processing', desc: 'Borosilicate sight glasses in threaded and flanged form for corrosive media and high-pressure reactor and pipeline observation.', href: '/applications/chemical-processing/', tag: 'SG-300 / SG-400' },
+  { icon: '🛢️', name: 'Oil & Gas', desc: 'High-pressure flanged and threaded sight glasses in carbon steel or stainless for separators, scrubbers and pipelines.', href: '/applications/oil-gas/', tag: 'SG-400 / SG-300' },
+];
+const tableRows = [
+  { industry: 'Pharmaceutical', connection: 'Sanitary tri-clamp (1/2"–12")', glass: 'Borosilicate (DIN 7080)', metal: '316L SS', models: 'SG-100 (+ heated anti-fog)' },
+  { industry: 'Food & Beverage', connection: 'Tri-clamp / threaded', glass: 'Borosilicate / soda lime', metal: '304 / 316L SS', models: 'SG-100, SG-200' },
+  { industry: 'Chemical Processing', connection: 'Threaded NPT/BSP, flanged ANSI/DIN', glass: 'Borosilicate / quartz', metal: '316 SS / Hastelloy / carbon steel', models: 'SG-300, SG-400' },
+  { industry: 'Oil & Gas', connection: 'Flanged ANSI Class 150/300, threaded', glass: 'Borosilicate / quartz', metal: 'Carbon steel / 316 SS', models: 'SG-400, SG-300' },
+];
+---
+
+<Layout title={title + ' — SIGHTSPEC'} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <span class="text-slate-200">Applications</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">APPLICATIONS</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Sight Glass Applications by Industry</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A sight glass is a simple component with a demanding job: it lets operators see inside a process line without opening it. The right spec depends entirely on the industry — sterile pharma lines, food contact surfaces, corrosive chemicals and high-pressure hydrocarbons all need different glass, metal and connection choices.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Browse Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries grid -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">BY INDUSTRY</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Four Industries, Four Different Specs</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Every industry page below explains the specific failure modes buyers hit, the recommended product family, and the selection essentials for that duty. Start with your industry, then confirm with our engineers before you order. If your process spans two industries — a food-grade CIP line with live steam, or a chemical dosing skid sitting in a classified area — read both pages and combine the requirements; the parameter tables and FAQ on each page cover the cross-over questions.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {industries.map((ind) => (
+          <a href={ind.href} class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <span class="text-3xl">{ind.icon}</span>
+            <h3 class="mt-4 text-lg font-bold text-navy-950">{ind.name}</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{ind.desc}</p>
+            <span class="mt-4 inline-block text-sm font-semibold text-brand-blue transition group-hover:translate-x-0.5">{ind.tag} →</span>
+          </a>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-500">Food &amp; beverage application page is under construction — the recommended models and selection criteria are shown in the comparison table below.</p>
+    </div>
+  </section>
+
+  <!-- Comparison table -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">COMPARISON</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Industry Comparison: Connections, Glass and Metal</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A quick matrix of what each industry typically demands. It is a starting point, not a substitute for a media and duty review — send your operating conditions and our engineers will confirm the specification.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Industry</th>
+              <th class="px-5 py-4 font-semibold">Typical Connections</th>
+              <th class="px-5 py-4 font-semibold">Glass</th>
+              <th class="px-5 py-4 font-semibold">Metal</th>
+              <th class="px-5 py-4 font-semibold">Recommended Models</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {tableRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.industry}</td>
+                <td class="px-5 py-4 text-slate-600">{r.connection}</td>
+                <td class="px-5 py-4 text-slate-600">{r.glass}</td>
+                <td class="px-5 py-4 text-slate-600">{r.metal}</td>
+                <td class="px-5 py-4 text-slate-600">{r.models}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- What drives the spec -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHY SPECS DIFFER</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Drives a Sight Glass Specification</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Behind the same-looking window are three variables that change completely between industries. The <strong class="text-navy-950">connection</strong> must match the piping standard of the plant — sanitary tri-clamp on pharma and food lines, NPT or BSP threaded on small chemical and utility lines, ANSI or DIN flanged on process vessels and oil and gas mains. The <strong class="text-navy-950">glass</strong> must survive the media and the cleaning regime — borosilicate to DIN 7080 is the default, quartz extends the temperature range, and soda-lime is only for mild, low-temperature duty. The <strong class="text-navy-950">body metal</strong> is a cost-versus-compatibility decision — 316L for sterile and corrosive service, 304 or 316 stainless for food contact, carbon steel for dry hydrocarbons.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Get those three right and the sight glass is a fit-and-forget component until the next inspection. Get them wrong and you are chasing leaks, fogged windows or etched glass within months. That is why we publish an application page per industry instead of one generic product page: the failure modes, the recommended models and the selection checklists genuinely differ, and a correct first specification is cheaper than a field replacement.</p>
+    </div>
+  </section>
+
+  <!-- How we scope -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SCOPING</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">How We Scope an Application</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Every sight glass we quote starts from the same five questions. Answer them and you are 90% of the way to a correct specification:</p>
+      <ul class="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-slate-600">
+        <li><strong class="text-navy-950">Media:</strong> what is inside the line or vessel — including concentration and any solids?</li>
+        <li><strong class="text-navy-950">Pressure and temperature:</strong> operating conditions plus the worst-case upset?</li>
+        <li><strong class="text-navy-950">Connection:</strong> tri-clamp, threaded, flanged, or weld — and the size?</li>
+        <li><strong class="text-navy-950">Mounting:</strong> new installation on a nozzle, or retrofitting into an existing line?</li>
+        <li><strong class="text-navy-950">Environment:</strong> washdown areas, classified zones, steam exposure, cold climates?</li>
+      </ul>
+      <p class="mt-6 max-w-3xl text-sm leading-relaxed text-slate-600">Not sure which product family fits? Start from the <a href="/products/" class="font-semibold text-brand-blue transition hover:underline">product overview</a>, or send the five answers above to <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">our export team</a> — you will get a recommended model and quotation within 24 hours. For OEM and private-label programs, the <a href="/services/oem-odm/" class="font-semibold text-brand-blue transition hover:underline">OEM/ODM service</a> covers custom tube lengths, lighting, gasket selection and brand marking on any of the recommended models.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Not Sure Which Sight Glass Fits Your Application?"
+    subtitle="Send your media, pressure, temperature and connection — get a recommendation and quotation within 24 hours."
+  />
+</Layout>

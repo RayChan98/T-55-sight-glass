@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import IndustryPageTemplate from '../../components/IndustryPageTemplate.astro';
+
+const pageTitle = 'Sight Glass for Oil and Gas';
+const metaTitle = 'Sight Glass for Oil and Gas | High Pressure Sight Glass — SIGHTSPEC';
+const kw = 'sight glass for oil and gas';
+const desc = 'High pressure sight glasses for oil and gas: SG-400 flanged and SG-300 threaded models in carbon steel or 316 SS for separators, scrubbers, filter housings and pipelines in classified areas.';
+const points = [
+  'SG-300 threaded rated to 100 bar (1450 psi) for small-bore and instrument line observation',
+  'SG-400 flanged per ANSI Class 150/300 with large viewing windows for vessels and main lines',
+  'Carbon steel bodies for cost-effective, field-proven service on dry gas and refined products',
+  'Passive design — no electrical components — with the glass, gasket and body engineered to contain process pressure',
+];
+const longtail = [
+  'high pressure sight glass',
+  'carbon steel sight glass',
+  'sight glass for pipelines',
+  'flanged sight glass ANSI 300',
+  'sight glass for pressure vessels',
+  'oil and gas sight glass',
+  'threaded sight glass NPT',
+  'sight glass for separators',
+  'sight glass for scrubbers',
+  'sight glass for fuel skids',
+];
+const recommended = [
+  { href: '/products/flanged-sight-glasses/', title: 'SG-400 Flanged Sight Glass', desc: 'ANSI Class 150/300 flanged, 2"–8", carbon steel or 316 SS bodies.' },
+  { href: '/products/threaded-sight-glasses/', title: 'SG-300 Threaded Sight Glass', desc: 'Male NPT/BSP, up to 100 bar (1450 psi), compact for skids and small lines.' },
+  { href: '/products/sight-flow-indicators/', title: 'SG-200 Sight Flow Indicator', desc: 'Flapper and ball indicators for flow verification on fuel and lube lines.' },
+];
+---
+
+<Layout title={metaTitle} description={desc}>
+  <IndustryPageTemplate title={pageTitle} kw={kw} desc={desc} points={points} longtail={longtail} recommended={recommended}>
+    <div slot="chapters">
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">OIL & GAS CHALLENGES</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">High Pressure: Rating and Connection Choice</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Oil and gas sight glasses sit on separators, scrubbers, filter housings, pressure vessels, fuel skids and pipelines — often at pressures where a failed window is a safety event, not a maintenance nuisance. The pressure rating comes from the whole assembly: glass, gasket, body and connection. Never rate a sight glass on the window alone.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Small bore and instruments.</strong> The SG-300 threaded sight glass (male NPT or BSP, 1/4"–3") is the compact choice for sampling lines, lubrication circuits and instrument hookups, rated to 100 bar (1450 psi).</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Vessels and main lines.</strong> The SG-400 flanged sight glass (ANSI B16.5 Class 150/300, 2"–8") provides the large viewing window operators need for level, color and phase checks on separators, scrubbers and pipeline skids. Where temperatures run high, quartz glass is available in place of borosilicate.</p>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">RECOMMENDED PRODUCTS</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG-400 Flanged and SG-300 Threaded for Oil and Gas</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For oil and gas duty we recommend the SG-400 flanged sight glass as the primary model for vessels, separators and main lines, with the SG-300 threaded sight glass for compact high-pressure spots. Both are offered in carbon steel or 316 SS bodies.</p>
+          <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-navy-950 text-white">
+                <tr>
+                  <th class="px-5 py-4 font-semibold">Parameter</th>
+                  <th class="px-5 py-4 font-semibold">SG-400 Flanged</th>
+                  <th class="px-5 py-4 font-semibold">SG-300 Threaded</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Mounting</td><td class="px-5 py-4 text-slate-600">ANSI B16.5 Class 150/300, DIN PN10–PN40</td><td class="px-5 py-4 text-slate-600">Male NPT / BSP, 1/4"–3"</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Glass</td><td class="px-5 py-4 text-slate-600">Borosilicate / soda lime / quartz</td><td class="px-5 py-4 text-slate-600">Borosilicate to DIN 7080</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Metal</td><td class="px-5 py-4 text-slate-600">Carbon steel / 316 SS</td><td class="px-5 py-4 text-slate-600">316 SS / Hastelloy / carbon steel</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Pressure</td><td class="px-5 py-4 text-slate-600">Per flange class (Class 150/300)</td><td class="px-5 py-4 text-slate-600">Up to 100 bar (1450 psi)</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Size range</td><td class="px-5 py-4 text-slate-600">2"–8" (DN50–DN200)</td><td class="px-5 py-4 text-slate-600">1/4"–3"</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Need a flow-verification window as well? The <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue hover:underline">SG-200 sight flow indicator</a> adds flapper, rotary or ball indication to confirm flow at a glance.</p>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">BODY MATERIAL</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Carbon Steel Construction for Cost-Effective Service</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For dry gas, refined products, lubricants and other non-corrosive hydrocarbons, carbon steel bodies deliver the strength at the right price — which is why the majority of oil and gas sight glass duty is carbon steel. It is the field-proven, economical default for standard service.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Step up to 316 stainless steel when the media is corrosive, when the line is sour (H2S service), or when your integrity program demands stainless wetted parts. Seals follow the same logic: FKM for hydrocarbons, PTFE for broad chemical resistance, and graphite-based gaskets for high-temperature flanged service. Tell us if the line is sour — we will recommend the metal and seal combination for the duty.</p>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">HAZARDOUS AREAS</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Hazardous Areas and Explosion-Proof Considerations</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">In classified areas, engineers ask whether the sight glass is explosion-proof. Because a sight glass has no electrical components, it introduces no ignition source of its own — the engineering focus is containment. The glass, gasket and body must hold process pressure, and the window must be kept in good condition so it never becomes the weak point.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">That makes inspection routine: check the window for chips, cracks and etching at every shutdown; replace the gasket when it shows wear; torque flanged covers to spec on installation. In cold climates, condensation on the inside of the glass is common — a heated anti-fog window option keeps the view clear without adding any electrical component inside the process envelope.</p>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SELECTION GUIDE</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Selection Essentials for Oil and Gas</h2>
+          <ul class="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-slate-600">
+            <li><strong class="text-navy-950">Pressure class:</strong> state design pressure and temperature — SG-300 holds to 100 bar; SG-400 follows the flange class.</li>
+            <li><strong class="text-navy-950">Connection:</strong> NPT/BSP threaded for small bores; ANSI Class 150/300 or DIN flanged for vessels and mains.</li>
+            <li><strong class="text-navy-950">Body material:</strong> carbon steel as the economical default; 316 SS for corrosive, sour or integrity-critical service.</li>
+            <li><strong class="text-navy-950">Glass:</strong> borosilicate as standard; quartz where temperatures exceed borosilicate limits.</li>
+            <li><strong class="text-navy-950">Seal:</strong> FKM, PTFE or graphite per media, temperature and your plant standards.</li>
+            <li><strong class="text-navy-950">Spares and inspection:</strong> keep a spare window and gasket per size; add the sight glass to your shutdown inspection list.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Oil and Gas Sight Glass Questions</h2>
+          <div class="mt-8 max-w-3xl space-y-4">
+            <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="cursor-pointer text-base font-bold text-navy-950">How high a pressure can these sight glasses take?</summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">The SG-300 threaded sight glass is rated up to 100 bar (1450 psi). The SG-400 flanged sight glass follows its flange class — ANSI Class 150 or Class 300, or DIN PN10 to PN40. State your design pressure and temperature and we will confirm the rating.</p>
+            </details>
+            <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="cursor-pointer text-base font-bold text-navy-950">Carbon steel or stainless steel?</summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Carbon steel is the economical, field-proven default for dry gas, refined products and lubricants. Step up to 316 SS for corrosive media, sour (H2S) service, or integrity programs that require stainless wetted parts.</p>
+            </details>
+            <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="cursor-pointer text-base font-bold text-navy-950">Is the sight glass explosion-proof?</summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">A sight glass has no electrical components, so it adds no ignition source of its own. The engineering focus is containment: the glass, gasket and body are rated to hold process pressure, and the window must be inspected and kept in good condition.</p>
+            </details>
+            <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="cursor-pointer text-base font-bold text-navy-950">Why does the window fog on cold days?</summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">That is condensation: warm vapor inside meets a cold glass surface. A heated anti-fog window option keeps the glass above the dew point so the view stays clear, with no electrical component inside the process envelope.</p>
+            </details>
+            <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="cursor-pointer text-base font-bold text-navy-950">Can the glass be replaced in the field?</summary>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Yes. The window is a replaceable consumable — keep a spare glass and gasket per size, and swap them during shutdown inspection. We supply replacement windows for every model we ship.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </div>
+  </IndustryPageTemplate>
+
+  <CtaBand
+    title="Need a High-Pressure Sight Glass?"
+    subtitle="Send your pressure class, connection and body material preference — get a quotation and lead time within 24 hours."
+  />
+</Layout>

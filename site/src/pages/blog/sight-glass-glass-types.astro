@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz";
+const description = "Sight glass glass types compared: borosilicate vs soda lime vs quartz for industrial sight glasses — temperature limits, thermal shock, chemical resistance, pressure behavior and cost.";
+const date = "2026-08-25";
+const readTime = 8;
+const author = "Ray Chan";
+const toc = [
+  { id: "why-glass-matters", label: "Why the Glass Type Matters" },
+  { id: "soda-lime-glass", label: "Soda Lime Glass" },
+  { id: "borosilicate-glass", label: "Borosilicate Glass (DIN 7080)" },
+  { id: "quartz-glass", label: "Quartz / Fused Silica Glass" },
+  { id: "comparison-table", label: "Borosilicate vs Soda Lime vs Quartz: Comparison Table" },
+  { id: "temperature-pressure-table", label: "Temperature and Pressure Limits by Glass Type" },
+  { id: "how-to-choose", label: "How to Choose the Right Glass Type" },
+  { id: "faq", label: "Sight Glass Glass FAQ" },
+];
+const related = [
+  { href: "/blog/what-is-a-sight-glass/", title: "What Is a Sight Glass? Definition, Working Principle and Types", readTime: 8 },
+  { href: "/blog/how-to-choose-a-sight-glass/", title: "How to Choose a Sight Glass: A 6-Question Selection Guide", readTime: 8 },
+  { href: "/products/flanged-sight-glasses/", title: "SG-400 Flanged Sight Glass", readTime: 4 },
+];
+---
+
+<Layout title={title + " | SIGHTSPEC"} description={description}>
+  <BlogPostTemplate title={title} category="Materials" date={date} readTime={readTime} author={author} toc={toc} related={related}>
+    <div slot="cover" class="hidden lg:block" aria-hidden="true">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="60" cy="60" r="28" fill="#FDE68A" stroke="#F59E0B" stroke-width="3"/>
+        <circle cx="52" cy="52" r="8" fill="#FFFBEB" opacity="0.8"/>
+        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+      </svg>
+    </div>
+
+    <p>Of all the components in a sight glass, the glass window is the one that defines the limits. The body and gasket can be swapped for different metals and elastomers, but the window decides how hot the assembly can run, how fast it can change temperature without cracking, and which chemicals it can survive. Three glass families cover virtually the entire industrial sight glass market: soda lime glass, borosilicate glass to DIN 7080, and quartz (fused silica). They look similar at a glance — all three are transparent disks — but their engineering behavior is completely different. This guide compares the three in detail: composition, temperature limits, thermal shock resistance, chemical resistance, pressure behavior and price, with the tables engineers actually spec from.</p>
+
+    <h2 id="why-glass-matters">Why the Glass Type Matters</h2>
+    <p>Glass is the weakest link in a sight glass assembly, and it is also the part you cannot fully verify by eye. A hairline crack that starts at the edge of the window can propagate under pressure, so the window must do four jobs at once: contain pressure as a pressure boundary, survive temperature in both steady state and rapid change, resist the process chemistry because it is a wetted part, and keep its optical clarity so the process stays visible.</p>
+    <p>That is why selecting the glass type is the first decision, not an afterthought. Two practical facts follow. First, the glass type and the window size together set the pressure rating — a larger window needs thicker glass to hold the same pressure. Second, sight glass windows are consumable parts: thermal cycling, chemical attack and mechanical load all shorten window life, and a good maintenance program inspects windows on a schedule and replaces them before failure rather than after.</p>
+
+    <h2 id="soda-lime-glass">Soda Lime Glass</h2>
+    <p>Soda lime glass is the glass of everyday windows and bottles: roughly 70% silica with sodium oxide and calcium oxide as fluxes. It is cheap, easy to form, and gives good optical clarity in thin sections — which is exactly why it appears in low-cost sight glasses. Its engineering limits are what matter for process duty. Continuous service temperature is typically around 150–200°C. Thermal shock resistance is poor, with a typical tolerable temperature difference of only tens of degrees Celsius, so a cold splash on a hot window or a steam burst on a cold one can crack it. Chemical resistance is fair against water and mild media but weak against strong acids, alkalis and sustained steam.</p>
+    <p>When is soda lime acceptable in a sight glass? Low-temperature duties — water, oils, air and general non-aggressive media — where the process never sees steam, CIP or fast temperature changes, and where budget matters. It is a perfectly good engineering choice inside that envelope; the mistake is using it outside it. In the SIGHTSPEC range, soda lime appears as the low-temperature option on the <a href="/products/sight-flow-indicators/">SG-200 sight flow indicator</a>.</p>
+
+    <h2 id="borosilicate-glass">Borosilicate Glass (DIN 7080)</h2>
+    <p>Borosilicate glass replaces much of the flux with boric oxide, pushing silica content to around 80% and cutting the coefficient of thermal expansion to about one third of soda lime's. That low expansion is the whole story: it is what makes borosilicate resistant to thermal shock and what keeps it dimensionally stable under heat. In sight glasses, borosilicate is specified to DIN 7080, the German standard that defines the dimensions, tolerances and strength requirements for pressure sight glasses.</p>
+    <p>Typical limits: continuous service to roughly 280–300°C, thermal shock resistance around triple that of soda lime, and excellent chemical resistance across a very wide pH range — the exceptions are hydrofluoric acid and hot concentrated alkali. It is the default glass for industrial and sanitary sight glasses: the <a href="/products/tri-clamp-sight-glasses/">SG-100 tri-clamp</a>, <a href="/products/threaded-sight-glasses/">SG-300 threaded</a> and <a href="/products/flanged-sight-glasses/">SG-400 flanged</a> families all use it as standard. In hygienic applications, borosilicate windows are compatible with USP Class VI pharmaceutical duty and survive the repeated thermal cycling of CIP and SIP cleaning.</p>
+
+    <h2 id="quartz-glass">Quartz / Fused Silica Glass</h2>
+    <p>Quartz — fused silica — is essentially pure silicon dioxide at 99.9% or better. Its expansion coefficient is so low, around 0.5 × 10⁻⁶/K or about an order of magnitude below soda lime, that it can be heated red-hot and quenched in cold water without cracking. Continuous service temperature is around 1000–1100°C, and it resists almost every chemical except hydrofluoric acid and hot phosphoric acid. Optical clarity is excellent and the cost is correspondingly higher.</p>
+    <p>Quartz is the choice when the process outruns borosilicate: high-temperature reactors, furnaces, burner observation, flue lines, and any duty with severe thermal cycling. One practical caveat: quartz's temperature potential is usually capped by the rest of the assembly — the metal body and the gasket — so quartz windows are mounted with high-temperature sealing arrangements and special designs. In the SIGHTSPEC range, quartz is offered on the <a href="/products/flanged-sight-glasses/">SG-400 flanged sight glass</a> for high-temperature duty.</p>
+
+    <h2 id="comparison-table">Borosilicate vs Soda Lime vs Quartz: Comparison Table</h2>
+    <table>
+      <thead><tr><th>Property</th><th>Soda lime</th><th>Borosilicate (DIN 7080)</th><th>Quartz / fused silica</th></tr></thead>
+      <tbody>
+        <tr><td>Main composition</td><td>~70% SiO2 + Na2O / CaO</td><td>~80% SiO2 + B2O3</td><td>≥99.9% SiO2</td></tr>
+        <tr><td>Typical max continuous temperature</td><td>~150–200°C</td><td>~280–300°C</td><td>~1000–1100°C</td></tr>
+        <tr><td>Thermal shock resistance</td><td>Low</td><td>Good</td><td>Excellent</td></tr>
+        <tr><td>Thermal expansion (typical)</td><td>~9 × 10⁻⁶/K</td><td>~3.3 × 10⁻⁶/K</td><td>~0.5 × 10⁻⁶/K</td></tr>
+        <tr><td>Chemical resistance</td><td>Fair — water, mild media</td><td>Excellent — not HF / hot concentrated alkali</td><td>Excellent — not HF / hot phosphoric acid</td></tr>
+        <tr><td>Optical clarity</td><td>Good</td><td>Good</td><td>Excellent</td></tr>
+        <tr><td>Relative cost</td><td>$</td><td>$$</td><td>$$$$</td></tr>
+        <tr><td>Typical sight glass duty</td><td>Low-temperature water, oil, budget lines</td><td>Industrial and sanitary standard</td><td>High-temperature, extreme cycling</td></tr>
+      </tbody>
+    </table>
+    <p>Values are typical for common sight glass sizes; exact figures depend on window diameter, thickness and assembly design. Confirm against the datasheet for the specific model before finalizing a specification.</p>
+
+    <h2 id="temperature-pressure-table">Temperature and Pressure Limits by Glass Type</h2>
+    <table>
+      <thead><tr><th>Glass type</th><th>Continuous temperature</th><th>Short-term peak</th><th>Pressure rating notes</th><th>SIGHTSPEC series</th></tr></thead>
+      <tbody>
+        <tr><td>Soda lime</td><td>~150–200°C</td><td>~250°C brief</td><td>Pressure-rated, derated as temperature rises</td><td>SG-200 (low-temperature option)</td></tr>
+        <tr><td>Borosilicate DIN 7080</td><td>~280–300°C</td><td>~350°C brief</td><td>SG-100: FV to 230 psi (1.6 MPa); SG-300: up to 100 bar (1450 psi)</td><td>SG-100, SG-200, SG-300, SG-400</td></tr>
+        <tr><td>Quartz</td><td>~1000–1100°C</td><td>Higher, short exposure</td><td>Rating set by assembly design and gasket</td><td>SG-400 (quartz option)</td></tr>
+      </tbody>
+    </table>
+    <p>Pressure and temperature interact: the allowable pressure of any sight glass falls as the temperature approaches the glass limit, so always specify the worst-case combination — for example maximum temperature together with maximum pressure plus vacuum — rather than each figure in isolation.</p>
+
+    <h2 id="how-to-choose">How to Choose the Right Glass Type</h2>
+    <ul>
+      <li><strong>Process runs above ~300°C continuous</strong> — quartz. Borosilicate cannot sustain it.</li>
+      <li><strong>Steam, CIP/SIP or thermal cycling</strong> — borosilicate as the minimum; quartz if the cycling is severe or the media is aggressive at high temperature.</li>
+      <li><strong>Low temperature (below ~150°C), non-aggressive media, cost-sensitive</strong> — soda lime is a legitimate choice.</li>
+      <li><strong>Aggressive chemicals</strong> — borosilicate or quartz; verify that the media is not hydrofluoric acid or hot concentrated alkali.</li>
+      <li><strong>Pharmaceutical or food</strong> — borosilicate with USP Class VI / FDA-compliant assembly and gaskets.</li>
+      <li><strong>Maintenance</strong> — whatever the glass type, treat the window as a consumable: schedule inspection and keep spares.</li>
+    </ul>
+    <p>When in doubt, send your temperature, pressure and media to our engineers — the answer usually comes back within hours, not days, with a model and a quotation. See also our <a href="/blog/how-to-choose-a-sight-glass/">6-question selection guide</a> for the full decision process.</p>
+
+    <h2 id="faq">Sight Glass Glass FAQ</h2>
+    <details><summary>What is DIN 7080?</summary><p>DIN 7080 is the German standard for pressure sight glasses. It defines the dimensions, tolerances and strength requirements for borosilicate glass windows used as pressure boundaries. Borosilicate glass to DIN 7080 is the default choice for industrial sight glasses.</p></details>
+    <details><summary>Can soda lime glass handle steam?</summary><p>Generally not for sustained steam service. The rapid temperature change and hot wet environment are exactly what soda lime handles worst, and thermal shock will eventually crack it. Use borosilicate for any steam, CIP or hot-water cycling duty.</p></details>
+    <details><summary>What temperature can a quartz sight glass withstand?</summary><p>Quartz windows are rated to roughly 1000–1100°C continuous. In practice the assembly — the metal body, gasket and mounting design — often sets a lower usable limit, so quartz sight glasses use high-temperature sealing arrangements. Confirm the complete assembly rating, not just the glass.</p></details>
+    <details><summary>Is borosilicate sight glass food-safe?</summary><p>Borosilicate is chemically inert and compatible with FDA and USP Class VI hygienic duty. Food safety also depends on the complete assembly — body material, gasket and surface finish — so specify the full hygienic requirement, not just the glass.</p></details>
+    <details><summary>Can the glass window be replaced when damaged?</summary><p>Yes. Windows and gaskets are serviceable consumables. Keep spares on site and replace windows per your inspection schedule — inspecting for cracks, chips and clouding is the single most effective sight glass maintenance practice.</p></details>
+  </BlogPostTemplate>
+
+  <CtaBand
+    title="Specify the Right Glass for Your Sight Glass"
+    subtitle="Send your temperature, pressure and media — our engineers confirm the correct glass type, gasket and body material and quote within 24 hours."
+  />
+</Layout>

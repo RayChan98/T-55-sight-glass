@@ -1,0 +1,45 @@
+---
+// SIGHTSPEC Author: Ray Chan
+import Layout from '../../../layouts/Layout.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+
+const articles = [
+  { href: '/blog/what-is-a-sight-glass/', title: 'What Is a Sight Glass? Definition, Working Principle and Types', date: 'August 25, 2026' },
+  { href: '/blog/how-to-choose-a-sight-glass/', title: 'How to Choose a Sight Glass: A 6-Question Selection Guide', date: 'August 25, 2026' },
+  { href: '/blog/sight-glass-glass-types/', title: 'Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz', date: 'August 25, 2026' },
+];
+---
+
+<Layout title="Ray Chan — Sight Glass Technical Writer | SIGHTSPEC" description="Ray Chan writes sight glass selection guides and technical articles for SIGHTSPEC, an industrial sight glass manufacturer.">
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+      <div class="flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
+        <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-brand-blue text-3xl font-extrabold text-white">RC</div>
+        <div>
+          <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Ray Chan</h1>
+          <p class="mt-2 text-brand-green">Sight Glass Technical Writer</p>
+          <p class="mt-3 max-w-2xl text-slate-300">Ray helps global importers, engineering firms and OEMs source the right sight glass — covering glass types, pressure ratings, connections and installation. He writes the SIGHTSPEC selection guides from real factory spec sheets and process experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold tracking-tight text-navy-950">Articles by Ray Chan</h2>
+      <div class="mt-8 divide-y divide-slate-100 border-y border-slate-100">
+        {articles.map((a) => (
+          <a href={a.href} class="flex items-center justify-between gap-4 py-5 transition hover:bg-slate-50">
+            <div>
+              <h3 class="font-bold text-navy-950 hover:text-brand-blue">{a.title}</h3>
+              <p class="mt-1 text-sm text-slate-500">{a.date}</p>
+            </div>
+            <span class="shrink-0 text-brand-blue">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title="Need a Sight Glass for Your Application?" subtitle="Tell us your connection, media and operating conditions — Ray or the engineering team replies within 24 hours." />
+</Layout>
