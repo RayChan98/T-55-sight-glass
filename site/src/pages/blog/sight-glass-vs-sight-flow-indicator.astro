@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "Sight Glass vs Sight Flow Indicator: Key Differences & How to Choose";
+const description = "Sight glass vs sight flow indicator compared: what each does, how they indicate flow, where they install, price, maintenance — plus a decision checklist, when to use both, and FAQ.";
+const date = "2026-08-25";
+const readTime = 8;
+const author = "Ray Chan";
+const toc = [
+  { id: "what-is-a-sight-glass", label: "What Is a Sight Glass?" },
+  { id: "what-is-a-sight-flow-indicator", label: "What Is a Sight Flow Indicator?" },
+  { id: "comparison-table", label: "Sight Glass vs Sight Flow Indicator: Comparison Table" },
+  { id: "when-to-use-a-sight-glass", label: "When a Sight Glass Is the Right Choice" },
+  { id: "when-to-use-a-flow-indicator", label: "When a Sight Flow Indicator Is the Right Choice" },
+  { id: "how-to-choose", label: "How to Choose: A Decision Checklist" },
+  { id: "can-you-use-both", label: "Can You Use a Sight Glass and a Sight Flow Indicator Together?" },
+  { id: "faq", label: "Sight Glass vs Sight Flow Indicator FAQ" },
+];
+const related = [
+  { href: "/blog/what-is-a-sight-glass/", title: "What Is a Sight Glass? Definition, Working Principle and Types", readTime: 8 },
+  { href: "/blog/how-to-choose-a-sight-glass/", title: "How to Choose a Sight Glass: A 6-Question Selection Guide", readTime: 8 },
+  { href: "/products/sight-flow-indicators/", title: "SG-200 Sight Flow Indicator", readTime: 4 },
+];
+---
+
+<Layout title={title + " | SIGHTSPEC"} description={description}>
+  <BlogPostTemplate title={title} category="Comparison" date={date} readTime={readTime} author={author} toc={toc} related={related}>
+    <div slot="cover" class="hidden lg:block" aria-hidden="true">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="18" width="48" height="84" rx="10" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="32" cy="46" r="16" fill="#FDE68A" stroke="#F59E0B" stroke-width="3"/>
+        <rect x="26" y="34" width="12" height="24" rx="3" fill="#F97316" transform="rotate(-25 32 46)"/>
+        <rect x="64" y="18" width="48" height="84" rx="10" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="88" cy="46" r="16" fill="#FDE68A" stroke="#F59E0B" stroke-width="3"/>
+        <path d="M82 40 v12 a6 6 0 0 0 12 0 v-12" stroke="#F97316" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="88" cy="90" r="5" fill="#10B981" opacity="0.7"/>
+        <rect x="80" y="84" width="16" height="12" rx="2" fill="#FDE68A" opacity="0.9"/>
+      </svg>
+    </div>
+
+    <p>Ask ten process engineers to explain the difference between a sight glass and a sight flow indicator and you will get ten slightly different answers — which is exactly why the two products get mixed up in specifications. Both are transparent, pressure-rated windows that let you see into a process without opening the system, and at a glance they look similar. But they answer different questions. A sight glass tells you <strong>what is inside</strong> the vessel or line: level, color, clarity. A sight flow indicator tells you <strong>whether the media is actually moving</strong>, in which direction, and at roughly what rate. This guide defines both products, compares them across function, indication method, installation, price and maintenance, walks through when to choose each, and ends with a decision checklist you can hand to a specifier today.</p>
+
+    <h2 id="what-is-a-sight-glass">What Is a Sight Glass?</h2>
+    <p>A sight glass — also called a sight window, inspection glass or observation port — is a pressure-rated transparent assembly fitted into a vessel wall or into a pipeline so operators can observe the process media without opening the system. It is a passive component with three parts: a metal body, a glass window rated to the process pressure and temperature, and a gasket that seals the window in place. Nothing inside moves.</p>
+    <p>Sight glasses fall into two families. <strong>Vessel sight glasses</strong> are mounted on tanks, reactors and storage vessels, where their job is to show liquid level, product color, mixing behavior, foaming or sediment build-up. <strong>Pipeline sight glasses</strong> are installed inline in a pipe, where their job is to show that media is present and what it looks like as it passes the window. In the SIGHTSPEC range, vessel and pipeline observation is covered by the <a href="/products/tri-clamp-sight-glasses/">SG-100 tri-clamp sight glass</a> for sanitary duty, the <a href="/products/threaded-sight-glasses/">SG-300 threaded sight glass</a> for compact high-pressure lines up to 100 bar, and the <a href="/products/flanged-sight-glasses/">SG-400 flanged sight glass</a> for large windows on chemical and oil &amp; gas lines.</p>
+    <p>The limitation of a plain sight glass is that it cannot, by itself, tell you whether the media is moving. A pipe full of static liquid looks the same through a window as a pipe with liquid flowing past it — the operator sees the same glass, the same liquid, the same color. That gap is exactly what the sight flow indicator was designed to fill.</p>
+
+    <h2 id="what-is-a-sight-flow-indicator">What Is a Sight Flow Indicator?</h2>
+    <p>A sight flow indicator is an inline viewing device that combines a transparent window with an internal moving element that responds to flow. That moving element is the defining difference. It gives positive, visual proof that media is moving, which direction it is moving, and — with some element types — a rough sense of rate.</p>
+    <p>Four element designs cover the majority of applications. A <strong>flapper</strong> (or paddle) is hinged at the top of the body and pushed open by the flow; if the line stops, the flapper drops, and the change is obvious. A <strong>rotary</strong> element uses vanes or a rotor that spins at a rate roughly proportional to flow, making it the best choice when relative flow rate matters. A <strong>drip tube</strong> is used on gravity and vent lines: liquid drips through a visible tube, and the drip rate is the indication. A <strong>ball</strong> element is lifted or rolled by the flow and settles when flow stops. Each element is selected for the media, the line orientation and the question the operator needs answered.</p>
+    <p>The SIGHTSPEC <a href="/products/sight-flow-indicators/">SG-200 sight flow indicator</a> covers tri-clamp, threaded, flanged and weld mounting, with borosilicate glass for high-temperature duty and soda lime for low-temperature service, in 304 / 316L stainless steel or carbon steel. Depending on element and body, ratings reach up to 500°F and 300 psi, and the range splits into a hygienic line and an industrial line so the same basic product serves both pharmaceutical and heavy-duty process duty.</p>
+
+    <h2 id="comparison-table">Sight Glass vs Sight Flow Indicator: Comparison Table</h2>
+    <table>
+      <thead><tr><th>Comparison</th><th>Sight glass</th><th>Sight flow indicator</th></tr></thead>
+      <tbody>
+        <tr><td>Primary function</td><td>Observe media condition: level, color, clarity, mixing</td><td>Verify flow: existence, direction, approximate rate — plus media visibility</td></tr>
+        <tr><td>Indication method</td><td>Passive transparent window only</td><td>Window plus moving element (flapper / rotary / drip tube / ball)</td></tr>
+        <tr><td>What it confirms</td><td>What is inside the vessel or line</td><td>That media is actually moving — or that it has stopped</td></tr>
+        <tr><td>Typical location</td><td>Vessel walls, tanks, reactors; inline in pipes for observation</td><td>Inline in pipelines, vertical or horizontal, pump and drain lines</td></tr>
+        <tr><td>Mounting options</td><td>Tri-clamp, threaded (NPT/BSP), flanged, weld</td><td>Tri-clamp, threaded, flanged, weld</td></tr>
+        <tr><td>Moving parts</td><td>None — window and gasket only</td><td>One serviceable moving element inside the body</td></tr>
+        <tr><td>Price</td><td>Lower — simpler body, no internals</td><td>Higher — element and more complex body add cost</td></tr>
+        <tr><td>Maintenance</td><td>Inspect window; replace window and gasket as consumables</td><td>Same window care, plus element inspection and wear checks</td></tr>
+      </tbody>
+    </table>
+    <p>Both products share the same glass reality: the window is the pressure boundary and the weakest link, so it must be rated for the worst-case pressure and temperature combination, and it must be treated as a consumable. For a deeper look at window materials, see our <a href="/blog/sight-glass-glass-types/">borosilicate vs soda lime vs quartz comparison</a>.</p>
+
+    <h2 id="when-to-use-a-sight-glass">When a Sight Glass Is the Right Choice</h2>
+    <ul>
+      <li><strong>Level and inventory checks on vessels</strong> — tanks, reactors and storage vessels where the operator needs to see how full the vessel is. Large windows such as the SG-400 flanged design suit this duty.</li>
+      <li><strong>Batch quality and product changeover</strong> — color, clarity and contamination checks on <a href="/applications/pharmaceutical/">pharmaceutical</a>, <a href="/applications/food-beverage/">food and beverage</a> and <a href="/applications/chemical-processing/">chemical</a> batches without opening the system.</li>
+      <li><strong>Mixing and agitation observation</strong> — confirming that agitators are actually mixing, that powders are wetting out, or that foam is forming where it should not.</li>
+      <li><strong>Sanitary vessels</strong> — the SG-100 tri-clamp sight glass with USP Class VI / FDA-compliant assembly is built for hygienic tanks where dead spaces are unacceptable.</li>
+      <li><strong>Simple, low-cost inline observation</strong> — when the only question is "is there media in this line and what does it look like," a plain pipeline sight glass is the economical answer.</li>
+    </ul>
+    <p>Choose a sight glass when the operator's question is about the <em>state of the media</em>: level, appearance, condition. It shows you the process; it does not measure it.</p>
+
+    <h2 id="when-to-use-a-flow-indicator">When a Sight Flow Indicator Is the Right Choice</h2>
+    <ul>
+      <li><strong>Pump and circulation verification</strong> — seal water, cooling water and recirculation lines where a stopped pump must be spotted immediately. A flapper or rotary element makes a dead line unmistakable.</li>
+      <li><strong>Lubrication and oil return lines</strong> — confirming that oil is actually returning to the reservoir, not just that the reservoir has oil in it.</li>
+      <li><strong>Purge gas, vent and drain lines</strong> — gravity and low-pressure lines where a drip tube shows drip rate at a glance.</li>
+      <li><strong>CIP / SIP flow verification</strong> — confirming cleaning media actually passes through the line during cleaning cycles, not just that the cycle timer ran.</li>
+      <li><strong>Clear or invisible media</strong> — transparent liquids and gases that look identical whether static or moving; the moving element is the only visual proof of flow.</li>
+      <li><strong>Dead-leg and blockage detection</strong> — on <a href="/applications/oil-gas/">oil and gas</a> and process lines where a blocked or air-locked section must be found quickly.</li>
+    </ul>
+    <p>Choose a sight flow indicator when the operator's question is about <em>movement</em>: is flow happening, in which direction, and at roughly what rate?</p>
+
+    <h2 id="how-to-choose">How to Choose: A Decision Checklist</h2>
+    <ul>
+      <li><strong>1. What question must the operator answer?</strong> "What is in the vessel / what does the media look like?" → sight glass. "Is the media moving?" → sight flow indicator.</li>
+      <li><strong>2. Where does it install?</strong> Vessel wall, tank or reactor → sight glass family. Inline in a pipe → either; add the flow question to decide.</li>
+      <li><strong>3. Is flow confirmation part of the job?</strong> Pump verification, cooling, seal water, drain or purge lines → sight flow indicator. If flow confirmation matters, a plain window will disappoint.</li>
+      <li><strong>4. Do you need direction or rate?</strong> Rough rate or direction → rotary element. On/off flow only → flapper or ball. Gravity drip rate → drip tube.</li>
+      <li><strong>5. Pressure and temperature?</strong> High pressure up to 100 bar → SG-300 threaded. Up to 300 psi and 500°F → SG-200 flow indicator or SG-100 tri-clamp. Large flanged lines → SG-400, ANSI Class 150/300.</li>
+      <li><strong>6. Hygienic or pharmaceutical duty?</strong> Use tri-clamp versions with USP Class VI / FDA-compliant glass, gaskets and surface finish — the SG-100 and the hygienic SG-200 line.</li>
+      <li><strong>7. Budget and maintenance capacity?</strong> Sight glasses cost less and have no moving parts; flow indicators cost slightly more and add one wear point to inspect.</li>
+      <li><strong>8. Still unsure?</strong> Send your media, line size, connection, pressure and temperature to our <a href="/contact/">engineers</a>, or work through our <a href="/blog/how-to-choose-a-sight-glass/">6-question selection guide</a>.</li>
+    </ul>
+    <p>One rule applies to both: specify the worst-case combination — maximum pressure together with maximum temperature, plus vacuum if it can occur — and verify the glass type against the media, because the window is the pressure boundary.</p>
+
+    <h2 id="can-you-use-both">Can You Use a Sight Glass and a Sight Flow Indicator Together?</h2>
+    <p>Yes — and in practice they are frequently installed on the same skid, because they answer different questions. A common arrangement is a vessel with a sight glass for level, plus a flow indicator on the discharge line to verify the pump is actually moving product. Another is a plain sight glass upstream to watch media condition and a flow indicator downstream to confirm flow reaches the next unit. They do not replace each other: a flow indicator tells you nothing about level, and a vessel sight glass tells you nothing about movement.</p>
+    <p>Two practical notes when combining them. First, rate each window independently — the pressure and temperature at a vessel nozzle can differ from the conditions at a discharge line. Second, treat both windows as consumables and put them on the same inspection schedule; checking for cracks, chips and clouding is the most effective sight glass maintenance practice there is.</p>
+
+    <h2 id="faq">Sight Glass vs Sight Flow Indicator FAQ</h2>
+    <details><summary>Is a sight flow indicator just a sight glass with a moving part?</summary><p>Essentially yes. The body, glass and gasket are the same family of components, and the moving element (flapper, rotary, drip tube or ball) is added to give positive visual proof of flow. That element is also the main reason a flow indicator costs a little more and needs one extra inspection point.</p></details>
+    <details><summary>Can a plain sight glass show whether flow is happening?</summary><p>Only indirectly. Through a plain window, static liquid and flowing liquid can look identical, especially with clear media. If confirming flow matters to your operation, use a sight flow indicator — the moving element makes a stopped line obvious.</p></details>
+    <details><summary>Which one is more expensive, and why?</summary><p>A sight flow indicator generally costs more than an equivalent sight glass. The extra cost comes from the moving element and the more complex body that houses it. Sight glasses are simpler and cheaper when observation of media condition is all you need.</p></details>
+    <details><summary>Can both be used in hygienic and pharmaceutical lines?</summary><p>Yes, in tri-clamp versions. The SG-100 sight glass and the hygienic SG-200 flow indicator line use sanitary tri-clamp mounting with USP Class VI / FDA-compliant glass and gaskets, so both are suitable for pharmaceutical and food duty where dead spaces are not acceptable.</p></details>
+    <details><summary>Can I replace an existing sight glass with a sight flow indicator?</summary><p>Often yes, if the mounting and ratings match — same connection type and size, and pressure/temperature ratings equal to or better than the line conditions. Confirm the glass type suits the media, and check line orientation, because some elements suit vertical lines and others horizontal. When in doubt, send the existing installation details to our engineers.</p></details>
+  </BlogPostTemplate>
+
+  <CtaBand
+    title="Specify the Right Window — Sight Glass or Sight Flow Indicator"
+    subtitle="Send your media, line size, connection and pressure/temperature details — our engineers recommend the correct product, element and glass type within 24 hours, factory-direct."
+  />
+</Layout>

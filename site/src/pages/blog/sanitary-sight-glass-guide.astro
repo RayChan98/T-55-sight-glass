@@ -1,0 +1,160 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = "Sanitary Sight Glass Guide: Tri-Clamp, Specs & Selection";
+const description = "A deep guide to sanitary sight glasses: what makes a sight glass hygienic vs industrial, 3A/ASME BPE/USP Class VI/FDA 21 CFR standards, tri-clamp connection sizes and clamps, gasket materials (EPDM, silicone, Viton, PTFE), 6 selection questions, CIP/SIP and pharmaceutical applications, common mistakes and an 8-question FAQ.";
+const date = "2026-08-25";
+const readTime = 15;
+const author = "Ray Chan";
+const toc = [
+  { id: "what-is-a-sanitary-sight-glass", label: "What Is a Sanitary Sight Glass?" },
+  { id: "sanitary-vs-industrial", label: "Sanitary vs Industrial: Key Differences" },
+  { id: "sanitary-standards", label: "Sanitary Standards: 3A, ASME BPE, USP Class VI and FDA 21 CFR" },
+  { id: "tri-clamp-connection", label: "The Tri-Clamp Connection: Sizes, Clamp Specs and Assembly" },
+  { id: "gasket-materials", label: "Gasket Materials: EPDM, Silicone, Viton and PTFE" },
+  { id: "six-selection-questions", label: "The 6 Selection Questions for a Sanitary Sight Glass" },
+  { id: "applications", label: "Where Sanitary Sight Glasses Are Used" },
+  { id: "common-mistakes", label: "Common Mistakes to Avoid" },
+  { id: "faq", label: "Sanitary Sight Glass FAQ" },
+];
+const related = [
+  { href: "/blog/what-is-a-sight-glass/", title: "What Is a Sight Glass? Definition, Working Principle and Types", readTime: 8 },
+  { href: "/blog/how-to-choose-a-sight-glass/", title: "How to Choose a Sight Glass: A 6-Question Selection Guide", readTime: 8 },
+  { href: "/blog/sight-glass-glass-types/", title: "Sight Glass Glass Types: Borosilicate vs Soda Lime vs Quartz", readTime: 8 },
+];
+---
+
+<Layout title={title + " | SIGHTSPEC"} description={description}>
+  <BlogPostTemplate title={title} category="Deep Guide" date={date} readTime={readTime} author={author} toc={toc} related={related}>
+    <div slot="cover" class="hidden lg:block" aria-hidden="true">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
+        <circle cx="60" cy="60" r="28" fill="#A7F3D0" stroke="#10B981" stroke-width="3"/>
+        <circle cx="52" cy="52" r="8" fill="#ECFDF5" opacity="0.8"/>
+        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
+      </svg>
+    </div>
+
+    <p>A sanitary sight glass is the inspection window of a hygienic process line — the small round glass assembly that lets operators see inside a pharmaceutical reactor, a CIP'd dairy skid or a brewery fermenter without breaking the sterile boundary. On the surface it looks like any other sight glass: a metal body, a glass window, gaskets and a cover. But the engineering behind a sanitary sight glass is stricter than almost any other window in process industry, because the window itself sits in the product-contact zone of equipment that must be cleaned, sterilized and validated. Get the surface finish, the gasket or the connection wrong and you introduce a harbor for bacteria, a compliance failure, or a pressure-boundary risk.</p>
+    <p>This guide covers everything a buyer, specifier or maintenance engineer needs to specify a sanitary sight glass correctly: what actually makes a sight glass "sanitary" versus industrial, the standard system that governs hygienic equipment (3A, ASME BPE, USP Class VI and FDA 21 CFR), the tri-clamp connection in detail, gasket material selection, the six questions that narrow down any specification, the main applications, the mistakes that keep coming up in the field, and an eight-question FAQ.</p>
+
+    <h2 id="what-is-a-sanitary-sight-glass">What Is a Sanitary Sight Glass?</h2>
+    <p>A sanitary sight glass — also called a hygienic sight glass or sanitary sight window — is a pressure-rated transparent window designed for installation in equipment that must meet hygienic design and cleaning requirements: pharmaceutical processing, biotechnology, food &amp; beverage, dairy, brewing and cosmetics. Like any sight glass it has four parts — a metal body, a glass window, sealing gaskets and a retaining cover — and like any sight glass it is a pressure boundary: the window must hold the internal pressure of the vessel or line while the operator looks through it. What makes it sanitary is not the glass, which is the same borosilicate family used in industrial units, but three engineering decisions around it.</p>
+    <p><strong>Surface finish.</strong> Product-contact surfaces on a sanitary sight glass are polished to a smoothness industrial units rarely achieve: mechanically polished or electropolished stainless steel with a surface roughness of Ra 0.4–0.8 µm (15–30 µin) on wetted surfaces. The purpose is not cosmetics. Bacteria cling to scratches, pits and weld irregularities, and a rough surface is measurably harder to clean and sterilize than a smooth one. Electropolishing also removes the mechanically disturbed surface layer, which improves corrosion resistance in CIP and aggressive media.</p>
+    <p><strong>Dead-space-free design.</strong> A sanitary sight glass is designed so that the wetted geometry has no crevices, pockets or stagnant zones where product can lodge and bacteria can multiply. The glass sits flush or nearly flush with the bore, the gasket is captured so it cannot extrude into the flow path, and every internal radius is generous enough that cleaning solution and sterilizing steam can reach every surface. This is the property that makes the difference between a part that CIPs clean and one that silently contaminates a batch.</p>
+    <p><strong>Materials and approvals.</strong> Sanitary sight glasses are built from 304 or 316L stainless steel as standard — 316L preferred for product contact — with gaskets made from elastomers and plastics that pass USP Class VI biological reactivity tests and comply with FDA food-contact regulations. The complete assembly is engineered to survive repeated clean-in-place (CIP) and sterilize-in-place (SIP) cycles, which means thermal cycling endurance as well as chemical resistance. In the SIGHTSPEC range, the <a href="/products/tri-clamp-sight-glasses/">SG-100 tri-clamp sight glass</a> is the flagship sanitary model: tri-clamp mounting from 1/2" to 12" (DN15–DN300), borosilicate glass to DIN 7080, 304 or 316L bodies with Hastelloy or duplex options, rated up to 572°F (300°C) and from full vacuum to 230 psi (1.6 MPa), and built to USP Class VI, ASME BPE and FDA requirements with a dead-space-free design.</p>
+
+    <h2 id="sanitary-vs-industrial">Sanitary vs Industrial: Key Differences</h2>
+    <p>An industrial sight glass and a sanitary sight glass often look identical in a catalog photo, and they use the same glass technology. The differences are in the detail — and in the price, because the detail costs money. The table below summarizes what changes when a sight glass moves from industrial duty to hygienic duty.</p>
+    <table>
+      <thead><tr><th>Characteristic</th><th>Industrial sight glass</th><th>Sanitary sight glass</th></tr></thead>
+      <tbody>
+        <tr><td>Typical surface finish</td><td>Ra 1.6 µm or as-machined; cosmetic standards vary</td><td>Ra 0.4–0.8 µm wetted surfaces; electropolish option</td></tr>
+        <tr><td>Wetted geometry</td><td>Functional; small radii and crevices acceptable</td><td>Dead-space-free; flush glass; captured gaskets; drainable</td></tr>
+        <tr><td>Gaskets</td><td>Standard elastomers, metal, or asbestos-free fiber</td><td>USP Class VI / FDA-compliant elastomers and plastics</td></tr>
+        <tr><td>Standards</td><td>DIN 7080 glass, pressure vessel practice</td><td>3A, ASME BPE, USP Class VI, FDA 21 CFR</td></tr>
+        <tr><td>Connection styles</td><td>Threaded, flanged, weld, tri-clamp</td><td>Tri-clamp dominant; weld and flanged for larger lines</td></tr>
+        <tr><td>Cleaning duty</td><td>Manual, occasional</td><td>CIP and SIP cycles, repeated thermal cycling</td></tr>
+        <tr><td>Typical industries</td><td>Chemical, oil &amp; gas, water, power</td><td>Pharma, biotech, food, dairy, beverage, brewing</td></tr>
+        <tr><td>Documentation</td><td>Basic datasheet</td><td>Material certs, surface finish reports, compliance statements</td></tr>
+      </tbody>
+    </table>
+    <p>The rule of thumb: if the line is cleaned in place, sterilized in place, or the product is consumed or injected, specify a sanitary sight glass. If the duty is chemical processing where hygiene is irrelevant but chemical resistance matters, an industrial unit such as the <a href="/products/threaded-sight-glasses/">SG-300 threaded</a> or <a href="/products/flanged-sight-glasses/">SG-400 flanged</a> sight glass is often the right — and cheaper — choice.</p>
+
+    <h2 id="sanitary-standards">Sanitary Standards: 3A, ASME BPE, USP Class VI and FDA 21 CFR</h2>
+    <p>Hygienic equipment is governed by a system of standards, and a sanitary sight glass sits at the intersection of several of them. Understanding which standard applies to your plant — and which one your auditor will ask about — is the difference between a smooth validation and a rejected component. Four names dominate: 3A, ASME BPE, USP Class VI and FDA 21 CFR.</p>
+    <p><strong>3-A Sanitary Standards (3A).</strong> 3-A Sanitary Standards, Inc. (3A SSI) publishes voluntary standards for dairy and food processing equipment — the design criteria that make equipment cleanable and safe for food contact. Originally born in the dairy industry, 3A criteria now cover process equipment broadly, including fittings, valves, pumps and sight components. A 3A-compliant sight glass is designed for cleanability: crevice-free construction, accessible surfaces, no threads in the product zone. 3A is the standard a food or dairy plant will most often cite.</p>
+    <p><strong>ASME BPE (Bioprocessing Equipment).</strong> ASME BPE is the design standard for bioprocessing equipment — pharmaceutical and biotech systems, from upstream fermentation to downstream purification. BPE is the strictest of the family in practice: it specifies surface finish requirements for product-contact surfaces (electropolished surfaces are commonly specified at Ra 0.4 µm / 15 µin), material requirements for 316L stainless steel (including limits on delta ferrite), weld quality, and dimensional standards for sanitary fittings such as tri-clamps. For pharmaceutical sight glasses, BPE compliance is increasingly an explicit purchase requirement.</p>
+    <p><strong>USP Class VI.</strong> USP Class VI refers to the highest classification in the United States Pharmacopeia (USP) biological reactivity tests, USP &lt;88&gt;, which evaluate the biological response of plastics and elastomers used in medical and pharmaceutical contact applications. A gasket or plastic component that passes Class VI testing has shown no significant reaction in tissue and implant tests. It matters for sight glasses because the gaskets are the only non-metal wetted parts — a USP Class VI elastomer is the accepted proof that the seal will not leach or react in pharmaceutical service.</p>
+    <p><strong>FDA 21 CFR.</strong> FDA 21 CFR is the Code of Federal Regulations Title 21, which governs food and drugs in the US. For sight glass components the relevant sections are the food-contact regulations — most commonly 21 CFR 177.2600 (rubber articles intended for repeated use in food contact) and 21 CFR 177.1550 (perfluorocarbon resins, covering PTFE). Compliance means the elastomer or plastic formulation meets FDA requirements for contact with food, which is the basis for using a sight glass on food, dairy and beverage lines.</p>
+    <table>
+      <thead><tr><th>Standard</th><th>What it covers</th><th>Typical users</th><th>What it means for a sight glass</th></tr></thead>
+      <tbody>
+        <tr><td>3A Sanitary Standards</td><td>Cleanable design of dairy and food equipment</td><td>Dairy, food &amp; beverage plants</td><td>Crevice-free, cleanable geometry; hygienic fittings</td></tr>
+        <tr><td>ASME BPE</td><td>Design of bioprocessing equipment: finish, material, welds, fittings</td><td>Pharmaceutical and biotech</td><td>Ra 0.4 µm finish options; 316L with controlled composition; tri-clamp dimensional standards</td></tr>
+        <tr><td>USP Class VI</td><td>Biological reactivity of plastics and elastomers (USP &lt;88&gt;)</td><td>Pharmaceutical contact parts</td><td>Gaskets proven biocompatible for drug-contact service</td></tr>
+        <tr><td>FDA 21 CFR</td><td>Food-contact materials (177.2600 rubber, 177.1550 PTFE)</td><td>Food, dairy, beverage</td><td>Gasket materials compliant for food contact</td></tr>
+      </tbody>
+    </table>
+    <p>The SG-100 tri-clamp sight glass is offered with USP Class VI gaskets, BPE-compliant construction and FDA-compliant materials, so a single part can satisfy pharmaceutical and food lines alike. If you are buying for a validated pharmaceutical process, ask your supplier for the specific compliance statements and material certifications in writing — see the <a href="/applications/pharmaceutical/">pharmaceutical application page</a> for what pharma buyers should demand.</p>
+
+    <h2 id="tri-clamp-connection">The Tri-Clamp Connection: Sizes, Clamp Specs and Assembly</h2>
+    <p>The tri-clamp connection — also called TC, sanitary clamp or ISO 2852 coupling — is the workhorse of hygienic piping. It joins two ferrules with a gasket between them, held together by a two-piece clamp that is tightened with a wing nut or bolt. It has three properties that make it ideal for sanitary service: it is quick to assemble and disassemble, it has no threads in the product zone (threads are a classic bacterial harbor), and it can be made crevice-free when the gasket is installed correctly. That is why the flagship sanitary sight glass, the <a href="/products/tri-clamp-sight-glasses/">SG-100</a>, is built around it.</p>
+    <p><strong>Size range.</strong> Sanitary tri-clamp sight glasses cover the practical range of hygienic piping: from 1/2" up to 12" nominal line size (DN15 to DN300). The sight glass body itself is a spool with a ferrule welded to each end, so it clamps into the line exactly like a short pipe section — which is why installing one is a five-minute job: loosen the two adjacent clamps, drop the sight glass in with gaskets, re-clamp.</p>
+    <p><strong>Clamp and ferrule dimensions.</strong> A critical point that causes ordering errors: the tri-clamp size is not the same as the tube size. The clamp size matches the outside diameter of the ferrule, and ferrules are standardized so that several tube sizes share one ferrule OD. Typical values used across the industry:</p>
+    <table>
+      <thead><tr><th>Tube / line size</th><th>Ferrule OD (typical)</th><th>Clamp size</th></tr></thead>
+      <tbody>
+        <tr><td>1/2" – 1-1/2" (DN15 – DN40)</td><td>50.5 mm (1.98")</td><td>1.5" TC clamp</td></tr>
+        <tr><td>2" – 3" (DN50 – DN80)</td><td>64 mm (2.52")</td><td>2.5" TC clamp</td></tr>
+        <tr><td>4" (DN100)</td><td>91 mm (3.58")</td><td>4" TC clamp</td></tr>
+        <tr><td>6" – 8" (DN150 – DN200)</td><td>119 mm (4.69")</td><td>4" TC clamp</td></tr>
+        <tr><td>10" – 12" (DN250 – DN300)</td><td>167.5 mm (6.59")</td><td>6" TC clamp</td></tr>
+      </tbody>
+    </table>
+    <p>Values are typical for the widely used sanitary ferrule convention; some systems use different ferrule ODs for small lines (for example 25 mm ferrules for 1/2" and 3/4" tube). Always confirm the ferrule OD and clamp size of the existing line before ordering — a sight glass with the wrong clamp size simply will not fit.</p>
+    <p><strong>Assembly practice.</strong> Three rules keep a tri-clamp sight glass hygienic and safe. First, center the gasket so it sits evenly in both ferrule grooves — an off-center gasket extrudes into the bore, creates a dead pocket and can fail under pressure. Second, tighten the clamp to a firm hand-tight plus a modest turn; over-tightening distorts the gasket and, on a sight glass, transfers bending stress to the glass window. Third, inspect the gasket on every disassembly and replace it if it shows compression set, cuts or deformation. Gaskets are consumables by design — treating them as permanent parts is one of the most common field failures.</p>
+
+    <h2 id="gasket-materials">Gasket Materials: EPDM, Silicone, Viton and PTFE</h2>
+    <p>The gasket is the only wetted component that is not metal or glass, and it is usually the first part to limit the operating envelope of a sanitary sight glass. Four materials cover the vast majority of hygienic applications: EPDM, silicone, Viton (FKM) and PTFE. Each has a different temperature range, a different relationship with steam, and a different chemical resistance — and none is universally right.</p>
+    <table>
+      <thead><tr><th>Material</th><th>Typical temperature range</th><th>Steam / CIP-SIP behavior</th><th>Chemical resistance</th><th>Best for</th></tr></thead>
+      <tbody>
+        <tr><td>EPDM</td><td>−40°C to +150°C</td><td>Excellent — the standard steam and hot-water gasket</td><td>Good with water, steam, dilute acids and alkalis; poor with oils and hydrocarbons</td><td>CIP/SIP, dairy, food, water-based pharma media</td></tr>
+        <tr><td>Silicone</td><td>−60°C to +200°C</td><td>Good for occasional steam; degrades with prolonged steam</td><td>Broad inertness; attacked by strong acids, alkalis and solvents</td><td>Wide-temperature pharma duty, USP Class VI applications</td></tr>
+        <tr><td>Viton (FKM)</td><td>−20°C to +200°C</td><td>Poor with sustained steam and hot water</td><td>Excellent — oils, fuels, mineral acids, many solvents</td><td>Chemical resistance where hygiene meets aggressive media</td></tr>
+        <tr><td>PTFE</td><td>−200°C to +260°C</td><td>Very good with steam; cold flow under load</td><td>Outstanding — virtually inert, resists almost everything</td><td>Aggressive chemicals at high temperature; FDA-compliant per 21 CFR 177.1550</td></tr>
+      </tbody>
+    </table>
+    <p>The practical consequences: for a dairy or food line that is CIP'd and steam-sterilized, EPDM is the default. For a pharmaceutical reactor gasket that must pass USP Class VI and survive moderate temperatures, silicone is common. For a hygienic line carrying aggressive chemicals — a hybrid duty that happens more often than catalogs suggest — Viton balances chemical resistance with reasonable temperature. For the most aggressive chemistries, PTFE is the fallback, but PTFE's cold flow means it must be designed as an encapsulated or supported gasket rather than a simple elastomer seal. When in doubt, specify the worst combination — maximum temperature with maximum pressure plus the actual media — and let the supplier confirm the gasket; that single decision prevents most premature seal failures.</p>
+
+    <h2 id="six-selection-questions">The 6 Selection Questions for a Sanitary Sight Glass</h2>
+    <p>Selection of a sanitary sight glass follows the same six-question logic as any sight glass — pressure, temperature, materials, glass, gasket and installation — but each question has a hygienic twist. Work through them in order.</p>
+    <p><strong>Q1: Pressure.</strong> What is the maximum operating pressure, and is there a vacuum? A sight glass must be rated for the worst case, and vacuum is the silent killer: atmospheric pressure pushing on the outside of the glass creates tensile stress that cracked or thin windows cannot survive. The SG-100 tri-clamp sight glass is rated from full vacuum (FV) to 230 psi (1.6 MPa), which covers CIP skids, tank jackets and most hygienic pipelines. Remember that allowable pressure falls as temperature rises — rate for the worst-case combination, not the best-case numbers.</p>
+    <p><strong>Q2: Temperature.</strong> What is the maximum sustained process temperature, and does the line see CIP or SIP cycling? The SG-100 with borosilicate glass is rated up to 572°F (300°C), but the more demanding question is thermal cycling: every CIP/SIP cycle heats and cools the window, and borosilicate to DIN 7080 is specified precisely because it survives that cycling. If the duty is purely low-temperature, soda lime glass is a cheaper option, but any steam or hot-water cleaning pushes you to borosilicate.</p>
+    <p><strong>Q3: Metal.</strong> 316L stainless steel is the sanitary default, with 304 acceptable for many food duties. For aggressive media, Hastelloy or duplex options exist. In pharmaceutical service, ASME BPE also governs the material: controlled-composition 316L with documented certification, and a specified surface finish. Ask for material certificates as part of the delivery — a sanitary sight glass without material traceability is hard to validate.</p>
+    <p><strong>Q4: Glass.</strong> Borosilicate glass to DIN 7080 is the default for sanitary sight glasses, and it is compatible with USP Class VI pharmaceutical duty and CIP/SIP cycling. Verify the media against the two blind spots of borosilicate: hydrofluoric acid and hot concentrated alkali. Soda lime is only for low-temperature, non-aggressive, non-CIP duty. A full engineering comparison of glass types is in our guide to <a href="/blog/sight-glass-glass-types/">sight glass glass types</a>.</p>
+    <p><strong>Q5: Gasket.</strong> Match the gasket to the media and the cleaning regime, not to habit: EPDM for steam and water-based CIP, silicone for USP Class VI pharma duty, Viton where chemical resistance matters, PTFE for aggressive chemistry. Gasket temperature rating must cover the sterilization cycle, not just the process temperature — a 150°C process with a 121°C SIP cycle is fine for EPDM, but a 200°C process needs silicone, Viton or PTFE.</p>
+    <p><strong>Q6: Installation.</strong> Confirm the tri-clamp size (ferrule OD, not just tube size), the orientation — mount so the bore is self-draining and the glass can be inspected and cleaned — and access for maintenance. For processes where condensation or fogging hides the view, specify the optional heated window option on the SG-100. And decide whether you need OEM customization — bore dimensions, special ferrules, brand marking — since the SG-100 is available with full <a href="/services/oem-odm/">OEM/ODM customization</a>. The complete decision framework, including a decision table, is in our <a href="/blog/how-to-choose-a-sight-glass/">6-question selection guide</a>.</p>
+
+    <h2 id="applications">Where Sanitary Sight Glasses Are Used</h2>
+    <p><strong>Pharmaceutical and biotech.</strong> In pharmaceutical processing, the sight glass is a validation-relevant component: it sits in product-contact service, must be CIP/SIP compatible, and its gaskets must pass USP Class VI. Bioreactors, buffer tanks, media preparation vessels and filling lines all use them, and ASME BPE compliance is increasingly required. Operators use the window to verify mixing, foaming, level and cleaning effectiveness — often the only way to confirm a spray ball actually reached the surface. See the <a href="/applications/pharmaceutical/">pharmaceutical application page</a> for the full requirement picture.</p>
+    <p><strong>CIP and SIP systems.</strong> Cleaning and sterilization skids are among the harshest environments a sight glass sees: hot caustic, hot acid, rinse water and steam, cycling every cleaning event. The dead-space-free design matters here most — a crevice that CIP cannot reach becomes a permanent contamination source. Borosilicate glass and EPDM gaskets are the standard pairing, with the glass chosen for thermal shock endurance rather than raw temperature.</p>
+    <p><strong>Brewing.</strong> Breweries use sanitary sight glasses on fermenters, bright tanks, yeast propagation vessels and transfer lines to check yeast activity, krausen, clarity and transfer progress. The duty is food-contact (FDA 21 CFR), often 3A-oriented, with CIP cleaning between batches — a classic EPDM-plus-borosilicate application. Where clear beer makes a static window useless for flow verification, a <a href="/products/sight-flow-indicators/">sight flow indicator</a> with a flapper or rotary element adds visible movement.</p>
+    <p><strong>Food and dairy.</strong> Dairy plants — the original home of 3A standards — use sight glasses on pasteurizers, HTST skids, milk tanks and CIP returns. Food processing uses them on sauces, syrups, edible oils and beverage lines to watch color, level, foaming and sedimentation. The complete requirement set for food and beverage duty is on the <a href="/applications/food-beverage/">food &amp; beverage application page</a>. Across all of these, the same principle applies: the sight glass is a cheap, passive, always-available verification tool that no sensor replaces.</p>
+
+    <h2 id="common-mistakes">Common Mistakes to Avoid</h2>
+    <ul>
+      <li><strong>Using an industrial sight glass on a hygienic line.</strong> A standard industrial unit has crevices, rough surfaces and non-FDA gaskets — it will fail cleaning validation even if it holds pressure perfectly.</li>
+      <li><strong>Ignoring the vacuum rating.</strong> A line that pulls vacuum on a sight glass rated for pressure only is a crack waiting to happen; specify full vacuum explicitly.</li>
+      <li><strong>Rating temperature without the cleaning cycle.</strong> The gasket and glass must survive SIP, which can be hotter than the process — and they must survive the repeated cycling, not just one excursion.</li>
+      <li><strong>Choosing the gasket by habit.</strong> EPDM is not a universal answer; oils kill it, prolonged steam kills silicone, and aggressive chemicals need Viton or PTFE.</li>
+      <li><strong>Ordering the wrong clamp size.</strong> Tri-clamp size follows ferrule OD, and one clamp size covers several tube sizes — measure the ferrule, not the tube.</li>
+      <li><strong>Over-tightening the clamp.</strong> Distorted gaskets extrude into the bore and create dead pockets; on a sight glass, excess torque also stresses the glass.</li>
+      <li><strong>Treating the glass as a permanent part.</strong> Windows are consumables: thermal cycling, chemical attack and mechanical load all shorten window life. Inspect on a schedule and keep spares.</li>
+      <li><strong>Specifying surface finish without verifying it.</strong> "Electropolished" on a datasheet is not a measurement — ask for the Ra value and the finish report when the application demands it.</li>
+      <li><strong>Assuming every "sanitary" sight glass is interchangeable.</strong> Compliance claims differ between suppliers; for pharma, demand the USP Class VI and BPE documentation in writing.</li>
+      <li><strong>Buying the biggest window available.</strong> Larger windows need thicker glass for the same pressure rating and cost more — size the window to the inspection task.</li>
+    </ul>
+
+    <h2 id="faq">Sanitary Sight Glass FAQ</h2>
+    <details><summary>What is a sanitary sight glass?</summary><p>A sanitary sight glass is a pressure-rated transparent inspection window designed for hygienic process equipment — pharmaceutical, biotech, food, dairy and beverage lines. It combines a polished, crevice-free metal body, a borosilicate glass window, and FDA/USP Class VI-compliant gaskets so it can be cleaned in place and sterilized in place without harboring bacteria.</p></details>
+    <details><summary>What is the difference between a sanitary and an industrial sight glass?</summary><p>The glass technology is the same; the difference is hygienic design. Sanitary sight glasses have smooth wetted surfaces (typically Ra 0.4–0.8 µm), dead-space-free geometry with flush glass and captured gaskets, FDA/USP Class VI-compliant gaskets, and are built for repeated CIP/SIP cycling. Industrial units are cheaper but have crevices and standard gaskets that fail cleaning validation.</p></details>
+    <details><summary>What does USP Class VI mean for a sight glass?</summary><p>USP Class VI refers to the highest classification in USP &lt;88&gt;, the biological reactivity tests for plastics and elastomers used in pharmaceutical contact. A USP Class VI gasket has shown no significant biological reaction in tissue and implant tests, which is why it is required for drug-contact service.</p></details>
+    <details><summary>What temperature and pressure can a tri-clamp sanitary sight glass handle?</summary><p>The SG-100 tri-clamp sight glass is rated up to 572°F (300°C) and from full vacuum to 230 psi (1.6 MPa). As with any sight glass, allowable pressure decreases as temperature rises, so the rating must be confirmed against the worst-case combination of temperature, pressure and vacuum.</p></details>
+    <details><summary>Which gasket should I choose for steam and CIP-SIP duty?</summary><p>EPDM is the standard choice for steam, hot water and CIP/SIP — it has excellent steam resistance up to about 150°C. Silicone suits USP Class VI pharmaceutical duty but degrades with prolonged steam, Viton suits chemical resistance but not sustained steam, and PTFE suits aggressive chemicals at high temperature with the caveat of cold flow.</p></details>
+    <details><summary>What sizes do sanitary tri-clamp sight glasses come in?</summary><p>The SG-100 covers 1/2" to 12" (DN15 to DN300). Note that the tri-clamp size follows the ferrule outside diameter, not the tube size — for example 1/2" to 1-1/2" tube typically uses a 50.5 mm ferrule and a 1.5" clamp. Confirm the ferrule OD of your line before ordering.</p></details>
+    <details><summary>Can a sanitary sight glass be used on a food or dairy line?</summary><p>Yes — with FDA 21 CFR-compliant gaskets (such as 21 CFR 177.2600 rubber or 21 CFR 177.1550 PTFE) and a cleanable, crevice-free design, which is exactly what the SG-100 provides. Dairy and food plants typically also reference 3A Sanitary Standards in their equipment requirements.</p></details>
+    <details><summary>Is the glass window replaceable?</summary><p>Yes. The window and gaskets are serviceable consumables by design. Keep spares on site and replace them per your inspection schedule — inspecting for cracks, chips and clouding after each cleaning cycle is the single most effective way to extend sight glass life and avoid unplanned failure.</p></details>
+  </BlogPostTemplate>
+
+  <CtaBand
+    title="Specify the Right Sanitary Sight Glass"
+    subtitle="Send your pressure, temperature, media, line size and cleaning regime — our engineers confirm the correct tri-clamp sight glass, gasket and surface finish and quote within 24 hours, factory-direct."
+  />
+</Layout>
