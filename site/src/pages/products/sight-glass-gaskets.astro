@@ -1,0 +1,267 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Gaskets | Replacement Gaskets - EPDM, FKM, PTFE';
+const description = 'SIGHTSPEC replacement sight glass gaskets for SG-100/200/300/400 series: EPDM, silicone, Viton/FKM, PTFE and graphite-reinforced. Temperature and chemical compatibility, 1/2"-12" tri-clamp, 1/4"-3" threaded, 2"-8" flanged. Factory-direct pricing, low MOQ.';
+
+const matRows = [
+  { mat: 'EPDM', temp: '-40F to 300F (-40C to 150C)', good: 'Hot water, steam, dilute acids and alkalis, weather and ozone resistance', avoid: 'Petroleum oils, fuels, aromatic hydrocarbons' },
+  { mat: 'Silicone', temp: '-60F to 400F (-50C to 205C)', good: 'Food and pharma duty, wide temperature window, low-temperature flexibility', avoid: 'Steam, concentrated acids, petroleum oils, most solvents' },
+  { mat: 'Viton/FKM', temp: '-15F to 400F (-25C to 205C)', good: 'Oils, fuels, lubricants, mineral acids, aromatic hydrocarbons', avoid: 'Hot water and steam, amines, some ketones and esters' },
+  { mat: 'PTFE', temp: '-100F to 500F (-75C to 260C)', good: 'Near-universal chemical resistance, non-stick, low friction, food-contact grades', avoid: 'Molten alkali metals and some fluorinated media at high temperature; cold flow under load needs controlled torque' },
+  { mat: 'Graphite-reinforced', temp: '-400F to 850F (-240C to 450C)', good: 'Steam, high-temperature process duty, thermal cycling', avoid: 'Strong oxidizers; requires higher seating load than elastomers' },
+];
+
+const sizeRows = [
+  { series: 'SG-100 tri-clamp', conn: 'Sanitary tri-clamp', sizes: '1/2"-12" (DN15-DN300)' },
+  { series: 'SG-200 sight flow indicators', conn: 'Tri-clamp, threaded, flanged or weld', sizes: 'Sizes follow the indicator model' },
+  { series: 'SG-300 threaded', conn: 'Male NPT / BSP', sizes: '1/4"-3"' },
+  { series: 'SG-400 flanged', conn: 'ANSI B16.5 Class 150/300, DIN PN10-PN40', sizes: '2"-8" (DN50-DN200)' },
+];
+
+const orderRows = [
+  { item: 'Sight glass model', what: 'SG-100, SG-200, SG-300 or SG-400 - or the part number stamped on the body' },
+  { item: 'Connection and size', what: 'Tri-clamp size, thread size (NPT/BSP) or flange standard, class and size' },
+  { item: 'Media', what: 'Process fluid and concentration, e.g. 30% caustic, hot lube oil, CIP solution' },
+  { item: 'Temperature', what: 'Normal operating temperature plus maximum excursion' },
+  { item: 'Pressure', what: 'Normal and maximum working pressure, including surges' },
+  { item: 'Quantity', what: 'Standard MOQ applies; mixed sizes can be combined on one order' },
+];
+
+const specRows = [
+  { param: 'Gasket materials', options: 'EPDM, silicone, Viton/FKM, PTFE, graphite-reinforced' },
+  { param: 'Temperature range', options: 'Material-dependent; from -400F (-240C) to 850F (450C) across the range' },
+  { param: 'Fits series', options: 'SG-100, SG-200, SG-300 and SG-400 sight glasses' },
+  { param: 'Tri-clamp sizes', options: '1/2"-12" (DN15-DN300)' },
+  { param: 'Threaded sizes', options: '1/4"-3" NPT / BSP' },
+  { param: 'Flanged sizes', options: '2"-8" (DN50-DN200), ANSI Class 150/300 and DIN PN10-PN40' },
+  { param: 'MOQ', options: 'Low MOQ on standard sizes; mixed sizes per order accepted' },
+  { param: 'OEM marking', options: 'Printed or laser marking with brand, part number, size and material grade' },
+  { param: 'Packaging', options: 'Individually sealed and labeled; bulk cartons for wholesale and maintenance kits' },
+];
+
+const faqs = [
+  { q: 'How do I know which gasket material my sight glass needs?', a: 'Start with three facts: the sight glass model and size, the process media, and the operating temperature. Match the media and temperature against the compatibility table above, then confirm with our technical team - they will check the recommendation against the original datasheet before you order.' },
+  { q: 'Can I replace the gasket without replacing the glass?', a: 'Usually yes - the gasket is the service item and the glass is often still sound. Before reusing a window, inspect it for chips, cracks or etch marks on the sealing edge; if the glass is damaged, replace both together so the new seal seats on a clean surface.' },
+  { q: 'What is the MOQ for gaskets?', a: 'Standard sizes carry a low MOQ, and you can combine several sizes on one order. If you maintain a fleet of sight glasses, ask about maintenance kits that bundle the common sizes and materials for your line - they keep spares on the shelf at a better unit price.' },
+  { q: 'My gasket keeps extruding into the bore. What is wrong?', a: 'Extrusion usually means the material is too soft for the temperature and pressure, the gasket is oversized for the bore, or the sealing faces are worn and leave too large a gap. Check the material against the compatibility table, verify the gasket matches your sight glass size, and inspect the seating faces for scoring.' },
+  { q: 'Can you supply gaskets for other brands of sight glasses?', a: 'Yes, through our OEM/ODM program. Send the sight glass model, connection size and a photo or dimensions of the old gasket - we match the bore, thickness and material to your unit and can mark the replacement with your part number or brand.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Sight Glass Gaskets</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / ACCESSORIES &amp; SPARES</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Sight Glass Gaskets</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">The gasket is the highest-wear component in any sight glass assembly - the sealing ring that holds the window against the body and the body against your piping. SIGHTSPEC supplies matched replacement gaskets for the SG-100, SG-200, SG-300 and SG-400 series, cut and molded to the original dimensions in EPDM, silicone, Viton/FKM, PTFE and graphite-reinforced grades.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">All Sight Glass Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Why Sight Glass Gaskets Wear Out First</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A sight glass carries two seals: one between the glass and the body, and one between the body and the pipe connection. Both are gaskets, and both age faster than the glass or the metal around them. Elastomers lose flexibility as heat drives out plasticizers, PTFE cold-flows under sustained load, and graphite can crack under repeated thermal cycling - which is why a gasket replacement is the standard maintenance action long before the window itself needs attention.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Fitting a gasket matched to the original bore and material matters: an oversized gasket bulges into the viewing area, an undersized one leaves a crevice where media can collect, and the wrong compound fails quickly. Replacement gaskets are available for the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a>, <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicators</a>, <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-300 threaded sight glasses</a> and <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-400 flanged sight glasses</a>.</p>
+    </div>
+  </section>
+
+  <!-- Material compatibility -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MATERIALS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Gasket Materials: Temperature &amp; Chemical Compatibility</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Choose the compound by the media and the temperature, not by habit. The table below shows typical published service ranges and the chemical families each material handles well - and the ones it does not. Compatibility at full concentration, elevated temperature and continuous duty should always be confirmed against the original sight glass datasheet.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Material</th>
+              <th class="px-5 py-4 font-semibold">Typical Temperature Range</th>
+              <th class="px-5 py-4 font-semibold">Well Suited To</th>
+              <th class="px-5 py-4 font-semibold">Avoid With</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {matRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.mat}</td>
+                <td class="px-5 py-4 text-slate-600">{r.temp}</td>
+                <td class="px-5 py-4 text-slate-600">{r.good}</td>
+                <td class="px-5 py-4 text-slate-600">{r.avoid}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Ranges are typical published values for gasket compounds and derate at the top end under continuous pressure. EPDM and Viton/FKM cover most industrial water, steam and hydrocarbon duty; silicone suits hygienic lines; PTFE is the fallback for aggressive chemical service; graphite-reinforced grades carry the high-temperature steam and process work. When in doubt, send the media and temperature to our technical team before ordering.</p>
+    </div>
+  </section>
+
+  <!-- Failure modes -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAILURE MODES</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">How a Sight Glass Gasket Fails</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Catching a failing gasket early prevents a leak, a broken window or a process interruption. Three failure patterns account for most gasket replacements:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Extrusion</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Softening under pressure</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">At high temperature and pressure, a softened gasket squeezes into the gap between the glass and the bore. Look for a lip or ridge at the inner edge and media staining around it - extrusion is usually followed by leakage past the sealing face.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Hardening &amp; Cracking</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Heat aging</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Heat drives plasticizers out of elastomers over time. The gasket stiffens, loses its ability to recover, and develops surface cracks at the glass interface. A hardened gasket also needs more torque to seal, which can over-stress the window.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Chemical Attack</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Incompatible media</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Incompatible media swell, soften, discolor or disintegrate the compound. Swelling bulges the gasket into the view area, softening can end in blowout under pressure, and attack at the inner edge is usually the first visible sign.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Any of these signs means the gasket has reached end of service. Replace it with the correct compound for the media and temperature - and inspect the window and seating faces while the unit is open, since a damaged surface will shorten the life of the new gasket.</p>
+    </div>
+  </section>
+
+  <!-- Ordering guide -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">ORDERING</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">How to Order the Right Gasket</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Four pieces of information define a sight glass gasket completely: the sight glass model, the connection size, the media, and the temperature. Provide all four and we supply a gasket matched to the original bore and material.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">You Provide</th>
+              <th class="px-5 py-4 font-semibold">What It Determines</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {orderRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.item}</td>
+                <td class="px-5 py-4 text-slate-600">{r.what}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">If the original gasket is marked, read the size and material off its edge - most SIGHTSPEC gaskets carry a part reference. If you are replacing a gasket from another manufacturer's sight glass, send a photo of the old gasket and we will match it. Questions about media compatibility are covered in our <a href="/faq/" class="font-semibold text-brand-blue transition hover:underline">FAQ</a>; for an exact match on unusual media, contact our <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">technical team</a> with the details.</p>
+    </div>
+  </section>
+
+  <!-- Fitting guide -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">REPLACEMENT GUIDE</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Fitting &amp; Replacing a Sight Glass Gasket</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Gasket replacement is a routine maintenance job, but the seal is only as good as the preparation. Follow these steps in order:</p>
+      <ol class="mt-6 max-w-3xl list-decimal space-y-3 pl-5 text-base leading-relaxed text-slate-600">
+        <li><span class="font-semibold text-navy-950">Isolate and depressurize</span> the line, then drain it. Confirm zero pressure before loosening anything.</li>
+        <li><span class="font-semibold text-navy-950">Remove the sight glass</span>: open the tri-clamp, unbolt the flanges, or unscrew the threaded body.</li>
+        <li><span class="font-semibold text-navy-950">Remove the old gasket</span> and clean the sealing faces with a lint-free cloth and a plastic scraper. Inspect the glass edge for chips or cracks.</li>
+        <li><span class="font-semibold text-navy-950">Verify the replacement</span> against the order: model, connection size, material and bore must match before fitting.</li>
+        <li><span class="font-semibold text-navy-950">Fit the new gasket</span> and align its bore with the window opening. Do not stretch a flat gasket to force it; it should seat without distortion.</li>
+        <li><span class="font-semibold text-navy-950">Reassemble evenly</span>: tighten tri-clamp bands and threaded connections progressively, and flange bolts in a cross pattern to seat the gasket evenly.</li>
+        <li><span class="font-semibold text-navy-950">Pressure test</span> at line pressure and check for weep at the gasket lines before returning the unit to service.</li>
+      </ol>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Torque matters more than it looks: too little and the gasket does not seat, too much and it extrudes or over-stresses the glass. Re-torque flanged assemblies after the first thermal cycle, when the gasket has taken its initial set.</p>
+    </div>
+  </section>
+
+  <!-- Size availability -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SIZE AVAILABILITY</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Gaskets Across the SG-100/200/300/400 Range</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Replacement gaskets follow the connection families of the four sight glass series. The same gasket material range is available in every size listed below.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Series</th>
+              <th class="px-5 py-4 font-semibold">Connection</th>
+              <th class="px-5 py-4 font-semibold">Sizes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {sizeRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.series}</td>
+                <td class="px-5 py-4 text-slate-600">{r.conn}</td>
+                <td class="px-5 py-4 text-slate-600">{r.sizes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Sizes outside these ranges are available through the OEM/ODM program, where the gasket is cut or molded to the bore of a custom sight glass. See the <a href="/products/" class="font-semibold text-brand-blue transition hover:underline">full product range</a> for the sight glass assemblies these gaskets fit.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Sight Glass Gasket Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For distributors and maintenance programs, OEM marking is available: gaskets can be printed or laser-marked with your brand, part number, size and material grade, and packed as sealed, labeled spares with lot traceability. This is a recurring-purchase line - standard sizes are stocked for repeat orders, so maintenance teams can keep spares on the shelf rather than waiting on lead times.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Sight Glass Gasket Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need the Right Gasket for Your Sight Glass?"
+    subtitle="Send your sight glass model, connection size, media and operating temperature - get a matched gasket recommendation, datasheet and factory-direct quotation within 24 hours."
+  />
+</Layout>

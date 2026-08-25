@@ -1,0 +1,226 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Weld-In Sight Glasses | Butt-Weld Sight Glass for Vessels & Piping';
+const description = 'SIGHTSPEC weld-in sight glasses: permanent viewing windows welded directly into vessel walls, tanks, pipes and equipment with a butt-weld ferrule or socket-weld. 316 SS, Hastelloy or carbon steel bodies, borosilicate DIN 7080 windows, rated up to 100 bar class. Factory-direct pricing.';
+
+const compareRows = [
+  { feature: 'Connection to vessel', weld: 'Welded ferrule - permanent part of the pressure boundary', bolt: 'Bolted cover over an existing vessel opening', flange: 'Bolted between two pipe flange faces' },
+  { feature: 'Gasketed joint to vessel', weld: 'None', bolt: 'Gasket under the cover plate', flange: 'Two gasketed faces' },
+  { feature: 'Installation', weld: 'Welding plus post-weld inspection', bolt: 'Bolt-up only, no hot work', flange: 'Bolt-up only, no hot work' },
+  { feature: 'Removal and service', weld: 'Ferrule stays in the vessel; window and seal serviced in place', bolt: 'Cover unbolted for full access', flange: 'Unit unbolted from the line' },
+  { feature: 'Pressure suitability', weld: 'High - no joint to leak; limited by vessel design and window size', bolt: 'Moderate - gasket and bolting dependent', flange: 'Limited by the flange class' },
+  { feature: 'Best for', weld: 'Pressure vessels, reactors, boiler drums, steam lines', bolt: 'Tanks with bolted manways or covers', flange: 'Chemical and oil &amp; gas piping' },
+];
+
+const specRows = [
+  { param: 'Connection', options: 'Butt-weld ferrule or socket-weld, prepared to the vessel wall thickness and weld detail' },
+  { param: 'Window bore', options: 'Specified per vessel - typical range 1"-6" (DN25-DN150); larger diameters on request' },
+  { param: 'Body material', options: '316 stainless steel standard; Hastelloy or carbon steel options' },
+  { param: 'Glass', options: 'Borosilicate to DIN 7080 standard; soda lime or fused quartz options' },
+  { param: 'Temperature', options: 'Up to 572F (300C) with borosilicate; higher with quartz' },
+  { param: 'Pressure', options: 'Up to 100 bar (1450 psi) class, application-dependent on size, glass thickness and ferrule design' },
+  { param: 'Seals', options: 'PTFE, FKM or graphite-reinforced, matched to media and temperature' },
+  { param: 'Welding', options: 'Ferrule supplied ready for butt-weld or socket-weld; weld per approved WPS with post-weld inspection' },
+  { param: 'Options', options: 'Glass shields, illumination, drain/vent ports, material certificates, OEM marking' },
+];
+
+const faqs = [
+  { q: 'What is the difference between a weld-in and a flanged sight glass?', a: 'A weld-in sight glass is welded directly into a prepared opening, so there is no gasketed joint between the unit and the vessel - the ferrule becomes part of the pressure boundary. A flanged sight glass bolts between two flange faces and can be removed for line maintenance. Choose weld-in where permanence, high pressure or steam duty matters; choose flanged where the unit must come out of the line - see our flanged sight glasses for the bolted alternative.' },
+  { q: 'How is the glass replaced if it cracks or etches?', a: 'The welded ferrule stays in the vessel; the window and its seal are serviced from the front of the unit. The retaining ring is released, the glass and gasket are removed, and a new window is fitted with fresh seals - no cutting of the weld is required. Treat the glass as a consumable and inspect it during routine maintenance for chips, cracks or etching.' },
+  { q: 'What pressure can a weld-in sight glass handle?', a: 'SIGHTSPEC weld-in units are rated up to 100 bar (1450 psi) class. The practical rating of any installation depends on the window bore, glass thickness, ferrule design and the vessel wall it is welded into - and the weld itself must be made and inspected to the applicable vessel code. Confirm your size, pressure and temperature with the factory datasheet before specifying.' },
+  { q: 'Are weld-in sight glasses suitable for steam and boiler drum service?', a: 'Yes - this is one of the strongest applications for the weld-in design, because the welded connection removes the gasket that usually limits bolted sight glass life in steam service. Borosilicate or quartz windows with graphite-reinforced seals and a 316 SS or carbon steel ferrule are typical. See our steam applications page for guidance, and confirm the temperature rating of the window and seal against your drum conditions.' },
+  { q: 'Can you supply weld ferrules for OEM vessel fabrication?', a: 'Yes. We supply loose weld ferrules, complete units ready to weld, and OEM-marked versions with material certificates and weld preparation to your drawing. The ferrule is welded by your fabricator under your approved WPS; we provide the weld detail and installation data. Send us your opening size, wall thickness and service conditions through our contact page and we will confirm the configuration.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Weld-In Sight Glasses</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / WELD-IN SERIES</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Weld-In Sight Glasses</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A weld-in sight glass is a permanent viewing window welded directly into a vessel wall, tank, pipe or piece of equipment. With a butt-weld ferrule or socket-weld connection there is no gasketed joint to the vessel - the window becomes part of the pressure boundary, which makes the weld-in design a first choice for high-pressure, steam and services where leakage must be minimized. SIGHTSPEC supplies weld-in sight glasses in 316 stainless steel, Hastelloy or carbon steel, with borosilicate, soda lime or quartz windows rated up to 100 bar class.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/flanged-sight-glasses/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Compare Flanged Sight Glasses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Is a Weld-In Sight Glass?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A weld-in sight glass - also called a weld-on or welded sight glass - is a viewing window whose body ends in a ferrule that is welded into a prepared opening in the vessel, tank, pipe or equipment. There is no gasketed joint between the sight glass and the vessel: once the weld is made and inspected, the unit is part of the pressure boundary. Nothing to loosen, no gasket to age, no joint to leak - which is exactly why the weld-in design is specified for high-pressure systems, steam service and any duty where leakage must be minimized.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The trade-off is permanence. Installation requires welding and post-weld inspection rather than a simple bolt-up, and the ferrule cannot simply be unbolted for removal. The window assembly itself stays serviceable: glass is a consumable component and is replaced from the front of the welded ferrule during maintenance, while the ferrule remains welded in place.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Weld-in units are the natural choice when a vessel is being fabricated or when an existing opening can be prepared, because the ferrule is welded by the vessel fabricator under the same approved welding procedure as the rest of the shell. That keeps the whole pressure boundary on one consistent weld specification.</p>
+    </div>
+  </section>
+
+  <!-- Weld preparation and installation -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WELDING &amp; INSTALLATION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Weld Preparation, Installation and Post-Weld Inspection</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Two ferrule styles cover the majority of weld-in installations. A <strong>butt-weld ferrule</strong> forms a full-penetration joint into the shell and is preferred for pressure vessels and high-pressure piping, where weld strength and a smooth internal bore matter. A <strong>socket-weld</strong> ferrule suits smaller sizes and simpler fit-up, but the socket leaves an internal gap that is not recommended where severe thermal cycling or crevice corrosion is a concern.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Installation follows standard pressure-system practice: the opening is cut to the drawing, the bevel is prepared to match the ferrule, the ferrule is tacked and then welded by a qualified welder under an approved WPS. For stainless pipe and vessel work, an orbital welding option produces consistent, repeatable autogenous welds with minimal heat input.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Post-weld inspection is part of the delivery: the weld is visually inspected, and non-destructive examination (penetrant or radiography) is carried out where the vessel code or client specification requires it, followed by pressure testing with the vessel. Where the fabrication code demands it, post-weld heat treatment is applied before testing. Because the unit becomes part of pressure equipment, code compliance - for example PED in Europe - is assessed together with the vessel fabricator, not by the sight glass alone.</p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MOUNTING OPTIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Weld-In vs Bolt-On vs Flanged: Which Connection?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The connection determines how the sight glass is installed, how it is serviced, and how much pressure it can safely hold. The table below compares the three dominant mounting styles.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Feature</th>
+              <th class="px-5 py-4 font-semibold">Weld-In</th>
+              <th class="px-5 py-4 font-semibold">Bolt-On</th>
+              <th class="px-5 py-4 font-semibold">Flanged</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {compareRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.feature}</td>
+                <td class="px-5 py-4 text-slate-600">{r.weld}</td>
+                <td class="px-5 py-4 text-slate-600">{r.bolt}</td>
+                <td class="px-5 py-4 text-slate-600">{r.flange}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">No single connection wins everywhere. Weld-in is chosen where permanence and leak-tightness outweigh serviceability; bolt-on units suit vessels with existing bolted openings; flanged units fit standard piping spools. See our <a href="/products/bolt-on-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">bolt-on sight glasses</a> and <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">flanged sight glasses</a> pages for the bolted alternatives, or browse the full range on the <a href="/products/" class="font-semibold text-brand-blue transition hover:underline">products overview</a>.</p>
+    </div>
+  </section>
+
+  <!-- Materials -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MATERIALS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Ferrule and Body Materials: 316 SS, Hastelloy &amp; Carbon Steel</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The ferrule material should match the vessel or piping it is welded into, so the weld joint behaves as one metallurgical system. Three materials cover the standard range:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">316 Stainless Steel</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Standard</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The default ferrule material: good corrosion resistance across most process media, a wide service temperature range, and metallurgical compatibility with stainless vessels and piping. The standard choice for process, steam and chemical duty.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Hastelloy</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Aggressive media</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Specified for aggressive chemicals, chlorides and high-temperature acids where 316 stainless is attacked. Matched to the vessel material so the weld joint properties stay consistent across the pressure boundary.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Carbon Steel</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Utility &amp; boiler duty</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The economical choice for utility, boiler and oil &amp; gas service where stainless is not required and the vessel itself is carbon steel. Typically paired with graphite-reinforced seals for steam and higher-temperature duty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glass selection -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS SELECTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Glass by Temperature: Borosilicate, Soda Lime &amp; Quartz</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Service temperature is the first question when choosing a window material for a welded installation - the window must outlast the vessel between maintenance windows. Three glass options are offered:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Soda Lime Glass</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~250F (120C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The economical choice for cold water, air and utility duties where thermal shock is not a concern. Not recommended for steam, hot process media or rapid temperature swings.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Borosilicate (DIN 7080)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to 572F (300C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The process workhorse: chemically resistant, thermally stable and resistant to thermal shock. This is the default window for weld-in sight glasses in chemical, steam and most industrial service.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Quartz (Fused Silica)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~1832F (1000C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">For boiler, furnace and high-temperature duty where borosilicate softens. Quartz also offers superior thermal-shock resistance for demanding cycling service.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Note that the ferrule material and seal may limit the assembly before the glass does - match all three components to your service temperature. On high-temperature weld-in builds, 316 SS or carbon steel ferrules are typically paired with graphite-reinforced seals and borosilicate or quartz windows.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Weld-In Sight Glass Specifications</h2>
+      <p class="mt-4 max-w-3xl text-base text-slate-600">Standard ratings follow published weld-in sight glass practice. Confirm the final window, seal and ferrule selection against your media, temperature and pressure - and against the vessel design - before ordering.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">* Ratings are application-dependent - glass is a consumable component and should be inspected during routine maintenance. Weld integrity and vessel code compliance are the responsibility of the fabricator under the approved WPS. Contact the factory for the current datasheet.</p>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">APPLICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Where Weld-In Sight Glasses Are Specified</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Pressure vessels and reactors are the core duty. A welded window on a reactor head or shell gives operators a direct view of level, color, foaming, carryover, crystallization and phase separation without adding a single gasketed joint to the vessel. In <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue transition hover:underline">chemical processing</a>, weld-in units are fitted at agitator levels, on reactor side walls and on heat-exchanger returns where the process must stay sealed.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Boiler drums and steam lines are another natural fit. The welded connection removes the gasket that usually limits bolted sight glass life in steam service, and the smooth welded bore resists the pitting and crevice attack that threaded or bolted joints invite. See our <a href="/applications/steam/" class="font-semibold text-brand-blue transition hover:underline">steam applications</a> page for typical drum, header and condensate installations.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">In <a href="/applications/oil-gas/" class="font-semibold text-brand-blue transition hover:underline">oil &amp; gas</a> and utility piping, weld-in sight glasses verify flow and liquid presence on lines that must not leak. For in-line flow verification on smaller welded lines, the <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicators</a> offer a weld mounting option with flapper, rotor and ball internals; where a small-bore threaded boss is preferred, our <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">threaded sight glasses</a> cover that path. Not sure which connection fits your vessel? <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">Send us your drawing</a> and we will recommend the right model.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Weld-In Sight Glass Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-500">More questions about ordering, lead times and documentation? Read our <a href="/faq/" class="font-semibold text-brand-blue transition hover:underline">general FAQ</a>.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Specifying a Weld-In Sight Glass?"
+    subtitle="Send your vessel wall thickness, opening size, media, pressure and temperature - get a weld detail, datasheet and factory-direct quotation within 24 hours."
+  />
+</Layout>

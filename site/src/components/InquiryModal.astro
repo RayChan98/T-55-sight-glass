@@ -12,7 +12,7 @@ const productOptions = [
   'Other',
 ];
 const qtyOptions = ['1-10 pcs (Sample)', '10-50 pcs', '50-500 pcs', '500+ pcs (Bulk)', 'Not sure yet'];
-const appOptions = ['Pharmaceutical / Biotech', 'Food & Beverage', 'Brewery / Distillery', 'Chemical Processing', 'Oil & Gas / Petrochem', 'Power / Steament', 'Other'];
+const appOptions = ['Pharmaceutical / Biotech', 'Food & Beverage', 'Brewery / Distillery', 'Chemical Processing', 'Oil & Gas / Petrochem', 'Power / Steam', 'Other'];
 const colorOptions = ['Borosilicate (DIN 7080)', 'Soda Lime Glass', 'Quartz / Sapphire', 'Fused (METAGLAS style)', 'Stainless Steel 304', 'Stainless Steel 316L', 'Not sure'];
 const connectOptions = ['Tri-Clamp (Sanitary)', 'Threaded NPT', 'Threaded BSP', 'Flanged ANSI', 'Flanged DIN', 'Weld-On / Bolt-On', 'Custom', 'Not sure'];
 const roleOptions = ['End User', 'Distributor / Wholesaler', 'OEM / Equipment Builder', 'System Integrator', 'Other'];
@@ -78,7 +78,7 @@ const roleOptions = ['End User', 'Distributor / Wholesaler', 'OEM / Equipment Bu
           </select>
         </div>
         <div>
-          <label for="modal-color" class="mb-1.5 block text-sm font-medium text-navy-950">Output Signal</label>
+          <label for="modal-color" class="mb-1.5 block text-sm font-medium text-navy-950">Glass / Material</label>
           <select id="modal-color" name="output_signal" class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20">
             {colorOptions.map((o) => <option>{o}</option>)}
           </select>

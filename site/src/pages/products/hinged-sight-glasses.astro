@@ -1,0 +1,219 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Hinged Sight Glasses | Quick-Opening Sight Glass for Fast Access & Cleaning';
+const description = 'SIGHTSPEC hinged sight glasses: a swing-open cover on a hinge with quick-release clamp for fast glass cleaning, process inspection and window replacement without removing the housing. Sanitary tri-clamp or industrial bolted, borosilicate DIN 7080, 304/316L or carbon steel. Factory-direct pricing.';
+
+const versions = [
+  { feature: 'Mounting', sanitary: 'Tri-clamp ferrule, clamp-on', industrial: 'Bolted flange (ANSI / DIN)' },
+  { feature: 'Body metal', sanitary: '304 / 316L stainless steel', industrial: 'Carbon steel or 316 stainless steel' },
+  { feature: 'Sealing', sanitary: 'Captured hygienic gasket, dead-space-free', industrial: 'Captured gasket matched to media' },
+  { feature: 'Surface finish', sanitary: 'Hygienic finish; electropolish option for CIP/SIP', industrial: 'Machined finish; painted or coated on request' },
+  { feature: 'Typical use', sanitary: 'Pharmaceutical, food, dairy and brewery lines with daily CIP', industrial: 'Chemical, oil & gas, water and utility tanks and piping' },
+  { feature: 'Compliance', sanitary: 'USP Class VI / ASME BPE / FDA-compliant wetted materials', industrial: 'PED on request' },
+];
+
+const specRows = [
+  { param: 'Design', options: 'Hinged cover with quick-release clamp; glass and cover swing open as one assembly' },
+  { param: 'Mounting options', options: 'Sanitary tri-clamp (SG-100 body) or bolted flange (SG-400 body)' },
+  { param: 'Size range', options: 'Tri-clamp 1/2"-12" (DN15-DN300); flanged 2"-8" (DN50-DN200)' },
+  { param: 'Glass window', options: 'Borosilicate to DIN 7080 standard; soda lime or fused quartz options' },
+  { param: 'Body material', options: '304 / 316L stainless (sanitary); carbon steel or 316 stainless (industrial)' },
+  { param: 'Sealing', options: 'Captured gasket; dead-space-free hygienic seal on sanitary versions' },
+  { param: 'Temperature', options: 'Up to 572F (300C) with borosilicate; higher with quartz' },
+  { param: 'Pressure', options: 'Follows the mounting: tri-clamp full vacuum to 230 psi (1.6 MPa); flanged per flange class' },
+  { param: 'Compliance', options: 'USP Class VI / ASME BPE / FDA-compliant wetted materials (sanitary); PED on request (industrial)' },
+  { param: 'Options', options: 'Spare window kits, glass shields, illuminated light port, OEM marking' },
+];
+
+const faqs = [
+  { q: 'What is a hinged sight glass and when would I use one?', a: 'A hinged sight glass is a viewing window whose cover and glass assembly swings open on a hinge, held closed by a quick-release clamp instead of a full bolted closure. It gives you fast access to clean the glass, inspect the process or replace the window without removing the whole housing. It earns its place on lines with frequent CIP cycles, sticky or fouling media, and batch processes where the window needs regular attention.' },
+  { q: 'How does the hinge and quick-release clamp stay pressure-tight?', a: 'The cover closes onto a captured gasket and the quick-release clamp draws the two faces together with a consistent, repeatable load. Because the seal is a captured gasket, the assembly holds the same rating as the mounting - the tri-clamp version is rated from full vacuum to 230 psi (1.6 MPa) and the flanged version follows its flange class. Always confirm the clamp is fully engaged and the gasket is in good condition before pressurizing.' },
+  { q: 'Can I retrofit a hinged sight glass onto my existing connection?', a: 'In most cases, yes. The sanitary version clamps onto standard tri-clamp ferrules, so it drops into an existing clamp joint. The industrial version bolts between existing flanges and needs the same bore, bolt circle and rating as your line. Send us your mounting type, size and service conditions and we will confirm the correct hinged configuration for your installation.' },
+  { q: 'Which materials are available for sanitary food and pharma duty?', a: 'Sanitary hinged sight glasses are built in 304 or 316L stainless steel with a borosilicate DIN 7080 window and a captured hygienic gasket, in a dead-space-free design that suits CIP/SIP lines. Wetted materials are USP Class VI, ASME BPE-compliant and FDA-compliant. Gasket compounds can be matched to your media - PTFE, FKM or EPDM options cover most food, beverage and pharmaceutical duties.' },
+  { q: 'How often should the glass be replaced on a hinged sight glass?', a: 'The window is a wear item, not a permanent part. Inspect it during routine maintenance and replace it if you see chips, cracks, permanent etching or fogging that cleaning does not fix. The advantage of the hinged design is that replacement takes minutes: release the clamp, swing the cover open, swap the window and re-seal. Keeping a spare window kit on site minimizes downtime.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Hinged Sight Glasses</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / QUICK-OPENING LINE</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Hinged Sight Glasses</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A hinged sight glass is a viewing window whose cover and glass assembly swings open on a hinge, held closed by a quick-release clamp. Release the clamp and the window opens in seconds - clean the glass, check the process or swap the window without removing the whole housing. That makes it the practical choice for frequent CIP cycles, sticky and fouling media, and batch processes where a fixed window spends too much time being disassembled.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/tri-clamp-sight-glasses/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Sanitary Tri-Clamp Sight Glasses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Is a Hinged Sight Glass?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A hinged sight glass - also called a quick-opening sight glass - is a sight window built around a simple idea: the cover and glass plate pivot on a hinge, and a quick-release clamp holds them shut. On a conventional sight glass, cleaning the window or replacing the glass means unbolting the cover, lifting it clear and refitting a new gasket. On a hinged unit, one clamp releases the whole cover, which swings out of the way and leaves the full bore open for access.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The result is a viewport that is genuinely serviceable in the field. Operators can wipe down the glass between batches, inspect the process side directly, and replace a worn window in minutes rather than hours. SIGHTSPEC builds the hinged quick-opening configuration on its standard bodies - most commonly on the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 sanitary tri-clamp line</a> and the <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-400 flanged line</a> - so you get a fast-access window without giving up the mounting, rating and materials you already spec.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">HOW IT WORKS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">The Hinge + Quick-Release Clamp in Action</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The operating cycle is what separates a hinged sight glass from a fixed one. The hinge pin carries the cover and window as a single assembly, so opening never requires handling loose glass plates. The quick-release clamp replaces the ring of bolts: a single lever or T-handle draws the cover onto the housing with a repeatable load, and the captured gasket does the sealing.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Release</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Undo the quick-release clamp - one action, no tools on most sizes. The cover stays captured on the hinge, so nothing drops, gets lost or needs a second pair of hands.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Swing Open</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The glass and cover swing clear of the bore, exposing the full opening. Clean the glass from both sides, inspect the process side, or unseat the window for replacement.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Close &amp; Re-seal</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Swing the cover back, engage the clamp and the captured gasket re-seals the assembly. Because the seal is a gasket rather than a thread or a torque-dependent joint, re-closing is fast and consistent.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">On sanitary builds the hinge and clamp are designed to be cleanable in place: no blind crevices, no threads in the product zone, and wetted surfaces you can reach with a brush when the cover is open. On industrial builds the hinge is sized for repeated operation over the life of the vessel or line.</p>
+    </div>
+  </section>
+
+  <!-- Sanitary vs industrial -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SANITARY VS INDUSTRIAL</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Two Builds, One Quick-Opening Principle</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The hinged mechanism is the same idea in both worlds; the difference is in the materials, sealing and finish. Sanitary versions follow hygienic design rules - dead-space-free sealing, 316L wetted surfaces and CIP-friendly geometry - while industrial versions prioritize pressure rating and economy. The table below compares the two configurations SIGHTSPEC offers.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Feature</th>
+              <th class="px-5 py-4 font-semibold">Sanitary (Hygienic)</th>
+              <th class="px-5 py-4 font-semibold">Industrial (Bolted)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {versions.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.feature}</td>
+                <td class="px-5 py-4 text-slate-600">{r.sanitary}</td>
+                <td class="px-5 py-4 text-slate-600">{r.industrial}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">The table above summarizes the mounting, body metal, sealing, finish and typical use per configuration; full specifications are listed further down the page. If your line runs daily CIP or product contact is direct, specify the sanitary build - the dead-space-free design keeps the seal area cleanable and the wetted materials are USP Class VI / ASME BPE / FDA-compliant.</p>
+    </div>
+  </section>
+
+  <!-- Glass selection -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS SELECTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Window Options: Borosilicate, Soda Lime &amp; Quartz</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The glass is the part you will open the hinge to service, so choose it to match your temperature and media. The three options below mirror the rest of the SIGHTSPEC range:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Borosilicate (DIN 7080)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to 572F (300C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The default window for the hinged line. Chemically resistant, thermally stable and resistant to thermal shock - the right choice for pharmaceutical, food and most industrial process service.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Soda Lime Glass</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~250F (120C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">An economical option for cold water, air and utility duty where thermal shock is not a concern. Not recommended for hot media, steam or rapid temperature swings.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Quartz (Fused Silica)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~1832F (1000C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">For high-temperature industrial duty where borosilicate softens, and for aggressive thermal cycling. Check the body metal and gasket too - on a hinged assembly they must survive the same service.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Remember that the window is a wear item on any sight glass. The hinged design makes replacement straightforward - release the clamp, swing the cover open and unseat the glass - so keep a spare window kit on site and inspect the glass during routine maintenance.</p>
+    </div>
+  </section>
+
+  <!-- Sealing -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SEALING &amp; WETTED PARTS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Captured Gaskets &amp; Dead-Space-Free Sanitary Design</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Sealing is where a quick-opening design stands or falls. The cover closes onto a captured gasket - a seal held in a machined groove so it cannot shift, pinch or creep out of position when the clamp draws the cover shut. Because the gasket is captured, every closure is repeatable: the same sealing surface, the same compression, cycle after cycle. That consistency is what lets a clamp-held cover hold the same rating as a bolted one.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">On the sanitary version, sealing follows hygienic design rules. The gasket groove and hinge geometry are arranged so there are no dead spaces, crevices or threads in the product zone - nothing for product to lodge in and nothing for cleaning solutions to miss. The result is a quick-opening window that still meets the dead-leg expectations of pharmaceutical and food lines. On the industrial version, the captured gasket is matched to the media and temperature, with PTFE, FKM or graphite-reinforced compounds available.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Hinged Sight Glass Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">APPLICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Where Quick Opening Pays Off: CIP Lines, Mixers &amp; Batch Tanks</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The hinged sight glass earns its cost anywhere the window needs regular attention. In <a href="/applications/pharmaceutical/" class="font-semibold text-brand-blue transition hover:underline">pharmaceutical</a> and <a href="/applications/food-beverage/" class="font-semibold text-brand-blue transition hover:underline">food &amp; beverage</a> plants, product lines run frequent CIP cycles and the window glass must stay clean enough to verify rinse clarity and product appearance batch after batch - a hinged unit lets operators clean both sides of the glass between cycles without touching the pipework.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Sticky, fouling and crystallizing media are the other classic case: on mixers, reaction vessels and storage tanks where product builds up on the glass, the quick-release clamp turns a two-hour glass-cleaning job into a two-minute swing-open. Batch processes benefit the same way - operators can visually confirm product condition, foam and color at the end of every batch, then open the window for a full inspection before the next charge.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For straight in-line flow verification on smaller lines, pair the hinged unit with an <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicator</a>; for fixed sanitary windows where opening is rarely needed, the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a> is the economical choice. Browse the full <a href="/products/" class="font-semibold text-brand-blue transition hover:underline">product range</a> or <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">contact our technical team</a> with your mounting and service conditions.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Hinged Sight Glass Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <p class="mt-6 text-sm text-slate-500">More general questions about sizing, glass and maintenance are answered on our <a href="/faq/" class="font-semibold text-brand-blue transition hover:underline">FAQ page</a>.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need a Quick-Opening Sight Glass?"
+    subtitle="Send your mounting type, size, media and service conditions - get a datasheet, dimensional drawing and factory-direct quotation within 24 hours."
+  />
+</Layout>

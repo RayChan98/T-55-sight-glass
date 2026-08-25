@@ -6,15 +6,19 @@ const title = 'Sight Glass Applications by Industry';
 const description = 'Sight glass applications across pharmaceutical, food and beverage, chemical processing and oil and gas — recommended models, connection types and selection guidance from SIGHTSPEC.';
 const industries = [
   { icon: '💊', name: 'Pharmaceutical', desc: 'USP Class VI sanitary sight glasses with tri-clamp mounting and heated anti-fog options for sterile lines, bioreactors and CIP/SIP duty.', href: '/applications/pharmaceutical/', tag: 'SG-100 Tri-Clamp' },
-  { icon: '🥛', name: 'Food & Beverage', desc: 'Hygienic sight glasses and flow indicators for dairy, brewing and beverage lines — 304/316L finishes and sanitary connections.', href: '', tag: 'SG-100 / SG-200' },
+  { icon: '🥛', name: 'Food & Beverage', desc: 'Hygienic sight glasses and flow indicators for dairy, brewing and beverage lines — 304/316L finishes and sanitary connections.', href: '/applications/food-beverage/', tag: 'SG-100 / SG-200' },
+  { icon: '🍺', name: 'Brewery', desc: 'Sanitary tri-clamp sight glasses for fermenters, kettles and bright tanks plus flow indicators for transfer and CIP lines.', href: '/applications/brewery/', tag: 'SG-100 / SG-200' },
   { icon: '🧪', name: 'Chemical Processing', desc: 'Borosilicate sight glasses in threaded and flanged form for corrosive media and high-pressure reactor and pipeline observation.', href: '/applications/chemical-processing/', tag: 'SG-300 / SG-400' },
   { icon: '🛢️', name: 'Oil & Gas', desc: 'High-pressure flanged and threaded sight glasses in carbon steel or stainless for separators, scrubbers and pipelines.', href: '/applications/oil-gas/', tag: 'SG-400 / SG-300' },
+  { icon: '♨️', name: 'Steam & Boiler', desc: 'High-temperature borosilicate and quartz sight glasses for steam lines, boiler drums and condensate systems.', href: '/applications/steam/', tag: 'SG-400 / SG-300' },
 ];
 const tableRows = [
   { industry: 'Pharmaceutical', connection: 'Sanitary tri-clamp (1/2"–12")', glass: 'Borosilicate (DIN 7080)', metal: '316L SS', models: 'SG-100 (+ heated anti-fog)' },
   { industry: 'Food & Beverage', connection: 'Tri-clamp / threaded', glass: 'Borosilicate / soda lime', metal: '304 / 316L SS', models: 'SG-100, SG-200' },
+  { industry: 'Brewery', connection: 'Tri-clamp (1/2"–12") / weld', glass: 'Borosilicate (DIN 7080)', metal: '304 / 316L SS', models: 'SG-100, SG-200' },
   { industry: 'Chemical Processing', connection: 'Threaded NPT/BSP, flanged ANSI/DIN', glass: 'Borosilicate / quartz', metal: '316 SS / Hastelloy / carbon steel', models: 'SG-300, SG-400' },
   { industry: 'Oil & Gas', connection: 'Flanged ANSI Class 150/300, threaded', glass: 'Borosilicate / quartz', metal: 'Carbon steel / 316 SS', models: 'SG-400, SG-300' },
+  { industry: 'Steam & Boiler', connection: 'Flanged / threaded / weld-in', glass: 'Borosilicate / quartz', metal: 'Carbon steel / 316 SS', models: 'SG-400, SG-300, weld-in' },
 ];
 ---
 
@@ -41,9 +45,9 @@ const tableRows = [
   <section class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">BY INDUSTRY</p>
-      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Four Industries, Four Different Specs</h2>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Six Industries, Six Different Specs</h2>
       <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Every industry page below explains the specific failure modes buyers hit, the recommended product family, and the selection essentials for that duty. Start with your industry, then confirm with our engineers before you order. If your process spans two industries — a food-grade CIP line with live steam, or a chemical dosing skid sitting in a classified area — read both pages and combine the requirements; the parameter tables and FAQ on each page cover the cross-over questions.</p>
-      <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {industries.map((ind) => (
           <a href={ind.href} class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <span class="text-3xl">{ind.icon}</span>
@@ -53,7 +57,6 @@ const tableRows = [
           </a>
         ))}
       </div>
-      <p class="mt-6 text-sm text-slate-500">Food &amp; beverage application page is under construction — the recommended models and selection criteria are shown in the comparison table below.</p>
     </div>
   </section>
 

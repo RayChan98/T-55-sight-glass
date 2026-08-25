@@ -1,0 +1,264 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Sight Glass Replacement Windows | Replacement Glass Lenses';
+const description = 'SIGHTSPEC replacement sight glass windows: borosilicate to DIN 7080, soda lime and fused quartz lenses for SG-100, SG-200, SG-300 and SG-400 housings. Glass-only supply, measured to your OD, thickness and hole pattern. Factory-direct pricing.';
+
+const failureRows = [
+  { mode: 'Crazing', sign: 'A fine network of surface micro-cracks, often spider-web in appearance', cause: 'Repeated thermal cycling or rapid temperature change on the surface', action: 'Replace before cracks propagate through the thickness; review heating and cooling rates' },
+  { mode: 'Etching', sign: 'Cloudy, frosted or pitted surface that does not wipe clean', cause: 'Chemical attack from the process media (alkaline service on borosilicate, HF on any silica glass)', action: 'Replace with a more resistant grade or review media compatibility' },
+  { mode: 'Fogging', sign: 'Persistent internal condensation or film between the glass and the seal', cause: 'Moisture ingress through a degraded gasket or damaged seal face', action: 'Replace the window together with a new gasket and re-torque evenly' },
+  { mode: 'Thermal shock cracks', sign: 'Single straight crack or branching crack, often from the edge', cause: 'Rapid temperature change, such as cold wash-down on a hot line', action: 'Replace immediately; check the operating procedure and warm-up sequence' },
+  { mode: 'Coating buildup', sign: 'Process deposit on the inner face that blocks the view', cause: 'Scale, polymer or crystallization on the wetted surface', action: 'Cleaning may restore the view; replace when cleaning no longer returns full visibility' },
+];
+
+const glassRows = [
+  { type: 'Soda Lime Glass', temp: 'Up to ~250F (120C)', use: 'Cold water, air and light process duty where thermal shock is not a concern. The economical choice for non-critical service.' },
+  { type: 'Borosilicate to DIN 7080', temp: 'Up to 572F (300C)', use: 'The process workhorse: chemically resistant, thermally stable and the default replacement window for chemical, pharmaceutical and industrial sight glass service.' },
+  { type: 'Fused Quartz', temp: 'Up to ~1832F (1000C)', use: 'Furnace, stack and high-temperature duty where borosilicate softens. Superior thermal-shock resistance for demanding cycling service.' },
+];
+
+const dimRows = [
+  { model: 'SG-100', housing: 'Tri-clamp (1/2"-12" / DN15-DN300)', size: 'OD matched to clamp size; typical thickness 6-12 mm (0.24-0.47 in)' },
+  { model: 'SG-200', housing: 'Sight flow indicator bodies (tri-clamp / threaded / flanged / weld)', size: 'OD matched to body bore; typical thickness 8-15 mm (0.31-0.59 in)' },
+  { model: 'SG-300', housing: 'Threaded (male NPT / BSP, 1/4"-3")', size: 'OD matched to thread size; typical thickness 6-20 mm (0.24-0.79 in) for higher-pressure duty' },
+  { model: 'SG-400', housing: 'Flanged (ANSI B16.5 / DIN EN 1092-1, 2"-8" / DN50-DN200)', size: 'OD matched to flange bore; typical thickness 10-25 mm (0.39-0.98 in)' },
+];
+
+const specRows = [
+  { param: 'Glass types', options: 'Borosilicate to DIN 7080 (standard), soda lime, or fused quartz' },
+  { param: 'Sizes', options: 'Matched to SG-100 / SG-200 / SG-300 / SG-400 housings; custom diameters per OEM drawing' },
+  { param: 'Dimensional tolerance', options: 'OD ±0.5 mm (0.020 in); thickness +1.0/-0.5 mm; tighter control available on OEM tooling' },
+  { param: 'Temperature limits', options: 'Soda lime ~250F (120C); borosilicate to 572F (300C); fused quartz ~1832F (1000C)' },
+  { param: 'Pressure', options: 'Thickness selected to the housing rating and bore span; thicker glass for higher ratings' },
+  { param: 'Edge finish', options: 'Ground and chamfered standard; polished edges on request' },
+  { param: 'Marking', options: 'OEM marking, glass grade and batch marking available' },
+  { param: 'Supply scope', options: 'Glass-only windows; matched gaskets available separately' },
+  { param: 'Packaging', options: 'Foam-lined, edge-protected crating for export' },
+];
+
+const faqs = [
+  { q: 'How do I know which replacement window to order?', a: 'Measure the outside diameter across two points 90 degrees apart, the thickness at the center, and the hole pattern if the housing uses a bolted retaining ring. Note any original marking on the lens and send a photo through our contact page - we match the glass grade, dimensions and edge details to your housing.' },
+  { q: 'Can I replace just the glass in my existing housing?', a: 'Yes. We supply glass-only replacement windows for SIGHTSPEC SG-100, SG-200, SG-300 and SG-400 housings, and for many in-service housings from other manufacturers once we have your measurements. Before fitting a new window, inspect the housing bore, seal faces and fasteners - if the gasket is old or the faces are pitted, replace the gasket at the same time.' },
+  { q: 'Why did my sight glass window craze or crack?', a: 'Thermal shock is the most common cause: a rapid temperature change sets up stress across the glass faster than it can distribute, producing surface crazing or a crack that usually starts at the edge. Uneven bolt torque, point loading from a distorted gasket, and chemical attack can also contribute. Replace the window, and review the heating, cooling and wash-down sequence that preceded the failure.' },
+  { q: 'Do I need a thicker window for higher pressure?', a: 'Yes. A glass window carries pressure across its unsupported span - the larger the bore it covers, the thicker the glass must be to hold the same rating. Thickness selection follows the housing rating and bore diameter, and the assembled rating never exceeds the weakest component: housing, gasket or glass. Give us your housing model and working pressure and we will confirm the right thickness.' },
+  { q: 'Can you match a window from another manufacturer\'s sight glass?', a: 'In most cases, yes. Send the outside diameter, thickness, hole pattern and a clear photo of the window and housing. Original markings - manufacturer logo, glass grade, pressure rating or batch code - help us identify the original specification quickly. If the window is still intact, measuring the original is the most reliable route.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Sight Glass Replacement Windows</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / REPLACEMENT WINDOWS</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Sight Glass Replacement Windows</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A sight glass window is a wear item. Crazing, etching, fogging and thermal-shock cracks all end up costing production time when the lens fails in service. SIGHTSPEC supplies replacement glass windows for our own SG-100, SG-200, SG-300 and SG-400 sight glasses - and for many in-service housings from other manufacturers - machined to your measured outside diameter, thickness and hole pattern, in borosilicate, soda lime or fused quartz.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/sight-glass-gaskets/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Sight Glass Gaskets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Glass-Only Supply for In-Service Housings</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A replacement sight glass window is the glass element alone - no body, no gasket, no fasteners. Most sight glass bodies are machined from bar or cast in stainless or carbon steel and far outlive their first lens, so when the window degrades you replace the glass, not the whole assembly. That is the point of glass-only supply: a measured, machined lens that drops back into the housing you already have, at a fraction of the cost of a complete unit.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Before refitting, inspect the housing bore, seal faces and retaining hardware. A housing that has seen service is worth keeping only if the wetted surfaces are sound - a pitted bore or a distorted gasket seat will put the new window at risk no matter how well it is made. If the housing itself is worn, the <a href="/products/" class="font-semibold text-brand-blue transition hover:underline">full SIGHTSPEC product range</a> covers new assemblies in every connection style.</p>
+    </div>
+  </section>
+
+  <!-- When to replace -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHEN TO REPLACE</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Five Failure Modes That Call for a New Window</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A window that is hard to see through is a safety issue as much as an operational one - operators stop trusting a cloudy glass and start opening the system to look. Catch these signs early and the replacement is a planned, low-cost maintenance task.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Failure Mode</th>
+              <th class="px-5 py-4 font-semibold">What You See</th>
+              <th class="px-5 py-4 font-semibold">Typical Cause</th>
+              <th class="px-5 py-4 font-semibold">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {failureRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.mode}</td>
+                <td class="px-5 py-4 text-slate-600">{r.sign}</td>
+                <td class="px-5 py-4 text-slate-600">{r.cause}</td>
+                <td class="px-5 py-4 text-slate-600">{r.action}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Crazing and thermal-shock cracks are the two that progress fastest: a crazed surface can deepen into a through-crack under pressure, so treat it as a replace-now item rather than a watch item. If a window has cracked in service, review the process conditions and the fitting torque before reinstalling, or the new lens will see the same stresses.</p>
+    </div>
+  </section>
+
+  <!-- Glass selection -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS SELECTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Match the Glass Grade to the Service</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Three glass grades cover the practical range of sight glass duty. Temperature is the first filter, chemical compatibility the second. The grade you fit should match the original specification of the housing - upgrading a soda lime window to borosilicate for a hot process is common, but check that the housing and gasket can take the higher service temperature too.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Soda Lime Glass</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~250F (120C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The economical choice for cold water, air and light process duty where thermal shock is not a concern. Not recommended for steam tracing, hot process media or rapid temperature swings.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Borosilicate (DIN 7080)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to 572F (300C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The process workhorse: chemically resistant, thermally stable and resistant to thermal shock. The default replacement window for chemical, pharmaceutical and most industrial sight glass service.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Fused Quartz</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~1832F (1000C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">For furnace, stack and high-temperature duty where borosilicate softens. Quartz also offers superior thermal-shock resistance for demanding cycling service.</p>
+        </div>
+      </div>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Glass Grade</th>
+              <th class="px-5 py-4 font-semibold">Temperature Limit</th>
+              <th class="px-5 py-4 font-semibold">Typical Service</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {glassRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.type}</td>
+                <td class="px-5 py-4 text-slate-600">{r.temp}</td>
+                <td class="px-5 py-4 text-slate-600">{r.use}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Temperature limits are material service limits at ambient pressure; the practical limit of an assembled sight glass follows the weakest component - glass, housing or gasket. If the original window carried a marking that identifies the glass grade, match it rather than guessing.</p>
+    </div>
+  </section>
+
+  <!-- Dimensions and tolerances -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">DIMENSIONS &amp; TOLERANCES</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Window Diameter &amp; Thickness by Model</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The window is the precision part of a sight glass: it must seat on the gasket with a controlled edge gap and carry the full pressure across the bore. The table below shows the typical window geometry across the SIGHTSPEC model range. Exact dimensions always follow the housing drawing - never force-fit a window that is close but not exact.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Model</th>
+              <th class="px-5 py-4 font-semibold">Housing Connection</th>
+              <th class="px-5 py-4 font-semibold">Typical Window Diameter x Thickness</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {dimRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.model}</td>
+                <td class="px-5 py-4 text-slate-600">{r.housing}</td>
+                <td class="px-5 py-4 text-slate-600">{r.size}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Standard production tolerance is OD +0/-0.5 mm (0.020 in) and thickness +1.0/-0.5 mm, with edges ground and chamfered. Where a window must match an existing housing exactly, we machine to your measured dimensions or your OEM drawing - tolerance can be tightened on request. Ordering a window from the model number alone works for standard SIGHTSPEC housings; for anything else, measure first.</p>
+    </div>
+  </section>
+
+  <!-- Pressure considerations -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">PRESSURE</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Thicker Glass for Higher Ratings</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A window is a flat plate under pressure, and its strength comes from thickness working against the unsupported span - the bore diameter it covers. Double the bore and you need roughly four times the section to hold the same pressure, which is why large flanged sight glasses carry noticeably thicker lenses than small threaded ones.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">When you order a replacement, the housing rating sets the ceiling: the assembled sight glass is never rated above its weakest component. State your working pressure and the housing model, and we confirm the thickness that matches. Two things to respect at every pressure level: keep bolt torque even around the retaining ring, and make sure the gasket is the correct profile - point loading from a misaligned gasket cracks glass that is otherwise correctly specified.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For the housing styles behind these windows, see the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a>, <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicator</a>, <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-300 threaded sight glass</a> and <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-400 flanged sight glass</a> pages.</p>
+    </div>
+  </section>
+
+  <!-- Measure and order -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MEASURE &amp; ORDER</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">How to Measure and Order a Replacement Window</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Three dimensions define a replacement window: outside diameter, thickness and - where the housing uses a bolted retaining ring - the hole pattern. Take the measurements with the window out of the housing, using calipers for the diameter and a micrometer for the thickness.</p>
+      <ul class="mt-6 max-w-3xl space-y-3 text-base leading-relaxed text-slate-600">
+        <li><strong class="font-bold text-navy-950">Outside diameter:</strong> measure across two points 90 degrees apart and record both. If the edge is chamfered, measure across the flat faces, not the corners.</li>
+        <li><strong class="font-bold text-navy-950">Thickness:</strong> measure at the center of the lens. For dished or stepped windows, note the maximum and the seat dimension.</li>
+        <li><strong class="font-bold text-navy-950">Hole pattern:</strong> for bolted retaining rings, record hole count, bolt-circle diameter and hole size, and note whether the holes are round or slotted for adjustment.</li>
+        <li><strong class="font-bold text-navy-950">Edge details:</strong> note whether the edge is ground, polished or chamfered, and any bevel angle visible on the seating face.</li>
+      </ul>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">OEM marking helps us confirm your spec without guesswork. Many sight glass lenses carry an etched or sandblasted marking - manufacturer mark, glass grade, pressure rating, or batch and date code. Photograph it clearly, or read it out to our team; it usually identifies the original specification the housing was built around, which lets us match the replacement exactly.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Send the measurements, photos and any markings through the <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">contact page</a>, and we confirm the glass grade, dimensions, edge treatment and price - typically within 24 hours. General ordering questions are covered on our <a href="/faq/" class="font-semibold text-brand-blue transition hover:underline">FAQ page</a>. If the housing is also due for refresh, pair the window with a matching <a href="/products/sight-glass-gaskets/" class="font-semibold text-brand-blue transition hover:underline">sight glass gasket</a> so the seal is renewed in the same outage.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Replacement Window Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">SIGHTSPEC Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Replacement Window Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Need a Replacement Sight Glass Window?"
+    subtitle="Send your outside diameter, thickness, hole pattern and a photo of the original lens - get a glass grade recommendation, lead time and factory-direct quotation within 24 hours."
+  />
+</Layout>

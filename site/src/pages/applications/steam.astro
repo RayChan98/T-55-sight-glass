@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import IndustryPageTemplate from '../../components/IndustryPageTemplate.astro';
+
+const pageTitle = 'Sight Glass for Steam & Boiler Systems';
+const metaTitle = 'Sight Glass for Steam & Boiler Systems | High Temperature Sight Glass — SIGHTSPEC';
+const kw = 'sight glass for steam and boiler systems';
+const desc = 'High temperature sight glasses for steam and boiler systems: SG-400 flanged and SG-300 threaded models in carbon steel with borosilicate or quartz windows for boiler drums, steam mains, condensate systems and heat exchangers.';
+const points = [
+  'Borosilicate glass to DIN 7080 rated to 572°F (300°C), with quartz windows available for superheated steam and higher temperatures',
+  'Carbon steel bodies with graphite-reinforced gaskets built for high-temperature steam and boiler duty',
+  'SG-400 flanged per ANSI Class 150/300 or DIN PN10–PN40 for boiler drums, steam mains and heat exchanger observation',
+  'SG-300 threaded rated to 100 bar (1450 psi) for instrument lines, steam tracing and small-bore viewing',
+];
+const longtail = [
+  'high temperature sight glass',
+  'steam boiler sight glass',
+  'quartz sight glass',
+  'sight glass for steam lines',
+  'boiler drum sight glass',
+  'carbon steel sight glass steam',
+  'sight glass thermal shock',
+  'boiler water level sight glass',
+  'sight glass for condensate systems',
+  'heat exchanger sight glass',
+];
+const recommended = [
+  { href: '/products/flanged-sight-glasses/', title: 'SG-400 Flanged Sight Glass', desc: 'ANSI Class 150/300 flanged, 2"–8", carbon steel bodies, quartz window option for superheated steam.' },
+  { href: '/products/threaded-sight-glasses/', title: 'SG-300 Threaded Sight Glass', desc: 'Male NPT/BSP 1/4"–3", up to 100 bar (1450 psi), compact for instrument lines and steam tracing.' },
+  { href: '/products/sight-flow-indicators/', title: 'SG-200 Sight Flow Indicator', desc: 'Flapper, rotary and drip-tube types for condensate return and steam trap discharge viewing.' },
+];
+const faqs = [
+  { q: 'What is the maximum temperature for a sight glass in steam service?', a: 'The borosilicate window is rated to 572°F (300°C). Where steam temperatures run beyond that — superheated steam, for example — we supply quartz windows on the SG-400 flanged sight glass. Always state both operating and upset temperature so the glass, gasket and body are matched to the duty.' },
+  { q: 'How do I protect a sight glass from thermal shock?', a: 'Thermal shock is the most common cause of glass breakage in steam service — a cold glass hit by hot steam, or cold condensate splashing a hot glass. Mitigate it with a proper warm-up: drain condensate, pressurize slowly, and let the glass heat gradually before full steam flow. For frequent cycling or higher temperatures, choose the quartz window option, and fit a protective shield where impact or debris is a risk.' },
+  { q: 'Is the sight glass compliant with boiler codes?', a: 'The glass is manufactured to DIN 7080, a recognized standard for pressure sight glass, and pressure equipment is supplied to PED where applicable. Final boiler-code compliance depends on the vessel design, operating conditions and your jurisdiction — send your drawings and we will provide the material documentation your inspector needs.' },
+  { q: 'Quartz or borosilicate — which glass for steam?', a: 'Borosilicate to DIN 7080 is the standard choice and covers most steam duty to 572°F (300°C). Quartz extends the temperature range beyond that and tolerates thermal cycling better, at a higher cost. For superheated steam, rapid temperature swings, or maximum shock resistance, specify the quartz option.' },
+  { q: 'Can I use a sight glass to check boiler water level?', a: 'Yes — sight glasses on boiler drums and steam generators give operators direct visual confirmation of water level. Keep the window clean and inspect it regularly; scale from hard feed water can obscure the view over time. Code-governed level indication may require dedicated instrumentation — confirm the requirement with your boiler inspector.' },
+  { q: 'Can I see condensate flow and steam trap operation?', a: 'Yes. The SG-200 sight flow indicator with flapper, rotary or drip-tube internals confirms condensate flow, trap discharge and valve position at a glance, and the threaded version suits small condensate and instrument lines.' },
+];
+const blogLinks = [
+  { href: '/blog/sight-glass-glass-types/', title: 'Sight Glass Glass Types: Borosilicate vs Quartz vs Soda Lime' },
+];
+---
+
+<Layout title={metaTitle} description={desc}>
+  <IndustryPageTemplate title={pageTitle} kw={kw} desc={desc} points={points} longtail={longtail} recommended={recommended} faqs={faqs} blogLinks={blogLinks}>
+    <div slot="chapters">
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">STEAM DUTY</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Where Sight Glasses Sit in Steam and Boiler Systems</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Steam systems put sight glasses at high temperature, and often at pressure: steam lines, boiler drums, steam generators, condensate systems and heat exchangers. The observation duty changes with location — water level on the drum, flow and phase on the lines, condensate quality on the return — but every location shares the same two constraints: temperature that exceeds what ordinary glass handles, and pressure that the whole assembly must contain.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Glass temperature limit.</strong> The practical ceiling for the standard borosilicate window is 572°F (300°C) — a limit set by the glass, not the metal. Below that, borosilicate to DIN 7080 is the workhorse: low thermal expansion and good resistance to clean steam and hot condensate. Above it — superheated steam, high-pressure boiler duty — the window is switched to quartz, which carries higher temperature and tolerates sharper thermal gradients. On the SG-400 flanged sight glass, both options fit the same body.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Pressure considerations.</strong> Steam-side pressure is carried by the assembly — glass, gasket, body and connection — never by the window alone. The <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue hover:underline">SG-400 flanged sight glass</a> follows its flange class (ANSI B16.5 Class 150/300 or DIN PN10–PN40), and the <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue hover:underline">SG-300 threaded sight glass</a> is rated to 100 bar (1450 psi). State operating and upset pressure: a sight glass that holds at steady state can still be challenged by cold-start transients.</p>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">RECOMMENDED PRODUCTS</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG-400 Flanged and SG-300 Threaded for Steam Duty</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Two models cover most steam and boiler applications. The SG-400 flanged sight glass is the primary choice for boiler drums, steam mains and heat exchanger covers, where operators need a real viewing window. The SG-300 threaded sight glass handles instrument lines, steam tracing manifolds and small-bore observation at pressures to 100 bar.</p>
+          <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-navy-950 text-white">
+                <tr>
+                  <th class="px-5 py-4 font-semibold">Parameter</th>
+                  <th class="px-5 py-4 font-semibold">SG-400 Flanged</th>
+                  <th class="px-5 py-4 font-semibold">SG-300 Threaded</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Mounting</td><td class="px-5 py-4 text-slate-600">ANSI B16.5 Class 150/300, DIN PN10–PN40</td><td class="px-5 py-4 text-slate-600">Male NPT / BSP, 1/4"–3"</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Glass</td><td class="px-5 py-4 text-slate-600">Borosilicate / soda lime / quartz</td><td class="px-5 py-4 text-slate-600">Borosilicate to DIN 7080</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Metal</td><td class="px-5 py-4 text-slate-600">Carbon steel / 316 SS</td><td class="px-5 py-4 text-slate-600">316 SS / Hastelloy / carbon steel</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Temperature</td><td class="px-5 py-4 text-slate-600">Borosilicate to 572°F (300°C); quartz beyond</td><td class="px-5 py-4 text-slate-600">Borosilicate to 572°F (300°C)</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Pressure</td><td class="px-5 py-4 text-slate-600">Per flange class (Class 150/300)</td><td class="px-5 py-4 text-slate-600">Up to 100 bar (1450 psi)</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Size range</td><td class="px-5 py-4 text-slate-600">2"–8" (DN50–DN200)</td><td class="px-5 py-4 text-slate-600">1/4"–3"</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Both models are available in carbon steel bodies — the economical, field-proven choice for clean steam and condensate — with graphite-reinforced gaskets that hold their seal at flanged temperatures where elastomers soften. Where a bolted or threaded connection is impractical, the <a href="/products/weld-in-sight-glasses/" class="font-semibold text-brand-blue hover:underline">weld-in sight glass</a> range offers a compact, permanent installation for small drums and manifolds.</p>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Need to verify flow rather than just look inside? The <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue hover:underline">SG-200 sight flow indicator</a> adds flapper, rotary or drip-tube indication for condensate returns, steam trap discharge and valve position checks.</p>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">THERMAL SHOCK</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Glass Breakage Risk in Steam Service and How to Mitigate It</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The glass rarely breaks because steam is hot — it breaks because steam is suddenly hot. Thermal shock is the stress created when one part of the window heats or cools faster than the rest: cold condensate splashing a hot glass, a cold glass hit by live steam during startup, or a rapid pressure change. Borosilicate's low thermal expansion resists this well; no glass resists it indefinitely.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Operational mitigation.</strong> Drain condensate before opening steam to a cold sight glass, pressurize slowly during warm-up, and never quench a hot glass with cold water or cold feed. A controlled warm-up buys more service life than any material upgrade.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Material mitigation.</strong> Specify the quartz window where temperatures exceed 572°F (300°C) or where thermal cycling is frequent — quartz carries heat and tolerates sharper gradients than borosilicate. Where debris or impact is a risk, fit a protective shield over the window. Graphite-reinforced gaskets keep the seal stable across the temperature swing, so the flanged joint does not leak as the assembly heats and cools.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Boiler water level observation.</strong> On boiler drums and steam generators, the sight glass doubles as a water-level observation point — a direct visual check that confirms the level instruments. Keep the window clean: scale from hard feed water clouds the view over months of service, and a dirty glass hides the early chip that later becomes a leak path. The window is a consumable — inspect it for chips, cracks and etching at every shutdown, and keep a spare window and gasket per size from the <a href="/products/sight-glass-replacement-windows/" class="font-semibold text-brand-blue hover:underline">replacement window range</a>.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">More answers on glass choice and service life in the <a href="/faq/" class="font-semibold text-brand-blue hover:underline">sight glass FAQ</a>, or send your steam pressure, temperature and connection to our engineers — see <a href="/contact/" class="font-semibold text-brand-blue hover:underline">contact</a> for the fastest response.</p>
+        </div>
+      </section>
+    </div>
+  </IndustryPageTemplate>
+
+  <CtaBand
+    title="Specifying a Sight Glass for Steam or Boiler Duty?"
+    subtitle="Send your steam pressure, temperature and connection — we confirm the glass type (borosilicate or quartz), body and gasket combination within 24 hours."
+  />
+</Layout>

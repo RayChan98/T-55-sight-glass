@@ -1,0 +1,123 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import IndustryPageTemplate from '../../components/IndustryPageTemplate.astro';
+
+const pageTitle = 'Sight Glass for Brewing';
+const metaTitle = 'Sight Glass for Brewing | Sanitary Tri-Clamp Brewery Sight Glass — SIGHTSPEC';
+const kw = 'sight glass for brewing';
+const desc = 'Sanitary brewery sight glass for fermenters, brew kettles, bright tanks and yeast propagation: tri-clamp SG-100 with borosilicate glass rated for CO2 pressure and CIP cycles, plus SG-200 sight flow indicators for transfer and CIP return lines.';
+const points = [
+  'SG-100 sanitary tri-clamp sight glass mounts on fermenters, brew kettles, bright tanks and yeast propagation vessels with 1/2"–12" (DN15–DN300) tri-clamp connections',
+  'Borosilicate glass to DIN 7080 and 316L SS bodies with USP Class VI and FDA-compliant materials for beer-contact service',
+  'Dead-space-free design that minimizes product hold-up so CIP solution reaches every wetted surface on the vessel',
+  'SG-200 sight flow indicators verify transfer flow, carbonation and CIP return on the way to the tank — flapper, rotary or ball types',
+];
+const longtail = [
+  'sight glass for fermenter',
+  'brewery sight glass tri clamp',
+  'fermentation tank sight glass',
+  'brewhouse sight glass',
+  'sanitary sight glass for brewing',
+  'tri clamp sight glass CIP',
+  'sight glass for bright tank',
+  'beer fermenter sight glass pressure',
+  'sight flow indicator brewery',
+  'brewery tank sight glass sanitary',
+];
+const recommended = [
+  { href: '/products/tri-clamp-sight-glasses/', title: 'SG-100 Tri-Clamp Sight Glass', desc: 'Sanitary 1/2"–12" tri-clamp mount, borosilicate DIN 7080 glass, 316L SS body, FV to 230 psi.' },
+  { href: '/products/sight-flow-indicators/', title: 'SG-200 Sight Flow Indicator', desc: 'Flapper, rotary, ball or drip-tube types for transfer and CIP return line verification.' },
+  { href: '/products/hinged-sight-glasses/', title: 'SG-100 Hinged Sight Glass', desc: 'Hinged opening for fast access — manual wiping and spray rinsing of the glass face between batches.' },
+];
+const faqs = [
+  {
+    q: 'What pressure rating do I need for a fermenter sight glass with CO2?',
+    a: 'The SG-100 tri-clamp sight glass is rated for full vacuum to 230 psi (1.6 MPa), which covers fermentation CO2 pressure — typically 7–22 psi for standard lager fermentation and up to 30 psi for pressure-fermented styles — plus the vacuum you can pull during tank cleaning. Confirm your vessel design pressure and we will size the window and glass thickness to it.',
+  },
+  {
+    q: 'Is the sight glass compatible with CIP cleaning cycles?',
+    a: 'Yes. The SG-100 is built from 316L SS and borosilicate glass and is designed to survive standard brewery CIP regimes — 1–3% caustic at 60–80°C, followed by acid and rinse passes. The dead-space-free design leaves no crevice where beer solids can hide from the cleaning solution. Check your exact CIP chemical and temperature against the gasket material (EPDM is the standard brewery choice) and we will confirm compatibility.',
+  },
+  {
+    q: 'What tri-clamp sizes are available for brewery tanks?',
+    a: 'The SG-100 covers 1/2"–12" (DN15–DN300) tri-clamp connections. Common brewery fittings are 1.5" and 2" on fermenters and yeast propagation vessels, 2"–3" on bright tanks, and larger ferrules — up to 4" and above — on brew kettles where a bigger viewing window is wanted. Send the ferrule size and orientation of your tank port and we will confirm the exact fit.',
+  },
+  {
+    q: 'How do I stop the sight glass fogging up during fermentation?',
+    a: 'Fogging is condensation: warm, humid CO2-rich headspace meets a cooler glass surface, and moisture films the window. Options include an anti-fog heated window on the SG-100 that keeps the glass above the dew point, and correct mounting so the window sits above the liquid and vapor line in a spot with some airflow. Fogging returns if the glass is colder than the headspace — if it persists after a CIP cycle, check that the window is not being cooled by an adjacent uninsulated fitting.',
+  },
+  {
+    q: 'What do I do about grain and yeast fouling on the glass?',
+    a: 'During hot break, whirlpool transfer or yeast propagation, solids can smear across the window and dry on. The practical answers are the hinged SG-100 for fast manual access, wiper and spray-cleaning options for rinsing the glass face between batches, and making sure the sight port is positioned away from the direct flow path of the transfer line. The window is a consumable: if a scratched or etched window will not clean up, replace the glass rather than accept a permanent blind spot.',
+  },
+  {
+    q: 'Are the materials approved for beer contact?',
+    a: 'The SG-100 uses 316L stainless steel, borosilicate glass to DIN 7080 and food-grade gaskets, with USP Class VI and FDA-compliant material options and ASME BPE-compliant surface finishes available. For a full hygiene review of your specific beer-contact application, send your process details and we will confirm the material and finish package — including gasket selection — against your quality requirements.',
+  },
+];
+const blogLinks = [
+  { href: '/blog/sanitary-sight-glass-guide/', title: 'The Sanitary Sight Glass Guide: Materials, Seals and Cleanability' },
+  { href: '/blog/sight-glass-vs-sight-flow-indicator/', title: 'Sight Glass vs. Sight Flow Indicator: Which Do You Need?' },
+];
+---
+
+<Layout title={metaTitle} description={desc}>
+  <IndustryPageTemplate title={pageTitle} kw={kw} desc={desc} points={points} longtail={longtail} recommended={recommended} faqs={faqs} blogLinks={blogLinks}>
+    <div slot="chapters">
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">BREWERY PROCESS CHALLENGES</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Brewery Service Does to a Sight Glass</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A sight glass in a brewhouse lives in a harder environment than it looks. It is pressurized by CO2, blasted with caustic every day, smeared with yeast and trub, and expected to stay perfectly clear for quality checks that decide whether a batch moves forward. Four brewery-specific demands shape the specification: pressure from fermentation gas, repeated CIP cycles, sanitary connections, and a design that leaves no place for microbes to hide.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">CO2 pressure.</strong> Fermentation generates carbon dioxide continuously, and the vessel headspace is held at positive pressure for carbonation control — anywhere from a few psi on open fermenters to 15–30 psi on pressurized and lager tanks. The sight glass must hold that pressure as a vessel penetration, and it must also survive the vacuum that appears during tank emptying and cleaning. The SG-100 is rated for full vacuum to 230 psi (1.6 MPa), with glass thickness selected against the vessel design pressure rather than the normal operating figure.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">CIP cycles.</strong> A brewery tank is cleaned in place after every batch: hot caustic, often an acid pass, then rinse water, sometimes at 80°C and above. Every wetted part of the sight glass — glass, body, gasket — must tolerate those chemicals at temperature, day after day. Borosilicate glass to DIN 7080 handles caustic and acid CIP regimes without etching, and 316L SS resists the pitting that chloride-laden cleaning chemistry can cause on lesser grades. Gasket choice matters: EPDM is the standard brewery material, with PTFE options where aggressive chemistry demands it.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Sanitary connections and hygiene.</strong> Brewery tanks are joined by tri-clamp fittings precisely because they are crevice-free and easy to strip and clean. A sight glass bolted on with a flanged or threaded connection would break that pattern, which is why the SG-100 uses the same sanitary tri-clamp mounting as the rest of the tank: the clamp, ferrule and gasket are standard brewery hardware, and the glass assembly strips out for manual cleaning or inspection. The dead-space-free design keeps product hold-up and entrapment points to a minimum, so CIP solution reaches every wetted surface — no ledge for beer stone or biofilm to start on. See how this fits the wider <a href="/applications/food-beverage/" class="font-semibold text-brand-blue hover:underline">food and beverage processing</a> picture, or review the <a href="/faq/" class="font-semibold text-brand-blue hover:underline">frequently asked questions</a> on ratings and materials.</p>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">RECOMMENDED MODELS</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Matching the Sight Glass to Each Brewery Location</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Different points in the brewery ask different things of a window. A fermenter port needs a pressure-rated, sanitary observation window. A transfer line needs to prove flow, not just show liquid. And the CIP return line needs to confirm that cleaning solution is actually coming back. This is why we recommend a combination of the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue hover:underline">SG-100 tri-clamp sight glass</a> and the <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue hover:underline">SG-200 sight flow indicator</a> across the brewhouse.</p>
+          <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-navy-950 text-white">
+                <tr>
+                  <th class="px-5 py-4 font-semibold">Brewery Location</th>
+                  <th class="px-5 py-4 font-semibold">Recommended Model</th>
+                  <th class="px-5 py-4 font-semibold">Why</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Fermenter</td><td class="px-5 py-4 text-slate-600">SG-100 tri-clamp, 1.5"–2"</td><td class="px-5 py-4 text-slate-600">Pressure-rated for CO2 headspace, sanitary mount, clear view of yeast activity and trub level.</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Brew kettle</td><td class="px-5 py-4 text-slate-600">SG-100 tri-clamp, 2"–4"</td><td class="px-5 py-4 text-slate-600">Larger window for boil vigor and hot break observation; sized off the kettle port.</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Bright tank</td><td class="px-5 py-4 text-slate-600">SG-100 tri-clamp, 1.5"–2"</td><td class="px-5 py-4 text-slate-600">Final clarity and fill-level checks before packaging; dead-space-free design protects the clean product.</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">Transfer line</td><td class="px-5 py-4 text-slate-600">SG-200 sight flow indicator</td><td class="px-5 py-4 text-slate-600">Flapper or rotary element proves flow during beer transfer and confirms the line is not running dry.</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-navy-950">CIP return</td><td class="px-5 py-4 text-slate-600">SG-200 sight flow indicator</td><td class="px-5 py-4 text-slate-600">Visible confirmation that caustic and rinse solution are returning to the CIP skid — a key check before the cycle is logged as complete.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-500">Gaskets for both models are selected for brewery duty — EPDM as standard, PTFE where aggressive CIP chemistry is used. Spare glass and gaskets are stocked per size; see the <a href="/products/sight-glass-gaskets/" class="font-semibold text-brand-blue hover:underline">sight glass gaskets</a> range when planning spares.</p>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FOULING, FOGGING & MAINTENANCE</p>
+          <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Keeping the Window Clear Between Batches</h2>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The two recurring complaints on brewery sight glasses are fouling and fogging. Fouling is solids: yeast, trub and hop material smearing the glass during transfer, whirlpool or yeast propagation. Fogging is condensation: warm, humid headspace meeting a cooler window. They are different problems with different fixes, and both are easier to prevent than to clean.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Fouling control.</strong> Position the sight port where it is not in the direct flow path of the incoming transfer, and where it sits above the normal liquid level. Where solids still reach the glass, the <a href="/products/hinged-sight-glasses/" class="font-semibold text-brand-blue hover:underline">SG-100 hinged sight glass</a> opens without breaking the clamp, giving fast access for manual wiping, and wiper or spray-cleaning options are available to rinse the glass face between batches. Routine CIP does the rest — but a window that has been scratched by aggressive manual cleaning will never be clear again, so use soft cloths and let the cleaning cycle do the heavy work.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600"><strong class="text-navy-950">Fogging control.</strong> The anti-fog heated window option on the SG-100 keeps the glass above the dew point of the headspace, which is the reliable fix on cold-conditioned tanks. Mounting also matters: a window at the very top of a fermenter sees the wettest, most humid gas and fogs more readily than one lower on the cone. Treat the glass as the consumable it is — inspect after each CIP cycle, and replace a window that is etched, chipped or permanently clouded before it becomes a blind spot or a leak path. For the full maintenance picture, read the <a href="/blog/sanitary-sight-glass-guide/" class="font-semibold text-brand-blue hover:underline">sanitary sight glass guide</a>. If your brewery is scaling up and you are deciding between a plain window and a flow indicator, the <a href="/blog/sight-glass-vs-sight-flow-indicator/" class="font-semibold text-brand-blue hover:underline">sight glass vs. sight flow indicator comparison</a> walks through the decision.</p>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">When specifying, send the vessel design pressure, the ferrule size and orientation, your CIP chemistry, and the beer-contact material requirements. That is enough for our engineers to confirm the right glass thickness, gasket and finish package — <a href="/contact/" class="font-semibold text-brand-blue hover:underline">contact SIGHTSPEC</a> with your brewery drawings or port list and we will quote the complete set.</p>
+        </div>
+      </section>
+    </div>
+  </IndustryPageTemplate>
+
+  <CtaBand
+    title="Equipping a Brewery or Scaling Up Tank Capacity?"
+    subtitle="Send your vessel design pressure, tri-clamp sizes and CIP chemistry — our engineers confirm the right SG-100 and SG-200 package for fermenters, kettles, bright tanks and transfer lines within 24 hours."
+  />
+</Layout>

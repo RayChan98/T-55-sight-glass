@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const title = 'Bolt-On Sight Glasses | Sight Glass Windows - SG Series | SIGHTSPEC';
+const description = 'SIGHTSPEC bolt-on sight glasses: drilled bolt-circle cover plates for vessels, tanks, bins and large equipment. 2"-12" windows, 316 SS or carbon steel covers, borosilicate DIN 7080, soda lime or quartz glass. Factory-direct pricing.';
+
+const mountRows = [
+  { type: 'Bolt-on', mount: 'Bolted cover plate through a matching opening in a vessel or tank wall', use: 'Vessels, tanks, bins, mixers, reactors, dryers and large equipment' },
+  { type: 'Flanged', mount: 'Bolts between two pipe flanges in a line', use: 'Piping runs, pump suction/discharge, process lines' },
+  { type: 'Threaded', mount: 'Male NPT/BSP thread screwed into a boss or coupling', use: 'Small lines, compact spaces, higher-pressure duty' },
+  { type: 'Weld-in', mount: 'Body welded directly into the vessel wall', use: 'Permanent installations and pressure-vessel duty' },
+];
+
+const specRows = [
+  { param: 'Size range', options: '2"-12" (DN50-DN300) standard windows; larger through the OEM/ODM program' },
+  { param: 'Mounting', options: 'Bolted cover with drilled bolt circle, matched to your vessel or tank opening' },
+  { param: 'Cover plate material', options: '316 stainless steel (standard) or carbon steel' },
+  { param: 'Glass', options: 'Borosilicate to DIN 7080, soda lime, or fused quartz' },
+  { param: 'Temperature', options: 'Up to 572F (300C) with borosilicate; higher with quartz' },
+  { param: 'Pressure', options: 'Set by cover plate thickness and bolt pattern; typical bolted-cover builds rated to 150 psi (10 bar) at ambient' },
+  { param: 'Gaskets', options: 'PTFE, FKM, graphite-reinforced or EPDM, matched to media and temperature' },
+  { param: 'Options', options: 'Lighting ports, wipers, glass shields, drain/vent ports, OEM marking' },
+];
+
+const faqs = [
+  { q: 'What is the difference between a bolt-on and a flanged sight glass?', a: 'A flanged sight glass bolts between two pipe flanges in a line, so it needs a flanged pipe spool to install into. A bolt-on sight glass is a cover plate with a drilled bolt circle that fastens directly through a matching opening in a vessel, tank, bin or piece of equipment - no piping required. Choose flanged for in-line viewing, bolt-on for vessel and equipment windows.' },
+  { q: 'Can a bolt-on sight glass be fitted to a pressure vessel?', a: 'Yes, where the opening is designed for a bolted cover. The safe working pressure is set by the cover plate thickness, bolt circle and fastener size, so the rating must be engineered to your opening and service conditions. Give us the vessel design pressure, opening diameter and bolt pattern and we select the plate thickness, glass and gasket to match.' },
+  { q: 'What sizes and bolt circles are available?', a: 'Standard windows range from 2" to 12" (DN50-DN300). The cover plate bolt circle is drilled to your opening pattern - send us a drawing or measure your existing hole circle - or to a standard pattern where the vessel was built to one. Larger diameters and custom plates are available through our OEM/ODM program.' },
+  { q: 'Which glass should I choose for high-temperature service?', a: 'Borosilicate to DIN 7080 handles up to 572F (300C) and is the default process choice. Fused quartz extends service well beyond that for furnace and high-temperature dryers. Soda lime is the economical option for cold water and air duty. Remember the gasket can limit the assembly before the glass does, so match both to the media temperature.' },
+  { q: 'Do you offer lighting or wipers for bolt-on sight glasses?', a: 'Yes. Lighting ports illuminate dark media for level and process checks, and wipers or spray nozzles clear condensation, dust and coating from the inner face. Glass shields, drain/vent ports and OEM marking are also available. All options are itemized on the datasheet we send with your quotation.' },
+];
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="bg-navy-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <nav class="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
+        <a href="/" class="transition hover:text-white">Home</a>
+        <span>/</span>
+        <a href="/products/" class="transition hover:text-white">Products</a>
+        <span>/</span>
+        <span class="text-slate-200">Bolt-On Sight Glasses</span>
+      </nav>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-green">PRODUCTS / SG SERIES</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">Bolt-On Sight Glasses</h1>
+      <p class="mt-4 max-w-2xl text-lg text-slate-300">A bolt-on sight glass is a viewing window fitted into a machined cover plate that bolts through a matching opening in a vessel, tank, bin or item of large equipment - the standard way to add a large visual window where no pipe connection exists. The SG series bolt-on range covers 2" to 12" windows with drilled bolt circles, in 316 stainless steel or carbon steel cover plates, with borosilicate, soda lime or quartz glass.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-quote-open class="rounded-lg bg-cta-orange px-6 py-3 text-center text-base font-semibold text-white shadow-lg transition hover:bg-orange-600">Request a Quote</button>
+        <a href="/products/flanged-sight-glasses/" class="rounded-lg border border-white/20 px-6 py-3 text-center text-base font-semibold text-white transition hover:bg-white/10">Flanged Sight Glasses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">WHAT IT IS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">What Is a Bolt-On Sight Glass?</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A bolt-on sight glass is a complete viewing assembly: a machined cover plate with a drilled bolt circle, a glass window seated in a counterbore, gaskets on both sealing faces, and studs or cap screws that draw the plate against the vessel opening. Unlike a flanged sight glass - which bolts between two pipe flanges in a line - the bolt-on design fastens directly to a flat face on the shell of a vessel, tank, bin or piece of equipment, so it suits large openings and locations where a pipe spool cannot be inserted.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Because the cover plate is machined to your opening, the bolt circle, gasket face and window diameter are matched to the vessel rather than to a piping standard. That makes bolt-on sight glasses the usual choice for storage tanks, mixers, reactors, dryers, hoppers and other process equipment that already has a flat mounting face, or where a large window is needed for level and process observation. The glass is a consumable component: it is retained in the cover so it can be replaced without replacing the plate or disturbing the vessel opening.</p>
+    </div>
+  </section>
+
+  <!-- Mounting comparison -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">MOUNTING COMPARISON</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Bolt-On vs Flanged, Threaded &amp; Weld-In</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The mounting method determines where a sight glass can go and how it is installed. The table below compares the four connection families SIGHTSPEC supplies.</p>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Connection</th>
+              <th class="px-5 py-4 font-semibold">How It Mounts</th>
+              <th class="px-5 py-4 font-semibold">Typical Duty</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {mountRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.type}</td>
+                <td class="px-5 py-4 text-slate-600">{r.mount}</td>
+                <td class="px-5 py-4 text-slate-600">{r.use}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Each family has its place: bolt-on covers for vessel and equipment windows, <a href="/products/flanged-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">flanged sight glasses</a> for piping runs, <a href="/products/threaded-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">threaded sight glasses</a> for compact high-pressure connections, and weld-in bodies for permanent installations. For hygienic food and pharmaceutical duty, the <a href="/products/tri-clamp-sight-glasses/" class="font-semibold text-brand-blue transition hover:underline">SG-100 tri-clamp sight glass</a> covers the sanitary range.</p>
+    </div>
+  </section>
+
+  <!-- Construction -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">CONSTRUCTION</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Cover Plate, Glass &amp; Gasket Construction</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">A bolt-on sight glass is three components engineered as one assembly. The cover plate is machined from 316 stainless steel or carbon steel bar or plate, with a drilled bolt circle matching your opening, a counterbore that seats the glass, and a machined sealing face for the gasket. Plate thickness is sized to the vessel opening and the service pressure, so larger windows use thicker plates with larger bolt circles.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">The glass window sits in the counterbore, sandwiched between gaskets on both faces, and is held by the plate and a retainer so compression stays even around the full circumference. The gasket is matched to the media: PTFE for general chemical service, FKM for higher temperatures and aggressive media, graphite-reinforced gaskets for hot duty, and EPDM for water and steam. Because the glass is a consumable, the design favors windows that can be changed out in place, without removing the cover from the vessel. For dark media or fouling services, lighting ports and wipers can be machined into the plate - tell us your service conditions and we build the assembly to match.</p>
+    </div>
+  </section>
+
+  <!-- Sizes and bolt circles -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SIZES &amp; BOLT CIRCLES</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Window Sizes &amp; Bolt Circle Options</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Standard bolt-on windows range from 2" to 12" (DN50-DN300), covering everything from small sight ports on bins to full-diameter observation windows on storage tanks and reactors. The bolt circle is drilled to your opening pattern - measured off the existing hole circle or taken from your vessel drawing - or to the standard pattern the vessel was built to. Cover plates are supplied with studs, cap screws and gaskets, ready to fit.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">For non-standard openings, multiple windows on one vessel, or windows above 12", the plate, glass thickness and bolt pattern are engineered through our OEM/ODM program. Send your opening diameter, bolt circle and design pressure via the <a href="/contact/" class="font-semibold text-brand-blue transition hover:underline">contact page</a> and we supply a dimensional drawing with your quotation.</p>
+    </div>
+  </section>
+
+  <!-- Glass and gaskets -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">GLASS &amp; GASKET OPTIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Glass by Temperature, Gasket by Media</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Service temperature is the first question when choosing a window material. Three glass options cover the bolt-on range:</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Soda Lime Glass</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~250F (120C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The economical choice for cold water, air and ambient tank duty where thermal shock is not a concern. Not recommended for steam tracing, hot process media or rapid temperature swings.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Borosilicate (DIN 7080)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to 572F (300C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">The process workhorse: chemically resistant, thermally stable and resistant to thermal shock. This is the default window for chemical, pharmaceutical and most industrial vessel sight glass service.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy-950">Quartz (Fused Silica)</h3>
+          <p class="mt-1 text-sm font-semibold text-brand-blue">Up to ~1832F (1000C)</p>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">For dryers, furnaces and high-temperature vessels where borosilicate softens. Quartz also offers superior thermal-shock resistance for demanding cycling service.</p>
+        </div>
+      </div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">The gasket is selected by media and temperature rather than by window size. PTFE suits most chemical service, FKM covers higher temperatures and aggressive media, graphite-reinforced gaskets handle hot duty on carbon steel plates, and EPDM suits water and steam. On high-temperature builds the gasket often sets the practical limit of the assembly, so all three components - plate, glass and gasket - are matched to the service before we quote.</p>
+    </div>
+  </section>
+
+  <!-- Typical duty -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">TYPICAL DUTY</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Vessels, Tanks, Mixers, Reactors &amp; Dryers</h2>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">Bolt-on sight glasses are specified wherever operators need to see inside a vessel without opening it. On storage tanks they confirm level, color and interface; on mixers and agitator vessels they verify batch consistency, vortex behavior and coating; on reactors they provide a direct view of reaction progress, foaming and crystallization; and on dryers and hoppers they show product state, bridging and flow continuity.</p>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">In <a href="/applications/chemical-processing/" class="font-semibold text-brand-blue transition hover:underline">chemical processing</a>, bolt-on windows monitor tanks and reactors handling solvents, acids and intermediates, while in <a href="/applications/oil-gas/" class="font-semibold text-brand-blue transition hover:underline">oil &amp; gas</a> they are used on storage and separation vessels where level certainty matters. Where a vessel feed or discharge line also needs visual flow verification, pair the bolt-on window with an <a href="/products/sight-flow-indicators/" class="font-semibold text-brand-blue transition hover:underline">SG-200 sight flow indicator</a> in the piping. For sizing questions, our technical team works through the <a href="/faq/" class="font-semibold text-brand-blue transition hover:underline">FAQ</a> and the contact form to match the opening, rating and glass to your vessel.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">SPECIFICATIONS</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">SG Series Bolt-On Sight Glass Specifications</h2>
+      <div class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-navy-950 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Parameter</th>
+              <th class="px-5 py-4 font-semibold">SG Series Options</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {specRows.map((r) => (
+              <tr class="transition hover:bg-slate-50">
+                <td class="px-5 py-4 font-bold text-navy-950">{r.param}</td>
+                <td class="px-5 py-4 text-slate-600">{r.options}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+      <h2 class="mt-2 text-2xl font-extrabold text-navy-950 sm:text-3xl">Bolt-On Sight Glass Questions</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="cursor-pointer text-base font-bold text-navy-950">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Specifying a Bolt-On Sight Glass for Your Vessel?"
+    subtitle="Send your opening diameter, bolt circle, service temperature and media - get a datasheet, dimensional drawing and factory-direct quotation within 24 hours."
+  />
+</Layout>
