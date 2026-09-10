@@ -13,7 +13,7 @@ for root, dirs, files in os.walk(DIST):
     for fn in files:
         if fn != "index.html":
             continue
-        d = os.path.relpath(root, DIST)
+        d = os.path.relpath(root, DIST).replace(os.sep, "/")
         d = d.strip("/")
         if d in (".", ""):
             urls.append(f"{BASE_URL}/")
