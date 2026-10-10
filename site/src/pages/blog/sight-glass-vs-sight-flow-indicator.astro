@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
 import CtaBand from '../../components/CtaBand.astro';
 
-const title = 'Sight Glass vs Sight Flow Indicator: Compared';
-const description = 'Sight glass vs sight flow indicator: 8-row comparison of function, indication method, mounting, price and maintenance, plus a buying decision checklist.';
+const title = "Sight Glass vs Sight Flow Indicator: Key Differences & How to Choose";
+const description = "Sight glass vs sight flow indicator compared: what each does, how they indicate flow, where they install, price, maintenance — plus a decision checklist, when to use both, and FAQ.";
 const date = "2026-08-25";
 const readTime = 8;
 const author = "Ray Chan";
@@ -27,21 +27,14 @@ const related = [
 
 <Layout title={title + " | SIGHTSPEC"} description={description}>
   <BlogPostTemplate title={title} category="Comparison" date={date} readTime={readTime} author={author} toc={toc} related={related}>
-    <div slot="cover" class="hidden lg:block" aria-hidden="true">
-      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="18" width="48" height="84" rx="10" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
-        <circle cx="32" cy="46" r="16" fill="#FDE68A" stroke="#F59E0B" stroke-width="3"/>
-        <rect x="26" y="34" width="12" height="24" rx="3" fill="#F97316" transform="rotate(-25 32 46)"/>
-        <rect x="64" y="18" width="48" height="84" rx="10" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
-        <circle cx="88" cy="46" r="16" fill="#FDE68A" stroke="#F59E0B" stroke-width="3"/>
-        <path d="M82 40 v12 a6 6 0 0 0 12 0 v-12" stroke="#F97316" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <circle cx="88" cy="90" r="5" fill="#10B981" opacity="0.7"/>
-        <rect x="80" y="84" width="16" height="12" rx="2" fill="#FDE68A" opacity="0.9"/>
-      </svg>
-    </div>
+    <img slot="cover" src="/images/blog/blog-sight-glass-vs-sight-flow-indicator-01.webp" alt="Flanged sight glass with hinged protective cover and quick-release star knob" width="1600" height="900" class="hidden w-full rounded-2xl border border-white/10 lg:block" decoding="async" />
 
     <p>Ask ten process engineers to explain the difference between a sight glass and a sight flow indicator and you will get ten slightly different answers — which is exactly why the two products get mixed up in specifications. Both are transparent, pressure-rated windows that let you see into a process without opening the system, and at a glance they look similar. But they answer different questions. A sight glass tells you <strong>what is inside</strong> the vessel or line: level, color, clarity. A sight flow indicator tells you <strong>whether the media is actually moving</strong>, in which direction, and at roughly what rate. This guide defines both products, compares them across function, indication method, installation, price and maintenance, walks through when to choose each, and ends with a decision checklist you can hand to a specifier today.</p>
 
+    <figure class="my-10">
+      <img src="/images/blog/blog-sight-glass-vs-sight-flow-indicator-02.webp" alt="Oval bolted sight glass window with a ring of perimeter clamping bolts" width="1600" height="900" class="w-full rounded-2xl border border-slate-200" loading="lazy" decoding="async" />
+      <figcaption class="mt-3 text-sm text-slate-500">Bolted oval sight window: the flat-gauge pattern used where level, not flow, must be read.</figcaption>
+    </figure>
     <h2 id="what-is-a-sight-glass">What Is a Sight Glass?</h2>
     <p>A sight glass — also called a sight window, inspection glass or observation port — is a pressure-rated transparent assembly fitted into a vessel wall or into a pipeline so operators can observe the process media without opening the system. It is a passive component with three parts: a metal body, a glass window rated to the process pressure and temperature, and a gasket that seals the window in place. Nothing inside moves.</p>
     <p>Sight glasses fall into two families. <strong>Vessel sight glasses</strong> are mounted on tanks, reactors and storage vessels, where their job is to show liquid level, product color, mixing behavior, foaming or sediment build-up. <strong>Pipeline sight glasses</strong> are installed inline in a pipe, where their job is to show that media is present and what it looks like as it passes the window. In the SIGHTSPEC range, vessel and pipeline observation is covered by the <a href="/products/tri-clamp-sight-glasses/">SG-100 tri-clamp sight glass</a> for sanitary duty, the <a href="/products/threaded-sight-glasses/">SG-300 threaded sight glass</a> for compact high-pressure lines up to 100 bar, and the <a href="/products/flanged-sight-glasses/">SG-400 flanged sight glass</a> for large windows on chemical and oil &amp; gas lines.</p>

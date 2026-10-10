@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
 import CtaBand from '../../components/CtaBand.astro';
 
-const title = 'What Is a Sight Glass? Types & Working Principle';
-const description = 'What is a sight glass explained: working principle, soda lime vs borosilicate vs quartz comparison table, 4 main types and selection checklist.';
+const title = "What Is a Sight Glass? Definition, Working Principle and Types";
+const description = "Wondering what is sight glass? SIGHTSPEC explains the definition, why process plants need them, how they work, the glass types (soda lime, borosilicate, quartz) and the four main types of sight glasses.";
 const date = "2026-08-25";
 const readTime = 8;
 const author = "Ray Chan";
@@ -26,20 +26,14 @@ const related = [
 
 <Layout title={title + " | SIGHTSPEC"} description={description}>
   <BlogPostTemplate title={title} category="Basics" date={date} readTime={readTime} author={author} toc={toc} related={related}>
-    <div slot="cover" class="hidden lg:block" aria-hidden="true">
-      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
-        <circle cx="60" cy="60" r="28" fill="#BFDBFE" stroke="#60A5FA" stroke-width="3"/>
-        <circle cx="52" cy="52" r="8" fill="#EFF6FF" opacity="0.8"/>
-        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
-      </svg>
-    </div>
+    <img slot="cover" src="/images/blog/blog-what-is-a-sight-glass-01.webp" alt="Five bolted flanged sight glasses staged in a factory warehouse" width="1600" height="900" class="hidden w-full rounded-2xl border border-white/10 lg:block" decoding="async" />
 
     <p>Walk through any process plant and you will see them everywhere: small round windows bolted into tanks, reactors, pipelines and transfer lines, letting operators see exactly what is happening inside. These windows are called sight glasses, and although they look like the simplest component in a process line, they are also one of the most safety-critical. A sight glass is a pressure-rated part that sits between the operator and the process — get the specification wrong and the consequences range from process downtime to a serious failure. This guide explains what a sight glass is, why industries rely on them, how they work, which glass types are used, and how to approach selection.</p>
 
+    <figure class="my-10">
+      <img src="/images/blog/blog-what-is-a-sight-glass-02.webp" alt="Operator watching a shielded industrial cell through a thick leaded-glass sight window" width="1600" height="900" class="w-full rounded-2xl border border-slate-200" loading="lazy" decoding="async" />
+      <figcaption class="mt-3 text-sm text-slate-500">A shielded viewing window is still a sight glass: operators watch the process through pressure-rated, protective glass without opening the system.</figcaption>
+    </figure>
     <h2 id="what-is-a-sight-glass">What Is a Sight Glass?</h2>
     <p>A sight glass — also called a sight window, inspection window or sight port — is a transparent window fitted into the wall of a vessel, tank, pipe or reactor so that operators can visually inspect the process media without opening the system. A complete sight glass assembly has four basic parts: a metal body or housing, a glass window, a sealing gasket, and a retaining ring or cover plate that holds the glass against the body.</p>
     <p>The key point is that an industrial sight glass is an engineered pressure component, not a decorative porthole. The glass window is a pressure boundary: it must contain the internal pressure of the vessel while withstanding process temperature, chemical attack, vibration and thermal shock. That is why most industrial sight glasses use borosilicate glass manufactured to DIN 7080 — the standard that defines the dimensions and strength requirements for pressure sight glasses — rather than ordinary window glass. In hygienic industries such as pharmaceuticals and food &amp; beverage, the whole assembly is additionally engineered for clean-in-place (CIP) and sterilize-in-place (SIP) cycles, with dead-space-free internal geometry and gaskets made from FDA-compliant elastomers.</p>

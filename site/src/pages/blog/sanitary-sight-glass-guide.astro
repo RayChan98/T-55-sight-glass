@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import BlogPostTemplate from '../../components/BlogPostTemplate.astro';
 import CtaBand from '../../components/CtaBand.astro';
 
-const title = 'Sanitary Sight Glass Guide 2026: Tri-Clamp Specs';
-const description = 'Sanitary sight glass guide: 3A, ASME BPE, USP Class VI and FDA standards, tri-clamp size table 1/2-12 inch, gasket materials and CIP/SIP selection.';
+const title = "Sanitary Sight Glass Guide: Tri-Clamp, Specs & Selection";
+const description = "A deep guide to sanitary sight glasses: what makes a sight glass hygienic vs industrial, 3A/ASME BPE/USP Class VI/FDA 21 CFR standards, tri-clamp connection sizes and clamps, gasket materials (EPDM, silicone, Viton, PTFE), 6 selection questions, CIP/SIP and pharmaceutical applications, common mistakes and an 8-question FAQ.";
 const date = "2026-08-25";
 const readTime = 15;
 const author = "Ray Chan";
@@ -28,21 +28,15 @@ const related = [
 
 <Layout title={title + " | SIGHTSPEC"} description={description}>
   <BlogPostTemplate title={title} category="Deep Guide" date={date} readTime={readTime} author={author} toc={toc} related={related}>
-    <div slot="cover" class="hidden lg:block" aria-hidden="true">
-      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="20" width="100" height="80" rx="14" fill="#17395C" stroke="#2E5A88" stroke-width="3"/>
-        <circle cx="60" cy="60" r="28" fill="#A7F3D0" stroke="#10B981" stroke-width="3"/>
-        <circle cx="52" cy="52" r="8" fill="#ECFDF5" opacity="0.8"/>
-        <rect x="38" y="12" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="72" y="12" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="38" y="96" width="10" height="12" rx="2" fill="#F97316"/>
-        <rect x="72" y="96" width="10" height="12" rx="2" fill="#F97316"/>
-      </svg>
-    </div>
+    <img slot="cover" src="/images/blog/blog-sanitary-sight-glass-guide-01.webp" alt="Sanitary stainless vessel with a tri-clamp sight window and lever clamp cover" width="1600" height="900" class="hidden w-full rounded-2xl border border-white/10 lg:block" decoding="async" />
 
     <p>A sanitary sight glass is the inspection window of a hygienic process line — the small round glass assembly that lets operators see inside a pharmaceutical reactor, a CIP'd dairy skid or a brewery fermenter without breaking the sterile boundary. On the surface it looks like any other sight glass: a metal body, a glass window, gaskets and a cover. But the engineering behind a sanitary sight glass is stricter than almost any other window in process industry, because the window itself sits in the product-contact zone of equipment that must be cleaned, sterilized and validated. Get the surface finish, the gasket or the connection wrong and you introduce a harbor for bacteria, a compliance failure, or a pressure-boundary risk.</p>
     <p>This guide covers everything a buyer, specifier or maintenance engineer needs to specify a sanitary sight glass correctly: what actually makes a sight glass "sanitary" versus industrial, the standard system that governs hygienic equipment (3A, ASME BPE, USP Class VI and FDA 21 CFR), the tri-clamp connection in detail, gasket material selection, the six questions that narrow down any specification, the main applications, the mistakes that keep coming up in the field, and an eight-question FAQ.</p>
 
+    <figure class="my-10">
+      <img src="/images/blog/blog-sanitary-sight-glass-guide-02.webp" alt="Hygienic process plant with stainless tanks, manway and tri-clamp pipework" width="1600" height="900" class="w-full rounded-2xl border border-slate-200" loading="lazy" decoding="async" />
+      <figcaption class="mt-3 text-sm text-slate-500">A CIP-ready hygienic line: crevice-free surfaces, tri-clamp joints and a sight window at the product-contact point.</figcaption>
+    </figure>
     <h2 id="what-is-a-sanitary-sight-glass">What Is a Sanitary Sight Glass?</h2>
     <p>A sanitary sight glass — also called a hygienic sight glass or sanitary sight window — is a pressure-rated transparent window designed for installation in equipment that must meet hygienic design and cleaning requirements: pharmaceutical processing, biotechnology, food &amp; beverage, dairy, brewing and cosmetics. Like any sight glass it has four parts — a metal body, a glass window, sealing gaskets and a retaining cover — and like any sight glass it is a pressure boundary: the window must hold the internal pressure of the vessel or line while the operator looks through it. What makes it sanitary is not the glass, which is the same borosilicate family used in industrial units, but three engineering decisions around it.</p>
     <p><strong>Surface finish.</strong> Product-contact surfaces on a sanitary sight glass are polished to a smoothness industrial units rarely achieve: mechanically polished or electropolished stainless steel with a surface roughness of Ra 0.4–0.8 µm (15–30 µin) on wetted surfaces. The purpose is not cosmetics. Bacteria cling to scratches, pits and weld irregularities, and a rough surface is measurably harder to clean and sterilize than a smooth one. Electropolishing also removes the mechanically disturbed surface layer, which improves corrosion resistance in CIP and aggressive media.</p>
