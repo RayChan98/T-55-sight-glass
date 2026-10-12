@@ -4,8 +4,8 @@
 import os, io, datetime
 
 BASE_URL = "https://sightspec.pages.dev"
-DIST = r"D:\kravzik-work\T-55-sight-glass\site\dist"
-PUBLIC = r"D:\kravzik-work\T-55-sight-glass\site\public"
+DIST = r"E:\HermesData\sites\kravzik-work\T-55-sight-glass\site\dist"
+PUBLIC = r"E:\HermesData\sites\kravzik-work\T-55-sight-glass\site\public"
 TODAY = datetime.date.today().isoformat()
 
 urls = []
@@ -14,7 +14,7 @@ for root, dirs, files in os.walk(DIST):
         if fn != "index.html":
             continue
         d = os.path.relpath(root, DIST)
-        d = d.strip("/")
+        d = d.strip("/").replace("\\", "/")  # 10-13 补闸 t_f78872ba：Windows 反斜杠不入 URL（旧产物 dist sitemap 带 backslash 假路径）
         if d in (".", ""):
             urls.append(f"{BASE_URL}/")
         else:

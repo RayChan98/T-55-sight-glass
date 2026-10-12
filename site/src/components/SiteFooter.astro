@@ -1,4 +1,6 @@
 ---
+// 10-13 补闸 t_f78872ba：触点单源=src/data/site.ts（值不变，禁硬写）
+import site from '../data/site';
 const productLinks = [
   { href: '/products/tri-clamp-sight-glasses/', label: 'Tri-Clamp Sight Glasses' },
   { href: '/products/sight-flow-indicators/', label: 'Sight Flow Indicators' },
@@ -53,8 +55,8 @@ const companyLinks = [
       <div>
         <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
         <ul class="mt-4 space-y-2 text-sm">
-          <li><a href="mailto:cj226144@gmail.com" class="transition hover:text-white">cj226144@gmail.com</a></li>
-          <li><a href="https://wa.me/8613710860663" class="transition hover:text-white" rel="noopener">+86 137 1086 0663</a></li>
+          <li><a href={`mailto:${site.email}`} class="transition hover:text-white">{site.email}</a></li>
+          <li><a href={`https://wa.me/${site.waNumber}`} class="transition hover:text-white" rel="noopener">{site.phone}</a></li>
           <li class="text-slate-400">Mon–Sat 9:00–18:00 (GMT+8)</li>
         </ul>
       </div>

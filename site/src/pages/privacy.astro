@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+// 10-13 补闸 t_f78872ba：触点单源=src/data/site.ts（值不变，禁硬写）
+import site from '../data/site';
 ---
 
 <Layout title="Privacy Policy | SIGHTSPEC" description="SIGHTSPEC privacy policy — how we collect, use and protect your information.">
@@ -34,10 +36,10 @@ import Layout from '../layouts/Layout.astro';
       <p>This website uses minimal cookies for essential functionality. We do not use third-party advertising cookies.</p>
 
       <h2>6. Your Rights</h2>
-      <p>You may request access to, correction of, or deletion of your personal data by contacting us at <a href="mailto:cj226144@gmail.com">cj226144@gmail.com</a>.</p>
+      <p>You may request access to, correction of, or deletion of your personal data by contacting us at <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
 
       <h2>7. Contact</h2>
-      <p>For privacy questions, contact: <a href="mailto:cj226144@gmail.com">cj226144@gmail.com</a></p>
+      <p>For privacy questions, contact: <a href={`mailto:${site.email}`}>{site.email}</a></p>
     </div>
   </section>
 </Layout>

@@ -2,6 +2,8 @@
 // SIGHTSPEC Technical Support — Sight Glass Selection, CAD & After-Sales
 import Layout from '../../layouts/Layout.astro';
 import CtaBand from '../../components/CtaBand.astro';
+// 10-13 补闸 t_f78872ba：触点单源=src/data/site.ts（值不变，禁硬写）
+import site from '../../data/site';
 
 const title = 'Sight Glass Technical Support — Selection, CAD Drawings & Installation';
 const description = 'SIGHTSPEC sight glass technical support: model selection by size, connection, pressure and media; CAD drawings before you order; installation and torque guidance; glass breakage replacement and gasket service.';
@@ -43,7 +45,7 @@ const issues = [
 ];
 
 const faqs = [
-  { q: 'How fast do you answer technical questions?', a: 'Technical questions, drawings and quotations are answered within 24 hours on working days. Urgent field issues can reach us directly on WhatsApp +86 137 1086 0663.' },
+  { q: 'How fast do you answer technical questions?', a: `Technical questions, drawings and quotations are answered within 24 hours on working days. Urgent field issues can reach us directly on WhatsApp ${site.phone}.` },
   { q: 'Do you provide CAD drawings before purchase?', a: 'Yes. We provide dimensional drawings in DWG and PDF for approval before production, including custom flange drilling and bolt patterns for retrofit windows.' },
   { q: 'What if the glass breaks in service?', a: 'Sight glass windows are service parts — they can break under thermal shock, overpressure or impact. We supply replacement glass and gaskets quickly, and our warranty covers manufacturing defects including glass fusion flaws found on arrival.' },
   { q: 'Can you replace a sight glass on an existing vessel?', a: 'Usually yes. Send the opening dimensions, bolt pattern and a photo — we match the envelope exactly and supply the window, gaskets and clamps as a retrofit kit.' },

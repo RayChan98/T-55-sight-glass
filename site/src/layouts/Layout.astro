@@ -6,9 +6,11 @@ import FloatingActions from '../components/FloatingActions.astro';
 import MobileBottomNav from '../components/MobileBottomNav.astro';
 import InquiryModal from '../components/InquiryModal.astro';
 import SearchModal from '../components/SearchModal.astro';
+// 10-13 补闸 t_f78872ba：站点 URL 单源=src/data/site.ts + astro.config site:（值不变）
+import site from '../data/site';
 
 const { title = 'SIGHTSPEC', description = 'Industrial Sight Glass Manufacturer — Sanitary Tri-Clamp Sight Glasses, Sight Flow Indicators & Borosilicate Windows, OEM' } = Astro.props;
-const siteUrl = 'https://sightspec.pages.dev';
+const siteUrl = import.meta.env.SITE || site.url;
 const canonical = Astro.url.pathname === '/' ? siteUrl + '/' : `${siteUrl}${Astro.url.pathname.replace(/\/$/, '')}/`;
 const organization = {
   '@context': 'https://schema.org',

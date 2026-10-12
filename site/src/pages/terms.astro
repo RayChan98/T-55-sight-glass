@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+// 10-13 补闸 t_f78872ba：触点单源=src/data/site.ts（值不变，禁硬写）
+import site from '../data/site';
 ---
 
 <Layout title="Terms of Service | SIGHTSPEC" description="SIGHTSPEC terms of service — terms governing use of this website.">
@@ -31,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
       <p>These terms are governed by applicable international trade law and the laws of the seller's jurisdiction.</p>
 
       <h2>7. Contact</h2>
-      <p>For questions about these terms, contact: <a href="mailto:cj226144@gmail.com">cj226144@gmail.com</a></p>
+      <p>For questions about these terms, contact: <a href={`mailto:${site.email}`}>{site.email}</a></p>
     </div>
   </section>
 </Layout>

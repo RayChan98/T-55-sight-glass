@@ -44,7 +44,9 @@ export async function onRequest(context) {
     ].join('\n');
 
     const env = context.env;
-    if (env.ZOHO_CLIENT_ID && env.ZOHO_CLIENT_SECRET && env.ZOHO_REFRESH_TOKEN && env.ZOHO_ACCOUNT_ID) {
+    // 10-13 补闸 t_f78872ba：清理克隆残留——本站从未注册品牌域，ZOHO_FROM_EMAIL 未配时
+    // 禁回落他线地址 inquiry@fullcolorcam.com（K-022 跨线身份禁借），改为 fail-closed。
+    if (env.ZOHO_CLIENT_ID && env.ZOHO_CLIENT_SECRET && env.ZOHO_REFRESH_TOKEN && env.ZOHO_ACCOUNT_ID && env.ZOHO_FROM_EMAIL) {
       // === Zoho Mail API (OAuth2) ===
       const tokenRes = await fetch(
         'https://accounts.zoho.com/oauth/v2/token?refresh_token=' + encodeURIComponent(env.ZOHO_REFRESH_TOKEN) +
@@ -69,7 +71,7 @@ export async function onRequest(context) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          fromAddress: env.ZOHO_FROM_EMAIL || 'inquiry@fullcolorcam.com',
+          fromAddress: env.ZOHO_FROM_EMAIL,
           toAddress: env.ZOHO_TO_EMAIL || 'cj226144@gmail.com',
           subject: `New inquiry: ${name || 'anonymous'}${company ? ' (' + company + ')' : ''}`,
           content: text,
